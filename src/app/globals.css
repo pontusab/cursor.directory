@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 0, 0%, 7%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0, 0%, 7%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 0 0% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 17%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, sans-serif;
+    @apply bg-background text-foreground;
+  }
+}
+
+.metall {
+  border: 2px solid #121212;
+  background: radial-gradient(741.61% 493.66% at -64.2% -418.75%, rgba(89, 96, 106, 0.81) 2.51%, rgba(85, 91, 105, 0.81) 6.06%, rgba(176, 176, 176, 0.82) 11.51%, rgba(95, 101, 115, 0.64) 17.5%, rgba(169, 171, 179, 0.86) 23.07%, rgba(182, 185, 192, 0.83) 33.45%, rgba(242, 243, 245, 0.81) 45%, rgba(98, 107, 116, 0.76) 60%, rgba(114, 122, 130, 0.77) 60%, rgba(142, 149, 157, 0.87) 60.79%, rgba(239, 239, 241, 0.85) 68.08%, rgba(105, 112, 122, 0.74) 74.82%, rgba(87, 93, 107, 0.83) 78.81%, rgba(99, 106, 116, 0.80) 83.61%, rgba(241, 241, 243, 0.78) 93.62%, rgba(151, 154, 163, 0.73) 97.03%, rgba(177, 179, 185, 0.79) 98.83%);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
