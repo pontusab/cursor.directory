@@ -5,7 +5,7 @@ import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cursor Rules",
+  title: "Cursor Directory",
   description: "Find the best cursor rules for your framework and language",
 };
 

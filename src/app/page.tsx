@@ -35,12 +35,14 @@ export default function Page() {
         </ScrollArea>
         <Separator className="my-4" />
         <div className="space-y-4">
-          <Button
-            className="w-full metall text-black rounded-full"
-            variant="outline"
-          >
-            Submit
-          </Button>
+          <a href="https://github.com/pontusab/cursor.directory">
+            <Button
+              className="w-full metall text-black rounded-full"
+              variant="outline"
+            >
+              Submit
+            </Button>
+          </a>
         </div>
       </aside>
       <main className="flex-1 p-6 overflow-auto">
