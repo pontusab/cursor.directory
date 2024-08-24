@@ -5,6 +5,7 @@ import { Copy } from "lucide-react";
 import { CopyButton } from "./copy-button";
 
 export type Rule = {
+  libs?: string[];
   content: string;
   author: {
     name: string;
@@ -24,8 +25,17 @@ export function RuleCard({ rule }: { rule: Rule }) {
       </CardContent>
 
       <CardHeader className="flex flex-row items-center justify-between p-0">
-        <CardTitle className="text-sm">{rule.author.name}</CardTitle>
+        <div>
+          <CardTitle className="text-sm">{rule.author.name}</CardTitle>
 
+          <div className="flex gap-2">
+            {rule?.libs?.map((lib) => (
+              <span key={lib} className="text-xs text-[#878787] font-mono">
+                {lib}
+              </span>
+            ))}
+          </div>
+        </div>
         <Avatar className="size-6">
           <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
             <AvatarImage src={rule.author.avatar} alt={rule.author.name} />

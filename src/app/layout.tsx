@@ -1,4 +1,6 @@
+import { Header } from "@/components/header";
 import "./globals.css";
+import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { GeistMono } from "geist/font/mono";
@@ -24,25 +26,9 @@ export default function RootLayout({
       )}
     >
       <body>
+        <Header />
         {children}
-        <footer className="right-4 bottom-4 absolute text-xs text-[#878787]">
-          Made by{" "}
-          <a
-            href="https://twitter.com/pontusab"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            pontus
-          </a>{" "}
-          &{" "}
-          <a
-            href="https://twitter.com/viktorhofte"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            viktor
-          </a>
-        </footer>
+        <Footer />
       </body>
 
       <Analytics />

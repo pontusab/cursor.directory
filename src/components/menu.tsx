@@ -16,7 +16,7 @@ export function Menu({
   };
 
   return (
-    <aside className="w-64 p-4 flex flex-col mt-12">
+    <aside className="w-64 p-4 flex flex-col">
       <ScrollArea className="flex-grow">
         <div className="space-y-1">
           {sections.map((section) => (

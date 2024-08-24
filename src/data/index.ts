@@ -1,6 +1,7 @@
 export const rules = [
   {
     tags: ["Next.js", "React", "TypeScript"],
+    libs: ["shadcn", "radix", "tailwind", "nuqs"],
     content: `You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI and Tailwind.
 
 Code Style and Structure:
@@ -59,6 +60,7 @@ Follow Next.js docs for Data Fetching, Rendering, and Routing`,
     },
   },
   {
+    libs: ["shadcn", "tailwind", "radix", "react-hook-form", "zod"],
     tags: ["React", "Vite", "Viem v2", "Wagmi v2", "TypeScript", "Next.js"],
     content: `You are an expert in Solidity, TypeScript, Node.js, Next.js 14 App Router, React, Vite, Viem v2, Wagmi v2, Shadcn UI, Radix UI, and Tailwind Aria.
 
