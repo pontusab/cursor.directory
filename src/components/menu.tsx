@@ -27,7 +27,7 @@ export function Menu({
               className="w-full justify-start"
             >
               {section.tag}
-              <span className="ml-auto text-muted-foreground">
+              <span className="ml-auto text-muted-foreground text-[#878787]">
                 {section.rules.length}
               </span>
             </Button>
