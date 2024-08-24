@@ -9,7 +9,16 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Copy } from "lucide-react";
 
-export function RuleCard({ rule }: { rule: any }) {
+export type Rule = {
+  content: string;
+  author: {
+    name: string;
+    url: string;
+    avatar: string;
+  };
+};
+
+export function RuleCard({ rule }: { rule: Rule }) {
   return (
     <Card className="bg-background p-4 aspect-square">
       <ContextMenu>

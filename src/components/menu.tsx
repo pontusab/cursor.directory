@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import type { Rule } from "./rule-card";
 
-export function Menu({ sections }) {
+export function Menu({
+  sections,
+}: { sections: { tag: string; rules: Rule[] }[] }) {
   const handleClick = (tag: string) => {
     const element = document.getElementById(tag);
     element?.scrollIntoView({
