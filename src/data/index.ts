@@ -8,6 +8,7 @@ import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
+import { reactNativeRules } from "./rules/react-native";
 
 export const rules = [
   ...astroRules,
@@ -21,6 +22,7 @@ export const rules = [
   ...cRules,
   ...vueTsRules,
   ...astroRules,
+  ...reactNativeRules,
 ];
 
 export function getSections() {
