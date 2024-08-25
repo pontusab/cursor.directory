@@ -5,7 +5,7 @@ import { laravelRules } from "./rules/laravel";
 import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
-
+import { vueTsRules } from "./rules/vue";
 export const rules = [
   ...nextjsRules,
   ...swiftuiRules,
@@ -14,6 +14,7 @@ export const rules = [
   ...fastapiRules,
   ...djangoRules,
   ...cRules,
+  ...vueTsRules,
 ];
 
 export function getSections() {
