@@ -45,6 +45,38 @@ export default function RootLayout({
               <PlusIcon className="w-4 h-4" />
             </Button>
           </a>
+
+          <a
+            href="https://news.ycombinator.com/newest"
+            target="_blank"
+            rel="noreferrer"
+            className="fixed bottom-4 right-6 z-10 hidden md:block"
+          >
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 rounded-none border-border"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={16}
+                height={16}
+                fill="none"
+              >
+                <g clipPath="url(#a)">
+                  <path
+                    fill="#F60"
+                    d="M0 0v16h16V0H0Zm8.7 9.225v3.925H7.275V9.225L3.775 2.3h1.65L8 7.525 10.65 2.3h1.55L8.7 9.225Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Live on Hacker News</span>
+            </Button>
+          </a>
         </div>
       </body>
 
