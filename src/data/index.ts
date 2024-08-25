@@ -1,3 +1,4 @@
+import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
 import { djangoRules } from "./rules/django";
 import { fastapiRules } from "./rules/fastapi";
@@ -6,6 +7,7 @@ import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
+
 export const rules = [
   ...nextjsRules,
   ...swiftuiRules,
@@ -15,6 +17,7 @@ export const rules = [
   ...djangoRules,
   ...cRules,
   ...vueTsRules,
+  ...astroRules,
 ];
 
 export function getSections() {
