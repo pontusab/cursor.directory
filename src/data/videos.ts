@@ -21,6 +21,29 @@ export const videos = [
     },
   },
   {
+    title: "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP",
+    description:
+      "Cursor Composer gives you INCREDIBLE Multi-File AI Coding Abilities",
+    url: "https://www.youtube.com/embed/V9_RzjqCXP8",
+    author: {
+      name: "IndyDevDan",
+      image:
+        "https://yt3.ggpht.com/tRTaWiEPa4eLVJgg3K0gO6orKleaIhxKcQBc4LryL_xczX5leDI5-6NEaD5xKEpwAQ_M7a747g=s88-c-k-c0x00ffffff-no-rj",
+    },
+  },
+  {
+    title:
+      "How to Build an AI Web App with Claude 3.5 and Cursor | Full Tutorial",
+    description:
+      "AI Programming Full Tutorial: YouTube Search App | Cursor - Claude 3.5 ++",
+    url: "https://www.youtube.com/embed/fv1rkctrEPk",
+    author: {
+      name: "All About AI",
+      image:
+        "https://yt3.ggpht.com/OLvM9exmm0IyZqyK_PLSNCcKZbkzUneljsQ7B_t6hjBawDy4mCYzLqQX8FxzNlVB8Tc10-VkJA=s88-c-k-c0x00ffffff-no-rj",
+    },
+  },
+  {
     title: "I Finally Tried The AI-Powered VS Code Killer | Cursor IDE Review",
     description:
       "I Finally Tried The AI-Powered VS Code Killer | Cursor IDE Review",
