@@ -1,10 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![hero](image.png)
 
 ## How to submit a new rule
 
 * Fork the repo
 * Add a new rule to `src/data/index.ts`
 * Create a PR
+
+## Recognition
+
+<a href="https://news.ycombinator.com/item?id=41346156">
+  <img
+    style="width: 250px; height: 54px;" width="250" height="54"
+    alt="Featured on Hacker News"
+    src="https://hackernews-badge.vercel.app/api?id=41346156"
+  />
+</a>
 
 ## Getting Started
 
