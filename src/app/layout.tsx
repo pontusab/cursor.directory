@@ -32,13 +32,19 @@ export default function RootLayout({
         <div className="flex">
           {children}
 
-          <Button
-            className="size-[48px] bg-[#F5F5F3]/30 text-white border border-white rounded-full font-medium md:hidden fixed bottom-4 left-6 z-10 backdrop-blur-lg"
-            variant="outline"
-            size="icon"
+          <a
+            href="https://github.com/pontusab/cursor.directory"
+            target="_blank"
+            rel="noreferrer"
           >
-            <PlusIcon className="w-4 h-4" />
-          </Button>
+            <Button
+              className="size-[48px] bg-[#F5F5F3]/30 text-white border border-white rounded-full font-medium md:hidden fixed bottom-4 left-6 z-10 backdrop-blur-lg"
+              variant="outline"
+              size="icon"
+            >
+              <PlusIcon className="w-4 h-4" />
+            </Button>
+          </a>
         </div>
       </body>
 

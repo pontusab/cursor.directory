@@ -40,7 +40,11 @@ export function Menu() {
         </div>
       </ScrollArea>
       <Separator className="my-4" />
-      <a href="https://github.com/pontusab/cursor.directory">
+      <a
+        href="https://github.com/pontusab/cursor.directory"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Button
           className="w-full bg-[#F5F5F3]/30 text-white border border-white rounded-full items-center justify-center gap-2 font-medium hidden md:flex"
           variant="outline"
