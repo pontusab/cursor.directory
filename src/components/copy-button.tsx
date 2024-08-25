@@ -2,6 +2,7 @@
 
 import { Check, Copy } from "lucide-react";
 import { useState } from "react";
+import { toast } from "sonner";
 
 export function CopyButton({ content }: { content: string }) {
   const [copied, setCopied] = useState(false);
@@ -9,6 +10,10 @@ export function CopyButton({ content }: { content: string }) {
   const handleCopy = () => {
     navigator.clipboard.writeText(content);
     setCopied(true);
+    toast(
+      "Copied to clipboard. Add a .cursorrules file to your project and paste the rule.",
+    );
+
     setTimeout(() => {
       setCopied(false);
     }, 1000);

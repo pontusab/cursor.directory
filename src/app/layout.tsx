@@ -1,6 +1,7 @@
-import { Header } from "@/components/header";
 import "./globals.css";
+import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
+import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { OpenPanelComponent } from "@openpanel/nextjs";
 import { GeistMono } from "geist/font/mono";
@@ -88,6 +89,8 @@ export default function RootLayout({
         clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
         trackScreenViews
       />
+
+      <Toaster />
     </html>
   );
 }
