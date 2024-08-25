@@ -74,7 +74,7 @@ export default function RootLayout({
                   </clipPath>
                 </defs>
               </svg>
-              <span>Vote on Hacker News</span>
+              <span>Live on Hacker News</span>
               <span className="relative ml-auto flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-green-400" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
