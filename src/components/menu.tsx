@@ -35,16 +35,14 @@ export function Menu({
         </div>
       </ScrollArea>
       <Separator className="my-4" />
-      <div className="space-y-4">
-        <a href="https://github.com/pontusab/cursor.directory">
-          <Button
-            className="w-full bg-white text-black rounded-full"
-            variant="outline"
-          >
-            Submit
-          </Button>
-        </a>
-      </div>
+      <a href="https://github.com/pontusab/cursor.directory">
+        <Button
+          className="w-full bg-white text-black rounded-full"
+          variant="outline"
+        >
+          Submit
+        </Button>
+      </a>
     </aside>
   );
 }

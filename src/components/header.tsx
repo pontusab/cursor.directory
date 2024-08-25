@@ -28,7 +28,18 @@ export function Header() {
             features such as Cursor Chat and Ctrl/⌘ K. <br />
             <br />
             The more specific your rules for your project, the better.
-            <div className="flex items-center space-x-1 mt-8">
+            <br />
+            <br />
+            <br />
+            <a href="https://github.com/pontusab/cursor.directory">
+              <Button
+                className="w-full bg-white text-black rounded-full"
+                variant="outline"
+              >
+                Submit
+              </Button>
+            </a>
+            <div className="flex items-center space-x-1 mt-8 justify-center">
               Made by{" "}
               <a href="https://midday.ai">
                 <svg
@@ -36,7 +47,7 @@ export function Header() {
                   width={102}
                   height={30}
                   fill="none"
-                  className="scale-75 text-white"
+                  className="scale-75"
                 >
                   <path
                     fill="currentColor"
