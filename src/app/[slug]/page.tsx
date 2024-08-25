@@ -29,7 +29,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       </div>
 
       <main className="flex-1 p-6 pt-16">
-        {rule && <RuleCard rule={rule} />}
+        {rule && <RuleCard rule={rule} isPage={true} />}
       </main>
     </>
   );

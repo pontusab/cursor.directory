@@ -1,6 +1,7 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";
 
@@ -16,10 +17,15 @@ export type Rule = {
   };
 };
 
-export function RuleCard({ rule }: { rule: Rule }) {
+export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
   return (
     <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square">
-      <CardContent className="bg-card h-full mb-2 font-mono p-4 text-sm opacity-50 hover:opacity-100 transition-opacity group relative">
+      <CardContent
+        className={cn(
+          "bg-card h-full mb-2 font-mono p-4 text-sm opacity-50 hover:opacity-100 transition-opacity group relative",
+          isPage && "opacity-100",
+        )}
+      >
         <CopyButton content={rule.content} />
         <Link href={`/${rule.slug}`}>
           <ScrollArea className="h-full">

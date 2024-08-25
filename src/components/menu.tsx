@@ -46,7 +46,7 @@ export function Menu() {
         rel="noreferrer"
       >
         <Button
-          className="w-full bg-[#F5F5F3]/30 text-white border border-white rounded-full items-center justify-center gap-2 font-medium hidden md:flex"
+          className="w-full bg-[#F5F5F3]/30 text-black border border-black rounded-full items-center justify-center gap-2 font-medium hidden md:flex dark:text-white dark:border-white"
           variant="outline"
         >
           <span>Submit</span> <PlusIcon className="w-4 h-4" />
