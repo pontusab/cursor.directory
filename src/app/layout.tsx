@@ -48,7 +48,7 @@ export default function RootLayout({
           </a>
 
           <a
-            href="https://news.ycombinator.com/shownew"
+            href="https://news.ycombinator.com/item?id=41346156"
             target="_blank"
             rel="noreferrer"
             className="fixed bottom-4 right-6 z-10"
