@@ -50,7 +50,7 @@ export default function RootLayout({
             href="https://news.ycombinator.com/shownew"
             target="_blank"
             rel="noreferrer"
-            className="fixed bottom-4 right-6 z-10 hidden md:block"
+            className="fixed bottom-4 right-6 z-10"
           >
             <Button
               variant="outline"
