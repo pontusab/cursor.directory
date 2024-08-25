@@ -50,6 +50,7 @@ export default function RootLayout({
 
       <OpenPanelComponent
         clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
+        trackScreenViews
       />
     </html>
   );
