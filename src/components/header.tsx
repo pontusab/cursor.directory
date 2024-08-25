@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 import {
   Dialog,
@@ -10,11 +11,29 @@ import {
 
 export function Header() {
   return (
-    <div className="fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center">
-      <h1 className="font-semibold text-sm font-mono">cursor.directory</h1>
+    <div className="md:fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center">
+      <Link href="/">
+        <h1 className="font-semibold text-sm font-mono">cursor.directory</h1>
+      </Link>
+
       <Dialog>
         <DialogTrigger asChild>
-          <Button variant="ghost">About</Button>
+          <Button variant="ghost" className="flex items-center gap-2">
+            <span>About</span>{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={20}
+              height={20}
+              fill="none"
+            >
+              <path
+                fill="#F5F5F3"
+                fillRule="evenodd"
+                d="M9.565 0a9.954 9.954 0 0 0-4.188 1.12l4.188 7.254V0Zm0 11.627L5.378 18.88A9.953 9.953 0 0 0 9.565 20v-8.373Zm.87 8.373v-8.378l4.19 7.257A9.954 9.954 0 0 1 10.436 20Zm0-11.621V0a9.955 9.955 0 0 1 4.19 1.121l-4.19 7.258Zm-8.878 7 7.256-4.189-4.189 7.255a10.063 10.063 0 0 1-3.067-3.066ZM18.445 4.624 11.19 8.812l4.189-7.255a10.062 10.062 0 0 1 3.066 3.067ZM1.556 4.623a10.062 10.062 0 0 1 3.068-3.067l4.19 7.257-7.258-4.19Zm-.435.753A9.954 9.954 0 0 0 0 9.566h8.379L1.12 5.377Zm0 9.25a9.954 9.954 0 0 1-1.12-4.19h8.375l-7.255 4.19Zm10.503-5.06H20a9.952 9.952 0 0 0-1.12-4.189l-7.255 4.19Zm7.255 5.058-7.252-4.187H20a9.953 9.953 0 0 1-1.12 4.187Zm-7.687-3.433 4.187 7.252a10.061 10.061 0 0 0 3.065-3.066l-7.252-4.186Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>

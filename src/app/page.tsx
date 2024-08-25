@@ -1,21 +1,17 @@
 import { Menu } from "@/components/menu";
 import { RuleCard } from "@/components/rule-card";
-import { rules } from "@/data";
+import { getSections } from "@/data";
 
-const categories = Array.from(new Set(rules.flatMap((rule) => rule.tags)));
-const sections = categories.map((tag) => ({
-  tag,
-  rules: rules.filter((rule) => rule.tags.includes(tag)),
-}));
+const sections = getSections();
 
 export default function Page() {
   return (
-    <div className="flex h-screen bg-background text-foreground">
-      <div className="hidden md:flex mt-12">
-        <Menu sections={sections} />
+    <>
+      <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
+        <Menu />
       </div>
 
-      <main className="flex-1 p-6 overflow-auto pt-16">
+      <main className="flex-1 p-6 pt-4 md:pt-16">
         {sections.map((section, idx) => (
           <section key={section.tag} id={section.tag}>
             <h3 className="text-lg font-semibold mb-4">{section.tag}</h3>
@@ -27,6 +23,6 @@ export default function Page() {
           </section>
         ))}
       </main>
-    </div>
+    </>
   );
 }

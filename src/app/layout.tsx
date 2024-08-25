@@ -1,10 +1,11 @@
 import { Header } from "@/components/header";
 import "./globals.css";
-import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Analytics } from "@vercel/analytics/react";
+import { OpenPanelComponent } from "@openpanel/nextjs";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
+import { PlusIcon } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,16 +23,28 @@ export default function RootLayout({
       lang="en"
       className={cn(
         `${GeistSans.variable} ${GeistMono.variable}`,
-        "whitespace-pre-line dark antialiased",
+        "whitespace-pre-line dark antialiased bg-background text-foreground",
       )}
     >
       <body>
         <Header />
-        {children}
-        <Footer />
+
+        <div className="flex">
+          {children}
+
+          <Button
+            className="size-[48px] bg-[#F5F5F3]/30 text-white border border-white rounded-full font-medium md:hidden fixed bottom-4 left-6 z-10 backdrop-blur-lg"
+            variant="outline"
+            size="icon"
+          >
+            <PlusIcon className="w-4 h-4" />
+          </Button>
+        </div>
       </body>
 
-      <Analytics />
+      <OpenPanelComponent
+        clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
+      />
     </html>
   );
 }

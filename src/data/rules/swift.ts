@@ -1,7 +1,9 @@
 export const swiftuiRules = [
-    {
-      tags: ["SwiftUI", "Swift"],
-      content: `
+  {
+    tags: ["SwiftUI", "Swift"],
+    title: "SwiftUI Swift Cursor Rules",
+    slug: "swiftui-swift-cursor-rules",
+    content: `
   # Original instructions: https://forum.cursor.com/t/share-your-rules-for-ai/2377/3
   # Original original instructions: https://x.com/NickADobos/status/1814596357879177592
   
@@ -21,11 +23,11 @@ export const swiftuiRules = [
   - Be concise. Minimize any other prose.
   - If you think there might not be a correct answer, you say so. If you do not know the answer, say so instead of guessing.
   `,
-      author: {
-        name: "Josh Pigford",
-        url: "https://x.com/Shpigford",
-        avatar: "https://pbs.twimg.com/profile_images/1826598708525387776/y8dXyJg2_400x400.jpg",
-      },
-    }
-  ];
-  
+    author: {
+      name: "Josh Pigford",
+      url: "https://x.com/Shpigford",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1826598708525387776/y8dXyJg2_400x400.jpg",
+    },
+  },
+];

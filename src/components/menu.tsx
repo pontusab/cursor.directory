@@ -3,12 +3,17 @@
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-import type { Rule } from "./rule-card";
+import { getSections } from "@/data";
+import { PlusIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
-export function Menu({
-  sections,
-}: { sections: { tag: string; rules: Rule[] }[] }) {
+const sections = getSections();
+
+export function Menu() {
+  const router = useRouter();
   const handleClick = (tag: string) => {
+    router.push("/", { scroll: false });
+
     const element = document.getElementById(tag);
     element?.scrollIntoView({
       behavior: "smooth",
@@ -27,7 +32,7 @@ export function Menu({
               className="w-full justify-start"
             >
               {section.tag}
-              <span className="ml-auto text-muted-foreground text-[#878787]">
+              <span className="ml-auto text-[#878787]">
                 {section.rules.length}
               </span>
             </Button>
@@ -37,10 +42,10 @@ export function Menu({
       <Separator className="my-4" />
       <a href="https://github.com/pontusab/cursor.directory">
         <Button
-          className="w-full bg-white text-black rounded-full"
+          className="w-full bg-[#F5F5F3]/30 text-white border border-white rounded-full items-center justify-center gap-2 font-medium hidden md:flex"
           variant="outline"
         >
-          Submit
+          <span>Submit</span> <PlusIcon className="w-4 h-4" />
         </Button>
       </a>
     </aside>

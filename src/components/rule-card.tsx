@@ -1,12 +1,14 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Copy } from "lucide-react";
+import Link from "next/link";
 import { CopyButton } from "./copy-button";
 
 export type Rule = {
   libs?: string[];
   content: string;
+  title?: string;
+  slug: string;
   author: {
     name: string;
     url: string;
@@ -16,12 +18,14 @@ export type Rule = {
 
 export function RuleCard({ rule }: { rule: Rule }) {
   return (
-    <Card className="bg-background p-4 aspect-square">
+    <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square">
       <CardContent className="bg-card h-full mb-2 font-mono p-4 text-sm opacity-50 hover:opacity-100 transition-opacity group relative">
         <CopyButton content={rule.content} />
-        <ScrollArea className="h-full">
-          <code className="text-sm">{rule.content}</code>
-        </ScrollArea>
+        <Link href={`/${rule.slug}`}>
+          <ScrollArea className="h-full">
+            <code className="text-sm">{rule.content}</code>
+          </ScrollArea>
+        </Link>
       </CardContent>
 
       <CardHeader className="flex flex-row items-center justify-between p-0">
