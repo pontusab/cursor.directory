@@ -1,9 +1,10 @@
-import { nextjsRules } from "./rules/nextjs";
-import { swiftuiRules } from "./rules/swift";
-import { laravelRules } from "./rules/laravel";
-import { railsRules } from "./rules/rails";
-import { fastapiRules } from "./rules/fastapi";
+import { cRules } from "./rules/c";
 import { djangoRules } from "./rules/django";
+import { fastapiRules } from "./rules/fastapi";
+import { laravelRules } from "./rules/laravel";
+import { nextjsRules } from "./rules/nextjs";
+import { railsRules } from "./rules/rails";
+import { swiftuiRules } from "./rules/swift";
 
 export const rules = [
   ...nextjsRules,
@@ -12,4 +13,5 @@ export const rules = [
   ...railsRules,
   ...fastapiRules,
   ...djangoRules,
+  ...cRules,
 ];
