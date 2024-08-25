@@ -50,17 +50,14 @@ export function Header() {
             <br />
             <br />
             Feel free to create your own directory using our{" "}
-            <a
-              href="https://github.com/pontusab/cursor.directory"
-              className="underline"
-            >
+            <a href="https://git.new/cd" className="underline">
               template
             </a>{" "}
             on GitHub.
             <br />
             <br />
             <br />
-            <a href="https://github.com/pontusab/cursor.directory">
+            <a href="https://git.new/cd">
               <Button
                 className="w-full bg-white text-black rounded-full"
                 variant="outline"
