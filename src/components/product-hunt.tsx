@@ -6,7 +6,7 @@ import ph from "./ph.png";
 
 export function ProductHuntBanner() {
   return (
-    <a href="https://ggl.link/ph" target="_blank" rel="noreferrer">
+    <a href="https://dub.sh/ph-launch" target="_blank" rel="noreferrer">
       <div className="fixed animate-in slide-in-from-bottom-full z-50 bottom-2 md:bottom-4 right-2 md:right-4 w-[calc(100vw-16px)] max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group">
         <Image
           width={54}
