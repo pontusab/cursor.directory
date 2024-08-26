@@ -38,12 +38,20 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         <div>
           <CardTitle className="text-sm">{rule.author.name}</CardTitle>
 
-          <div className="flex gap-2">
-            {rule?.libs?.map((lib) => (
-              <span key={lib} className="text-xs text-[#878787] font-mono">
+          <div className="flex gap-2 overflow-x-auto whitespace-nowrap">
+            {rule?.libs?.slice(0, 2).map((lib) => (
+              <span
+                key={lib}
+                className="text-xs text-[#878787] font-mono flex-shrink-0"
+              >
                 {lib}
               </span>
             ))}
+            {rule?.libs && rule.libs.length > 3 && (
+              <span className="text-xs text-[#878787] font-mono flex-shrink-0">
+                +{rule.libs.length - 3} more
+              </span>
+            )}
           </div>
         </div>
         <Avatar className="size-6">
