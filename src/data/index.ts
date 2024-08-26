@@ -13,6 +13,7 @@ import { metaPromptRules } from "./rules/meta-prompt";
 import { expoReactNativeRules } from "./rules/expo";
 import { pythonRules } from "./rules/python";
 import { reactNativeRules } from "./rules/react-native";
+import { juliaRules } from "./rules/julia";
 
 export const rules = [
   ...astroRules,
@@ -29,6 +30,7 @@ export const rules = [
   ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
+  ...juliaRules,
   ...dataAnalystRules,
 ];
 
