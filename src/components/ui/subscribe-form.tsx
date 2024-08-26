@@ -21,7 +21,7 @@ function SubmitButton() {
       type="submit"
       className="absolute right-2 h-6 bg-primary top-1.5 px-4 font-medium text-sm z-10 text-primary-foreground"
     >
-      Submit
+      Subscribe
     </button>
   );
 }
