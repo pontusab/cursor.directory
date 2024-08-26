@@ -8,15 +8,18 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
+import { SubscribeForm } from "./ui/subscribe-form";
 
 export function Header() {
   return (
-    <div className="md:fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center">
+    <div className="md:fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center bg-background backdrop-filter backdrop-blur-sm bg-opacity-30">
       <Link href="/">
         <h1 className="font-semibold text-sm font-mono">cursor.directory</h1>
       </Link>
 
       <div className="flex items-center gap-2">
+        <SubscribeForm group="newsletter" />
+
         <Link href="/learn">Learn</Link>
 
         <Dialog>
