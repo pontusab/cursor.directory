@@ -1,4 +1,4 @@
-import { ProductHuntBanner } from "@/components/product-hunt";
+import { Banner } from "@/components/banner";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
@@ -68,7 +68,7 @@ export default function RootLayout({
             </a>
           </div>
 
-          <ProductHuntBanner />
+          <Banner />
           <Toaster />
         </ThemeProvider>
       </body>
