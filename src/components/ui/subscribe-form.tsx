@@ -34,7 +34,7 @@ export function SubscribeForm({ group }: Props) {
   const [isSubmitted, setSubmitted] = useState(false);
 
   return (
-    <div className="mr-4">
+    <div className="mr-4 hidden md:block">
       <div className="flex justify-center">
         {isSubmitted ? (
           <div className="border border-[#2C2C2C] text-sm text-primary h-9 w-[290px] flex items-center py-0.5 px-2 justify-between">
