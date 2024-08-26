@@ -2,22 +2,28 @@ import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
 import { djangoRules } from "./rules/django";
 import { fastapiRules } from "./rules/fastapi";
+import { flaskRules } from "./rules/flask";
 import { laravelRules } from "./rules/laravel";
 import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
 import { pythonRules } from "./rules/python";
+import { reactNativeRules } from "./rules/react-native";
+
 export const rules = [
+  ...astroRules,
   ...nextjsRules,
   ...swiftuiRules,
   ...laravelRules,
   ...railsRules,
   ...fastapiRules,
+  ...flaskRules,
   ...djangoRules,
   ...cRules,
   ...vueTsRules,
   ...astroRules,
+  ...reactNativeRules,
 ];
 
 export function getSections() {
