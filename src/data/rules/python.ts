@@ -1,4 +1,4 @@
-export const fastapiRules = [
+export const pythonRules = [
   {
     tags: ["Function", "Python"],
     title: "Python Function Reflection Assistant",
