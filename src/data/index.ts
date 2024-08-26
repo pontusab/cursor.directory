@@ -8,6 +8,7 @@ import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
+import { metaPromptRules } from "./rules/meta-prompt";
 import { expoReactNativeRules } from "./rules/expo";
 import { pythonRules } from "./rules/python";
 import { reactNativeRules } from "./rules/react-native";
@@ -24,6 +25,7 @@ export const rules = [
   ...cRules,
   ...vueTsRules,
   ...astroRules,
+  ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
 ];
