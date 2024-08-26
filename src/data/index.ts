@@ -2,6 +2,7 @@ import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
 import { djangoRules } from "./rules/django";
 import { fastapiRules } from "./rules/fastapi";
+import { dataAnalystRules } from "./rules/data-analyst";
 import { flaskRules } from "./rules/flask";
 import { laravelRules } from "./rules/laravel";
 import { nextjsRules } from "./rules/nextjs";
@@ -28,6 +29,7 @@ export const rules = [
   ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
+  ...dataAnalystRules,
 ];
 
 export function getSections() {
