@@ -2,9 +2,19 @@
 
 import { XIcon } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 import ph from "./ph.png";
 
 export function ProductHuntBanner() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleClose = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
+
   return (
     <a href="https://dub.sh/ph-launch" target="_blank" rel="noreferrer">
       <div className="fixed animate-in slide-in-from-bottom-full z-50 bottom-2 md:bottom-4 right-2 md:right-4 w-[calc(100vw-16px)] max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group">
@@ -36,6 +46,7 @@ export function ProductHuntBanner() {
           <button
             type="button"
             className="absolute right-1.5 top-1.5 text-[#878787] hidden group-hover:block"
+            onClick={handleClose}
           >
             <XIcon className="w-4 h-4" />
           </button>
