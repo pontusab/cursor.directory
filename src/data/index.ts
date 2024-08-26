@@ -7,7 +7,7 @@ import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
-
+import { pythonRules } from "./rules/python";
 export const rules = [
   ...nextjsRules,
   ...swiftuiRules,
