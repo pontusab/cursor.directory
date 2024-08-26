@@ -19,10 +19,10 @@ export type Rule = {
 
 export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
   return (
-    <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square">
+    <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square flex flex-col">
       <CardContent
         className={cn(
-          "bg-card h-full mb-2 font-mono p-4 text-sm opacity-50 hover:opacity-100 transition-opacity group relative",
+          "bg-card h-full mb-2 font-mono p-4 text-sm opacity-50 hover:opacity-100 transition-opacity group relative flex-grow",
           isPage && "opacity-100",
         )}
       >
@@ -34,31 +34,31 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         </Link>
       </CardContent>
 
-      <CardHeader className="flex flex-row items-center justify-between p-0">
-        <div>
+      <CardHeader className="p-0 space-y-1">
+        <div className="flex items-center justify-between">
           <CardTitle className="text-sm">{rule.author.name}</CardTitle>
-
-          <div className="flex gap-2 overflow-x-auto whitespace-nowrap">
-            {rule?.libs?.slice(0, 2).map((lib) => (
-              <span
-                key={lib}
-                className="text-xs text-[#878787] font-mono flex-shrink-0"
-              >
-                {lib}
-              </span>
-            ))}
-            {rule?.libs && rule.libs.length > 3 && (
-              <span className="text-xs text-[#878787] font-mono flex-shrink-0">
-                +{rule.libs.length - 3} more
-              </span>
-            )}
-          </div>
+          <Avatar className="size-6">
+            <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
+              <AvatarImage src={rule.author.avatar} alt={rule.author.name} />
+            </a>
+          </Avatar>
         </div>
-        <Avatar className="size-6">
-          <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
-            <AvatarImage src={rule.author.avatar} alt={rule.author.name} />
-          </a>
-        </Avatar>
+
+        <div className="flex gap-2 overflow-x-auto whitespace-nowrap h-5">
+          {rule?.libs?.slice(0, 2).map((lib) => (
+            <span
+              key={lib}
+              className="text-xs text-[#878787] font-mono flex-shrink-0"
+            >
+              {lib}
+            </span>
+          ))}
+          {rule?.libs && rule.libs.length > 2 && (
+            <span className="text-xs text-[#878787] font-mono flex-shrink-0">
+              +{rule.libs.length - 2} more
+            </span>
+          )}
+        </div>
       </CardHeader>
     </Card>
   );
