@@ -7,6 +7,9 @@ import { nextjsRules } from "./rules/nextjs";
 import { railsRules } from "./rules/rails";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
+import { metaPromptRules } from "./rules/meta-prompt";
+
+
 
 export const rules = [
   ...nextjsRules,
@@ -18,6 +21,7 @@ export const rules = [
   ...cRules,
   ...vueTsRules,
   ...astroRules,
+  ...metaPromptRules,
 ];
 
 export function getSections() {
