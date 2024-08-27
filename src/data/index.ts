@@ -1,3 +1,4 @@
+import { elixirRules } from "@/data/rules/elixir";
 import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
 import { dataAnalystRules } from "./rules/data-analyst";
@@ -35,6 +36,7 @@ export const rules = [
   ...dataAnalystRules,
   ...goRules,
   ...pythonRules,
+  ...elixirRules,
 ];
 
 export function getSections() {
