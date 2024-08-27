@@ -22,14 +22,14 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
     <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square flex flex-col">
       <CardContent
         className={cn(
-          "bg-card h-full mb-2 font-mono p-4 text-sm opacity-50 hover:opacity-100 transition-opacity group relative flex-grow",
+          "bg-card h-full mb-2 font-mono p-4 pr-1 text-sm opacity-50 hover:opacity-100 transition-opacity group relative flex-grow",
           isPage && "opacity-100",
         )}
       >
         <CopyButton content={rule.content} />
         <Link href={`/${rule.slug}`}>
           <ScrollArea className="h-full">
-            <code className="text-sm">{rule.content}</code>
+            <code className="text-sm block pr-3">{rule.content}</code>
           </ScrollArea>
         </Link>
       </CardContent>
