@@ -15,7 +15,10 @@ export function Menu() {
     router.push("/", { scroll: false });
 
     const element = document.getElementById(tag);
-    element?.scrollIntoView({
+    if (!element) return
+
+    window.scrollTo({
+      top: element.offsetTop - 56,
       behavior: "smooth",
     });
   };
