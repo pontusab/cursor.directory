@@ -36,7 +36,8 @@ export const goRules = [
     author: {
       name: "Marvin Kaunda",
       url: "https://x.com/KaundaMarvin",
-      avatar: "https://pbs.twimg.com/profile_images/1820188526568157184/aMH5E8gl_400x400.jpg",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1820188526568157184/aMH5E8gl_400x400.jpg",
     },
   },
 ];

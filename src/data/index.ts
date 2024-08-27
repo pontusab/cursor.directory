@@ -1,20 +1,20 @@
 import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
-import { djangoRules } from "./rules/django";
-import { fastapiRules } from "./rules/fastapi";
 import { dataAnalystRules } from "./rules/data-analyst";
+import { djangoRules } from "./rules/django";
+import { expoReactNativeRules } from "./rules/expo";
+import { fastapiRules } from "./rules/fastapi";
 import { flaskRules } from "./rules/flask";
+import { goRules } from "./rules/go";
+import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
+import { metaPromptRules } from "./rules/meta-prompt";
 import { nextjsRules } from "./rules/nextjs";
+import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
+import { reactNativeRules } from "./rules/react-native";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
-import { metaPromptRules } from "./rules/meta-prompt";
-import { expoReactNativeRules } from "./rules/expo";
-import { pythonRules } from "./rules/python";
-import { reactNativeRules } from "./rules/react-native";
-import { juliaRules } from "./rules/julia";
-import { goRules } form ".rules/go";
 
 export const rules = [
   ...astroRules,
@@ -34,6 +34,7 @@ export const rules = [
   ...juliaRules,
   ...dataAnalystRules,
   ...goRules,
+  ...pythonRules,
 ];
 
 export function getSections() {
