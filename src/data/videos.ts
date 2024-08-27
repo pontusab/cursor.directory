@@ -65,4 +65,15 @@ export const videos = [
         "https://yt3.ggpht.com/R_rSQnTYQkL-rbtTA7djVbXLjU8Bwgua8GHJz6Ollsbyx_txdu0qVDBudCqvpzaxRQfVp2F4=s88-c-k-c0x00ffffff-no-rj",
     },
   },
+  {
+    title: "Coding with Cursor: Session 4 ft. @shaoruu",
+    url: "https://www.youtube.com/embed/42zmF9ARSWM",
+    description:
+      "Coding with Cursor: Session 4 ft. @shaoruu - developer at Cursor and Cursor Composer Creator",
+      author: {
+        name: "Sahil Lavingia",
+        image:
+          "https://yt3.ggpht.com/7Hvm8iHnumiLr8aWtftr6rNckmhqt7FvhbxmUMD9eB55v_BSDmCPiFtCVRgR2JowNyz6al4Ohg=s88-c-k-c0x00ffffff-no-rj",
+      },
+  },
 ];
