@@ -1,4 +1,4 @@
-export const goApiRules = [
+export const goRules = [
   {
     tags: ["Go", "Golang", "API", "net/http"],
     title: "Go API Development with Standard Library (1.22+)",
