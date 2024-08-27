@@ -1,6 +1,7 @@
 "use client";
 
 import { subscribeAction } from "@/actions/subscribe-action";
+import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 import { useState } from "react";
 import { useFormStatus } from "react-dom";
@@ -28,9 +29,11 @@ function SubmitButton() {
 
 type Props = {
   group: string;
+  placeholder: string;
+  className?: string;
 };
 
-export function SubscribeForm({ group }: Props) {
+export function SubscribeForm({ group, placeholder, className }: Props) {
   const [isSubmitted, setSubmitted] = useState(false);
 
   return (
@@ -66,14 +69,17 @@ export function SubscribeForm({ group }: Props) {
           >
             <fieldset className="relative">
               <input
-                placeholder="Get latest updates"
+                placeholder={placeholder}
                 type="email"
                 name="email"
                 id="email"
                 autoComplete="email"
                 aria-label="Email address"
                 required
-                className="bg-transparent text-primary outline-none py-0.5 px-2 w-[290px] placeholder-[#606060] h-9 border border-border text-sm"
+                className={cn(
+                  "bg-transparent text-primary outline-none py-0.5 px-2 w-[290px] placeholder-[#606060] h-9 border border-border text-sm",
+                  className,
+                )}
               />
               <SubmitButton />
             </fieldset>
