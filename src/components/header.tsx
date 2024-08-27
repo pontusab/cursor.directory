@@ -13,20 +13,35 @@ import { SubscribeForm } from "./ui/subscribe-form";
 export function Header() {
   return (
     <div className="md:fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center bg-background backdrop-filter backdrop-blur-sm bg-opacity-30">
-      <Link href="/">
-        <h1 className="font-semibold text-sm font-mono">cursor.directory</h1>
+      <Link href="/" className="font-medium font-mono text-sm">
+        cursor.directory
       </Link>
 
-      <div className="flex items-center gap-2">
-        <SubscribeForm group="newsletter" />
+      <div className="flex items-center gap-4">
+        <SubscribeForm group="newsletter" placeholder="Get latest updates" />
 
-        <Link href="/learn">Learn</Link>
+        <Link
+          href="/live"
+          className="flex items-center gap-2 text-sm font-medium"
+        >
+          <div className="font-semibold text-sm font-mono">
+            <span className="relative ml-auto flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-red-400" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+            </span>
+          </div>
+          <span>Live</span>
+        </Link>
+
+        <Link href="/learn" className="text-sm font-medium">
+          Learn
+        </Link>
 
         <Dialog>
           <DialogTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-2 hover:bg-transparent"
+              className="hover:bg-transparent p-0 text-sm font-medium"
             >
               About
             </Button>
@@ -37,7 +52,7 @@ export function Header() {
             </DialogHeader>
 
             <DialogDescription>
-              Copy and add a .cursorrules file in the root of your project.{" "}
+              Copy and add a .cursorrules file in the root of your project." "
               <br />
               <br />
               The instructions in the .cursorrules file will be included for
@@ -46,11 +61,11 @@ export function Header() {
               The more specific your rules for your project, the better.
               <br />
               <br />
-              Feel free to create your own directory using our{" "}
+              Feel free to create your own directory using our" "
               <a href="https://git.new/cd" className="underline">
                 template
-              </a>{" "}
-              on GitHub.
+              </a>
+              " " on GitHub.
               <br />
               <br />
               <br />
@@ -63,7 +78,7 @@ export function Header() {
                 </Button>
               </a>
               <div className="flex items-center space-x-1 mt-8 justify-center">
-                Made by{" "}
+                Made by" "
                 <a href="https://midday.ai">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
