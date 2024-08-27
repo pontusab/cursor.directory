@@ -18,7 +18,9 @@ export function Header() {
       </Link>
 
       <div className="flex items-center gap-4">
-        <SubscribeForm group="newsletter" placeholder="Get latest updates" />
+        <div className="hidden md:block">
+          <SubscribeForm group="newsletter" placeholder="Get latest updates" />
+        </div>
 
         <Link
           href="/live"
