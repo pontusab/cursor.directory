@@ -63,11 +63,11 @@ export function Header() {
               The more specific your rules for your project, the better.
               <br />
               <br />
-              Feel free to create your own directory using our" "
+              Feel free to create your own directory using our{" "}
               <a href="https://git.new/cd" className="underline">
                 template
-              </a>
-              " " on GitHub.
+              </a>{" "}
+              on GitHub.
               <br />
               <br />
               <br />
@@ -80,7 +80,7 @@ export function Header() {
                 </Button>
               </a>
               <div className="flex items-center space-x-1 mt-8 justify-center">
-                Made by" "
+                Made by{" "}
                 <a href="https://midday.ai">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
