@@ -14,6 +14,7 @@ import { expoReactNativeRules } from "./rules/expo";
 import { pythonRules } from "./rules/python";
 import { reactNativeRules } from "./rules/react-native";
 import { juliaRules } from "./rules/julia";
+import { goRules } form ".rules/go";
 
 export const rules = [
   ...astroRules,
@@ -32,6 +33,7 @@ export const rules = [
   ...reactNativeRules,
   ...juliaRules,
   ...dataAnalystRules,
+  ...goRules,
 ];
 
 export function getSections() {
