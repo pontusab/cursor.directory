@@ -1,6 +1,8 @@
+import { elixirRules } from "@/data/rules/elixir";
 import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
 import { dataAnalystRules } from "./rules/data-analyst";
+import { deepLearningRules } from "./rules/deep-learning";
 import { djangoRules } from "./rules/django";
 import { expoReactNativeRules } from "./rules/expo";
 import { fastapiRules } from "./rules/fastapi";
@@ -35,6 +37,8 @@ export const rules = [
   ...dataAnalystRules,
   ...goRules,
   ...pythonRules,
+  ...elixirRules,
+  ...deepLearningRules,
 ];
 
 export function getSections() {

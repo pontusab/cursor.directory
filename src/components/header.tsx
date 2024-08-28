@@ -19,6 +19,10 @@ export function Header() {
 
       <div className="flex items-center gap-4">
         <SubscribeForm group="newsletter" placeholder="Get latest updates" />
+        
+        <div className="hidden md:block">
+          <SubscribeForm group="newsletter" placeholder="Get latest updates" />
+        </div>
 
         <Link
           href="/live"
@@ -52,7 +56,7 @@ export function Header() {
             </DialogHeader>
 
             <DialogDescription>
-              Copy and add a .cursorrules file in the root of your project.{" "}
+              Copy and add a .cursorrules file in the root of your project." "
               <br />
               <br />
               The instructions in the .cursorrules file will be included for

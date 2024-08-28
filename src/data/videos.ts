@@ -76,4 +76,15 @@ export const videos = [
           "https://yt3.ggpht.com/7Hvm8iHnumiLr8aWtftr6rNckmhqt7FvhbxmUMD9eB55v_BSDmCPiFtCVRgR2JowNyz6al4Ohg=s88-c-k-c0x00ffffff-no-rj",
       },
   },
+  {
+    title: "Let's dig into CursorAI, do's don't, how to use it",
+    url: "https://www.youtube.com/embed/_SN7fqSNThg?si=UYS8khW30im4bfxz",
+    description:
+      "@pierre_vannier walks through CursorAI, what it is, how to use it, and how to get the most out of it with Python and fastapi",
+      author: {
+        name: "Pierre Vannier",
+        image:
+          "https://yt3.ggpht.com/CmdYMKlESb6P6DoDZ11hbEzzZMbnIWLLn1Bovrcv3AjxRWdbGnUrgG0RtvycO04OLOrFs2emBg=s176-c-k-c0x00ffffff-no-rj-mo",
+      },
+  },
 ];
