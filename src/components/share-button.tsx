@@ -1,18 +1,16 @@
 "use client";
 
-import { Check, Copy } from "lucide-react";
+import { Check, Copy, Share } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
-export function CopyButton({ content }: { content: string }) {
+export function ShareButton({ slug }: { slug: string }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(content);
+    navigator.clipboard.writeText(`${window.location.origin}/${slug}`);
     setCopied(true);
-    toast(
-      "Copied to clipboard. Add a .cursorrules file to your project and paste the rule.",
-    );
+    toast("URL copied to clipboard");
 
     setTimeout(() => {
       setCopied(false);
@@ -25,7 +23,7 @@ export function CopyButton({ content }: { content: string }) {
       className="text-xs bg-black text-white dark:bg-white dark:text-black p-2 rounded-full size-9 flex items-center justify-center"
       type="button"
     >
-      {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+      {copied ? <Check className="w-4 h-4" /> : <Share className="w-4 h-4" />}
     </button>
   );
 }
