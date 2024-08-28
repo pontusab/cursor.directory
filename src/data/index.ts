@@ -19,6 +19,7 @@ import { reactNativeRules } from "./rules/react-native";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
 import { tauriRules } from "./rules/tauri";
+import { unityCSharpRules } from "./rules/unity-cSharp";
 
 export const rules = [
   ...astroRules,
@@ -42,12 +43,12 @@ export const rules = [
   ...elixirRules,
   ...deepLearningRules,
   ...tauriRules,
-  ...nestjsRules
+  ...nestjsRules,
+  ...unityCSharpRules
 ];
 
 export function getSections() {
   const categories = Array.from(new Set(rules.flatMap((rule) => rule.tags)));
-
   return categories
     .map((tag) => ({
       tag,
