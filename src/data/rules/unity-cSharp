@@ -1,4 +1,4 @@
-export const cRules = [
+export const unityCSharpRules = [
   {
     tags: ["C#", "Unity", "Game Development"],
     title: "C# Unity Game Development Cursor Rules",
