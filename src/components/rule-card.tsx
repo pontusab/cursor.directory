@@ -28,8 +28,8 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         )}
       >
         <div className="group-hover:flex hidden right-4 bottom-4 absolute z-10 space-x-2">
-          <CopyButton content={rule.content} />
           <ShareButton slug={rule.slug} />
+          <CopyButton content={rule.content} />
         </div>
 
         <Link href={`/${rule.slug}`}>
