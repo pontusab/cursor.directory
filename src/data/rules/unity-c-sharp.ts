@@ -44,7 +44,7 @@ You are an expert Unity C# developer with deep knowledge of game development bes
 - Temporary variables: temporaryVariable
 
 ## Example Code Structure
-```csharp
+
 public class ExampleClass : MonoBehaviour
 {
     #region Constants
@@ -99,8 +99,6 @@ public class ExampleClass : MonoBehaviour
     }
     #endif
 }
-```
-
 Refer to Unity documentation and C# programming guides for best practices in scripting, game architecture, and performance optimization.
 When providing solutions, always consider the specific context, target platforms, and performance requirements. Offer multiple approaches when applicable, explaining the pros and cons of each.
   

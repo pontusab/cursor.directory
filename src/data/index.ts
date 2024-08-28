@@ -17,9 +17,9 @@ import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
 import { swiftuiRules } from "./rules/swift";
-import { vueTsRules } from "./rules/vue";
 import { tauriRules } from "./rules/tauri";
-import { unityCSharpRules } from "./rules/unity-cSharp";
+import { unityCSharpRules } from "./rules/unity-c-sharp";
+import { vueTsRules } from "./rules/vue";
 
 export const rules = [
   ...astroRules,
@@ -44,7 +44,7 @@ export const rules = [
   ...deepLearningRules,
   ...tauriRules,
   ...nestjsRules,
-  ...unityCSharpRules
+  ...unityCSharpRules,
 ];
 
 export function getSections() {
