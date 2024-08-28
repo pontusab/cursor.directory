@@ -47,7 +47,7 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         </div>
 
         <Popover>
-          <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent rounded">
+          <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
             {rule?.libs?.slice(0, 2).map((lib) => (
               <span
                 key={lib}
