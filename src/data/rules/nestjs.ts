@@ -1,4 +1,4 @@
-export const nextjsRules = [
+export const nestjsRules = [
   {
     title: "Clean NestJs APIs with TypeScript Cursor Rules",
     tags: ["NestJs", "Node", "API", "TypeScript"],
