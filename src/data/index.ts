@@ -11,6 +11,7 @@ import { goRules } from "./rules/go";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
 import { metaPromptRules } from "./rules/meta-prompt";
+import { nestjsRules } from "./rules/nestjs";
 import { nextjsRules } from "./rules/nextjs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
@@ -41,6 +42,7 @@ export const rules = [
   ...elixirRules,
   ...deepLearningRules,
   ...tauriRules,
+  ...nestjsRules
 ];
 
 export function getSections() {
