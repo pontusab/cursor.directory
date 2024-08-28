@@ -17,6 +17,7 @@ import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
 import { swiftuiRules } from "./rules/swift";
 import { vueTsRules } from "./rules/vue";
+import { tauriRules } from "./rules/tauri";
 
 export const rules = [
   ...astroRules,
@@ -39,6 +40,7 @@ export const rules = [
   ...pythonRules,
   ...elixirRules,
   ...deepLearningRules,
+  ...tauriRules,
 ];
 
 export function getSections() {
