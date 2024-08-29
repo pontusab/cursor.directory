@@ -44,7 +44,7 @@ Svelte Runes
 - \`$effect\`: Manage side effects and lifecycle
   \`\`\`typescript
   $effect(() => {
-    console.log(\`Count is now ${count}\`);
+    console.log(\`Count is now \${count}\`);
   });
   \`\`\`
 - \`$props\`: Declare component props
@@ -223,8 +223,7 @@ Refer to Svelte, SvelteKit, and Paraglide.js documentation for detailed informat
     author: {
       name: "MMBytes",
       url: "https://mmbytesolutions.com",
-      avatar:
-        "https://avatars.githubusercontent.com/u/162841721",
-    }
-  }
+      avatar: "https://avatars.githubusercontent.com/u/162841721",
+    },
+  },
 ];
