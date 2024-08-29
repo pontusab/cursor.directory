@@ -21,6 +21,7 @@ import { tauriRules } from "./rules/tauri";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { flutterRules } from "./rules/flutter";
+import { dotnetRules } from "./rules/dotnet";
 
 export const rules = [
   ...astroRules,
@@ -47,6 +48,7 @@ export const rules = [
   ...nestjsRules,
   ...unityCSharpRules,
   ...flutterRules,
+  ...dotnetRules,
 ];
 
 export function getSections() {
