@@ -21,9 +21,10 @@ import { tauriRules } from "./rules/tauri";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { flutterRules } from "./rules/flutter";
-import { AngularRules } from "./rules/angular";
+import { angularRules } from "./rules/angular";
 import { dotnetRules } from "./rules/dotnet";
 import { svelteKit5Rules } from "./rules/sveltekit";
+import { gatsbyRules } from "./rules/gastby";
 
 export const rules = [
   ...astroRules,
@@ -49,9 +50,10 @@ export const rules = [
   ...nestjsRules,
   ...unityCSharpRules,
   ...flutterRules,
-  ...AngularRules,
+  ...angularRules,
   ...dotnetRules,
   ...svelteKit5Rules,
+  ...gatsbyRules,
 ];
 
 export function getSections() {
