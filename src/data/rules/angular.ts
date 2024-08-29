@@ -1,4 +1,4 @@
-export const astroRules = [
+export const AngularRules = [
   {
     title: "Angular Cursor Rules",
     tags: ["Angular"],
