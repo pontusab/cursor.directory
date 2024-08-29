@@ -1,4 +1,4 @@
-export const AngularRules = [
+export const angularRules = [
   {
     title: "Angular Cursor Rules",
     tags: ["Angular"],
