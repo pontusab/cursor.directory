@@ -14,7 +14,6 @@ const allSections = getSections();
 
 export function Menu() {
   const router = useRouter();
-  const [searchTerm, setSearchTerm] = useState("");
   const [sections, setSections] = useState(allSections);
 
   const handleClick = (tag: string) => {
