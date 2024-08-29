@@ -44,7 +44,7 @@ Svelte Runes
 - \`$effect\`: Manage side effects and lifecycle
   \`\`\`typescript
   $effect(() => {
-    console.log(\`Count is now ${count}\`);
+    console.log(\`Count is now \${count}\`);
   });
   \`\`\`
 - \`$props\`: Declare component props
