@@ -20,20 +20,26 @@ export function Menu() {
     router.push("/", { scroll: false });
 
     const element = document.getElementById(tag);
-    if (!element) return
+    if (!element) return;
 
     window.scrollTo({
       top: element.offsetTop - 56,
       behavior: "smooth",
     });
+
+    // Run the handleClick function first
+    clearSearch();
   };
 
-
+  const clearSearch = () => {
+    // Clear the search input
+    setSections(allSections);
+  };
 
   return (
     <aside className="w-64 p-4 flex flex-col">
       {/* Search input */}
-      <SearchInput onSearch={(term) => setSections(allSections.filter((section) => section.tag.toLowerCase().includes(term)))} />
+      <SearchInput onSearch={(term) => setSections(allSections.filter((section) => section.tag.toLowerCase().includes(term)))} clearSearch={clearSearch} />
       <Separator className="mb-4 -mt-1 z-10" />
       <ScrollArea className="flex-grow">
         <div className="space-y-1">
