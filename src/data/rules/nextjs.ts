@@ -58,7 +58,7 @@ export const nextjsRules = [
   {
     title: "Next.js React TypeScript Cursor Rules",
     tags: ["React", "Vite", "Viem v2", "Wagmi v2", "TypeScript", "Next.js"],
-    slug: "nextjs-react-typescript-cursor-rules",
+    slug: "nextjs-vite-solidity-typescript-cursor-rules",
     libs: ["shadcn", "tailwind", "radix", "react-hook-form", "zod"],
     content: `
   You are an expert in Solidity, TypeScript, Node.js, Next.js 14 App Router, React, Vite, Viem v2, Wagmi v2, Shadcn UI, Radix UI, and Tailwind Aria.
@@ -138,7 +138,7 @@ export const nextjsRules = [
   {
     title: "Next.js React Standard.js Cursor Rules",
     tags: ["React", "Vite", "Next.js", "Standard.js"],
-    slug: "nextjs-react-typescript-cursor-rules",
+    slug: "nextjs-react-vite-javascript-cursor-rules",
     libs: [
       "zustand",
       "shadcn",
