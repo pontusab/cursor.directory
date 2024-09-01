@@ -1,8 +1,8 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { cn } from "@/lib/utils";
+import { cn, generateNameAbbr, isImageUrl } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";
@@ -20,7 +20,7 @@ export type Rule = {
   };
 };
 
-export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {  
+export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
   return (
     <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square flex flex-col">
       <CardContent
@@ -44,13 +44,14 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
       <CardHeader className="p-0 space-y-1">
         <div className="flex items-center justify-between">
           <CardTitle className="text-sm">{rule.author.name}</CardTitle>
-          <Avatar className="size-6">
-            <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
-              <AvatarImage src={rule.author.avatar} alt={rule.author.name} />
-            </a>
-          </Avatar>
+          <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
+            <Avatar className="size-6">
+              {
+                isImageUrl(rule.author.avatar) ? <AvatarImage src={rule.author.avatar} alt={rule.author.name} /> : <AvatarFallback>{generateNameAbbr(rule.author.name)}</AvatarFallback>
+              }
+            </Avatar>
+          </a>
         </div>
-
         <Popover>
           <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
             {rule?.libs?.slice(0, 2).map((lib) => (
