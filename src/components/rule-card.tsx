@@ -52,33 +52,35 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
             </Avatar>
           </a>
         </div>
-        <Popover>
-          <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
-            {rule?.libs?.slice(0, 2).map((lib) => (
-              <span
-                key={lib}
-                className="text-xs text-[#878787] font-mono flex-shrink-0"
-              >
-                {lib}
-              </span>
-            ))}
-            {rule?.libs && rule.libs.length > 2 && (
-              <span className="text-xs text-[#878787] font-mono flex gap-1 items-center">
-                <span>+{rule.libs.length - 2} more</span>
-                <ChevronDown className="w-3 h-3" />
-              </span>
-            )}
-          </PopoverTrigger>
-          <PopoverContent>
-            {rule?.libs?.map((lib) => (
-              <div key={lib} className="flex flex-col justify-center gap-2">
-                <span className="text-xs text-[#878787] font-mono flex-shrink-0">
+        {
+          rule.libs && rule.libs.length > 0 && <Popover>
+            <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
+              {rule.libs.slice(0, 2).map((lib) => (
+                <span
+                  key={lib}
+                  className="text-xs text-[#878787] font-mono flex-shrink-0"
+                >
                   {lib}
                 </span>
-              </div>
-            ))}
-          </PopoverContent>
-        </Popover>
+              ))}
+              {rule.libs.length > 2 && (
+                <span className="text-xs text-[#878787] font-mono flex gap-1 items-center">
+                  <span>+{rule.libs.length - 2} more</span>
+                  <ChevronDown className="w-3 h-3" />
+                </span>
+              )}
+            </PopoverTrigger>
+            <PopoverContent>
+              {rule.libs.map((lib) => (
+                <div key={lib} className="flex flex-col justify-center gap-2">
+                  <span className="text-xs text-[#878787] font-mono flex-shrink-0">
+                    {lib}
+                  </span>
+                </div>
+              ))}
+            </PopoverContent>
+          </Popover>
+        }
       </CardHeader>
     </Card>
   );
