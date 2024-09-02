@@ -1,4 +1,13 @@
 export const videos = [
+   {
+    title: "Introduction to Cursor - AI Code Editor",
+    description: "Discover Cursor: The revolutionary AI-powered code editor that’s transforming how developers work. Learn about its key features, natural language coding capabilities, and how it compares to traditional IDEs. Perfect for both beginners and experienced coders looking to boost productivity",
+    url: "https://www.youtube.com/embed/sKxUEnylsQg",
+    author: {
+      name: "Tech•sistence",
+      image: "https://img.youtube.com/vi/sKxUEnylsQg/maxresdefault.jpg",
+    },
+  },
   {
     title: "Coding with Cursor: Session 1",
     description: "Coding with Cursor: Session 1",
