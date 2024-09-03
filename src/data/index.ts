@@ -26,6 +26,7 @@ import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
+import { solanaRules } from "./rules/solana";
 
 export const rules = [
   ...astroRules,
@@ -56,6 +57,7 @@ export const rules = [
   ...svelteKit5Rules,
   ...gatsbyRules,
   ...solidityRules,
+  ...solanaRules,
 ];
 
 export function getSections() {
