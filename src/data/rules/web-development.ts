@@ -87,7 +87,7 @@ export const webDevelopment = [
       - Avoid using 'use client' for data fetching or state management.
     4. Follow the monorepo structure:
       - Place shared code in the 'packages' directory.
-      - Keep app-specific code in the 'apps/masterbots.ai' directory.
+      - Keep app-specific code in the 'apps' directory.
     5. Use Taskfile commands for development and deployment tasks.
     6. Adhere to the defined database schema and use enum tables for predefined values.
 
