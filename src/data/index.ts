@@ -20,6 +20,7 @@ import { nextjsRules } from "./rules/nextjs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
+import { rustRules } from "./rules/rust";
 import { solanaRules } from "./rules/solana";
 import { solidityRules } from "./rules/solidity";
 import { svelteRules } from "./rules/svelte";
@@ -56,6 +57,7 @@ export const rules = [
   ...flutterRules,
   ...angularRules,
   ...dotnetRules,
+  ...rustRules,
   ...svelteKitRules,
   ...gatsbyRules,
   ...solidityRules,
