@@ -27,6 +27,8 @@ import { tauriRules } from "./rules/tauri";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopment } from './rules/web-development';
+import { solanaRules } from "./rules/solana";
+
 
 export const rules = [
   ...astroRules,
@@ -58,6 +60,7 @@ export const rules = [
   ...gatsbyRules,
   ...solidityRules,
   ...webDevelopment
+  ...solanaRules,
 ];
 
 export function getSections() {
