@@ -2,7 +2,7 @@ export const unityCSharpRules = [
   {
     tags: ["C#", "Unity", "Game Development"],
     title: "C# Unity Game Development Cursor Rules",
-    slug: "c-unity-game-development-cursor-rules",
+    slug: "c-sharp-unity-game-development",
     libs: [],
     content: `
   
