@@ -1,4 +1,4 @@
-export const webDevelopment = [
+export const webDevelopmentRules = [
   {
     title: "Modern Web Development",
     tags: ["TypeScript", "Next.js", "React", "Supabase", "GraphQL"],
