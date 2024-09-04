@@ -2,7 +2,7 @@ export const flutterRules = [
   {
     tags: ["Flutter"],
     title: "Flutter Cursor Rules",
-    libs: ["Riverpod", "Freezed", "AutoRoute","GetIt",],
+    libs: ["Riverpod", "Freezed", "AutoRoute", "GetIt"],
     slug: "flutter-cursor-rules",
     content: `
 You are a senior Dart programmer with experience in the Flutter framework and a preference for clean programming and design patterns.

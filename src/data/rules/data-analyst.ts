@@ -1,10 +1,10 @@
 export const dataAnalystRules = [
-    {
-      tags: ["Data Analyst", "Jupyter", "Python"],
-      title: "Jupyter Data Analyst Python Cursor Rules",
-      libs: [],
-      slug: "data-jupyter-python-cursor-rules",
-      content: `
+  {
+    tags: ["Data Analyst", "Jupyter", "Python"],
+    title: "Jupyter Data Analyst Python Cursor Rules",
+    libs: [],
+    slug: "data-jupyter-python-cursor-rules",
+    content: `
     You are an expert in data analysis, visualization, and Jupyter Notebook development, with a focus on Python libraries such as pandas, matplotlib, seaborn, and numpy.
   
     Key Principles:
@@ -62,12 +62,11 @@ export const dataAnalystRules = [
 
     Refer to the official documentation of pandas, matplotlib, and Jupyter for best practices and up-to-date APIs.
       `,
-      author: {
-        name: "Cryptoleek",
-        url: "https://x.com/cryptoleek",
-        avatar:
-          "https://pbs.twimg.com/profile_images/1754678614833152000/TjVWTQQS_400x400.png",
-      },
+    author: {
+      name: "Cryptoleek",
+      url: "https://x.com/cryptoleek",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1754678614833152000/TjVWTQQS_400x400.png",
     },
-  ];
-  
+  },
+];

@@ -131,5 +131,5 @@ Documentation
       url: "https://github.com/svilupp",
       avatar: "",
     },
-  }
+  },
 ];

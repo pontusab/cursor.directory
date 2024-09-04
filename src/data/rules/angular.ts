@@ -94,6 +94,6 @@ Refer to Angular’s official documentation for best practices in Components, Se
       url: "https://twitter.com/marianocodes",
       avatar:
         "https://pbs.twimg.com/profile_images/1437586322248671234/PGmgV7z5_400x400.jpg",
-    }
-  }
+    },
+  },
 ];

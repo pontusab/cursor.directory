@@ -132,13 +132,10 @@ export const webDevelopment = [
     Refer to Next.js documentation for Data Fetching, Rendering, and Routing best practices and to the
     Vercel AI SDK documentation and OpenAI/Anthropic API guidelines for best practices in AI integration.
     `,
-  },
-  {
     author: {
       name: "Brandon Fernandez",
       url: "https://github.com/Bran18",
-      avatar:
-        "https://avatars.githubusercontent.com/u/31634868?v=4",
+      avatar: "https://avatars.githubusercontent.com/u/31634868?v=4",
     },
   },
 ];

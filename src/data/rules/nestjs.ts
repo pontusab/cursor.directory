@@ -129,8 +129,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
     author: {
       name: "Alberto Basalo",
       url: "https://x.com/AlbertoBasalo",
-      avatar:
-        "https://avatars.githubusercontent.com/u/756929?v=4",
+      avatar: "https://avatars.githubusercontent.com/u/756929?v=4",
     },
   },
 ];

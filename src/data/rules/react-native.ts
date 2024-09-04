@@ -1,10 +1,10 @@
 export const reactNativeRules = [
-    {
-      tags: ["React Native", "TypeScript", "Expo"],
-      title: "React Native Cursor Rules",
-      libs: ["Expo", "React Navigation"],
-      slug: "react-native-cursor-rules",
-      content: `
+  {
+    tags: ["React Native", "TypeScript", "Expo"],
+    title: "React Native Cursor Rules",
+    libs: ["Expo", "React Navigation"],
+    slug: "react-native-cursor-rules",
+    content: `
   You are an expert in TypeScript, React Native, Expo, and Mobile App Development.
   
   Code Style and Structure:
@@ -41,14 +41,21 @@ export const reactNativeRules = [
   - Utilize Expo's EAS Build and Updates for continuous deployment and Over-The-Air (OTA) updates.
   - Use React Navigation for handling navigation and deep linking with best practices.
       `,
-      author: {
-        name: "Will Sims",
-        url: "x.com/willsims",
-        avatar: "https://pbs.twimg.com/profile_images/1693182564658237440/CYiqYn8s_400x400.jpg",
-      },
+    author: {
+      name: "Will Sims",
+      url: "x.com/willsims",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1693182564658237440/CYiqYn8s_400x400.jpg",
+    },
   },
   {
-    tags: ["React Native", "React", "Tailwind CSS", "three.js", "React three fiber"],
+    tags: [
+      "React Native",
+      "React",
+      "Tailwind CSS",
+      "three.js",
+      "React three fiber",
+    ],
     title: "React Three Fiber Rules",
     libs: [],
     slug: "react-native-r3f",
@@ -102,8 +109,8 @@ React
     author: {
       name: "Erik Hulmák 🤙",
       url: "https://x.com/hulmaker",
-      avatar: "https://0.gravatar.com/avatar/f9be54537b792529d76e117db85feb48dc15e7bc73d82629578c31faf1ea9e66?size=256",
-      // avatar: "https://gravatar.com/hulmaker",
+      avatar:
+        "https://0.gravatar.com/avatar/f9be54537b792529d76e117db85feb48dc15e7bc73d82629578c31faf1ea9e66?size=256",
     },
   },
 ];

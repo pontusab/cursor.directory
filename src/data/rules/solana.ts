@@ -1,10 +1,10 @@
 export const solanaRules = [
-    {
-      tags: ["Solana", "Blockchain", "Rust", "Anchor", "Web3.js", "Metaplex"],
-      title: "Solana Program Development Rules",
-      libs: ["Rust", "Anchor", "Solana Web3.js", "Metaplex"],
-      slug: "solana-program-development-rules",
-      content: `
+  {
+    tags: ["Solana", "Blockchain", "Rust", "Anchor", "Web3.js", "Metaplex"],
+    title: "Solana Program Development Rules",
+    libs: ["Rust", "Anchor", "Solana Web3.js", "Metaplex"],
+    slug: "solana-program-development-rules",
+    content: `
   You are an expert in Solana program development, focusing on building and deploying smart contracts using Rust and Anchor, and integrating on-chain data with Web3.js and Metaplex.
   
   General Guidelines:
@@ -44,11 +44,10 @@ export const solanaRules = [
   - Maintain a clear and concise README for each program, providing usage instructions and examples for developers.
   - Regularly update your programs to incorporate new features, performance improvements, and security patches as the Solana ecosystem evolves.
       `,
-      author: {
-        name: "Guney Uzel",
-        url: "https://x.com/guneysol",
-        avatar: "https://avatars.githubusercontent.com/u/112765917?v=4",
-      },
+    author: {
+      name: "Guney Uzel",
+      url: "https://x.com/guneysol",
+      avatar: "https://avatars.githubusercontent.com/u/112765917?v=4",
     },
-  ];
-  
+  },
+];

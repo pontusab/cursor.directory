@@ -8,7 +8,7 @@ export async function generateMetadata({
   const rule = rules.find((rule) => rule.slug === params.slug);
 
   return {
-    title: `${rule?.title} rule by ${rule?.author.name}`,
+    title: `${rule?.title} rule by ${rule?.author?.name}`,
     description: rule?.content,
   };
 }

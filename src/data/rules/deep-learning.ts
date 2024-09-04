@@ -1,10 +1,17 @@
 export const deepLearningRules = [
-    {
-      tags: ["Deep Learning", "PyTorch", "Python", "Transformer", "LLM", "Diffusion"],
-      title: "Deep Learning Developer Python Cursor Rules",
-      libs: [],
-      slug: "deep-learning-developer-python-cursor-rules",
-      content: `
+  {
+    tags: [
+      "Deep Learning",
+      "PyTorch",
+      "Python",
+      "Transformer",
+      "LLM",
+      "Diffusion",
+    ],
+    title: "Deep Learning Developer Python Cursor Rules",
+    libs: [],
+    slug: "deep-learning-developer-python-cursor-rules",
+    content: `
     You are an expert in deep learning, transformers, diffusion models, and LLM development, with a focus on Python libraries such as PyTorch, Diffusers, Transformers, and Gradio.
 
 Key Principles:
@@ -75,12 +82,10 @@ Key Conventions:
 
 Refer to the official documentation of PyTorch, Transformers, Diffusers, and Gradio for best practices and up-to-date APIs.
       `,
-      author: {
-        name: "Yu Changqian",
-        url: "https://yu-changqian.github.io/",
-        avatar:
-          "https://x.com/ChangqianYu/photo",
-      },
+    author: {
+      name: "Yu Changqian",
+      url: "https://yu-changqian.github.io/",
+      avatar: "https://x.com/ChangqianYu/photo",
     },
-  ];
-  
+  },
+];

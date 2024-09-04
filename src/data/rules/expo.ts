@@ -173,7 +173,8 @@ export const expoReactNativeRules = [
     author: {
       name: "Munyaradzi Makosa",
       url: "https://x.com/makosamunyaa",
-      avatar: "https://utfs.io/f/eccdfbe4-6bc5-4e10-ba7e-aefdb7898584-9ux2y8.jpg",
+      avatar:
+        "https://utfs.io/f/eccdfbe4-6bc5-4e10-ba7e-aefdb7898584-9ux2y8.jpg",
     },
   },
 ];

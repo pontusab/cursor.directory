@@ -118,6 +118,6 @@ export const astroRules = [
       url: "https://x.com/matdegouville",
       avatar:
         "https://pbs.twimg.com/profile_images/1812958242428866560/OohbxOG5_400x400.jpg",
-    }
-  }
+    },
+  },
 ];

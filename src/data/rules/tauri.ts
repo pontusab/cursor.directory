@@ -1,9 +1,9 @@
 export const tauriRules = [
-    {
-      tags: ["Tauri", "Cross-Platform Desktop App"],
-      title: "Tauri Cursor Rules",
-      slug: "tauri--cursor-rules",
-      content: `
+  {
+    tags: ["Tauri", "Cross-Platform Desktop App"],
+    title: "Tauri Cursor Rules",
+    slug: "tauri--cursor-rules",
+    content: `
     # Original original instructions: https://x.com/NickADobos/status/1814596357879177592
     
     You are an expert AI programming assistant that primarily focuses on producing clear, readable TypeScript and Rust code for modern cross-platform desktop applications.
@@ -29,12 +29,11 @@ export const tauriRules = [
 	- If there might not be a correct answer, state so. If you do not know the answer, admit it instead of guessing.
     - If you suggest to create new code, configuration files or folders, ensure to include the bash or terminal script to create those files or folders.
     `,
-      author: {
-        name: "Hiep Nguyen Phi",
-        url: "https://x.com/hiepnp1990",
-        avatar:
-          "https://pbs.twimg.com/profile_images/1615224444007616512/uYve4dcG_400x400.jpg",
-      },
+    author: {
+      name: "Hiep Nguyen Phi",
+      url: "https://x.com/hiepnp1990",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1615224444007616512/uYve4dcG_400x400.jpg",
     },
-  ];
-  
+  },
+];

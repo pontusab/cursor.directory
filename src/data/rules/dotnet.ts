@@ -80,6 +80,6 @@ export const dotnetRules = [
       url: "https://github.com/TaylorBeck",
       avatar:
         "https://pbs.twimg.com/profile_images/1601309070203363328/bxphVPdY_400x400.jpg",
-    }
-  }
+    },
+  },
 ];

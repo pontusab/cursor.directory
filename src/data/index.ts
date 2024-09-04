@@ -20,15 +20,15 @@ import { nextjsRules } from "./rules/nextjs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
+import { solanaRules } from "./rules/solana";
 import { solidityRules } from "./rules/solidity";
-import { svelteKit5Rules } from "./rules/sveltekit";
+import { svelteRules } from "./rules/svelte";
+import { svelteKitRules } from "./rules/sveltekit";
 import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
-import { webDevelopment } from './rules/web-development';
-import { solanaRules } from "./rules/solana";
-
+import { webDevelopment } from "./rules/web-development";
 
 export const rules = [
   ...astroRules,
@@ -56,19 +56,21 @@ export const rules = [
   ...flutterRules,
   ...angularRules,
   ...dotnetRules,
-  ...svelteKit5Rules,
+  ...svelteKitRules,
   ...gatsbyRules,
   ...solidityRules,
-  ...webDevelopment
+  ...webDevelopment,
   ...solanaRules,
+  ...svelteRules,
 ];
 
 export function getSections() {
   const categories = Array.from(new Set(rules.flatMap((rule) => rule.tags)));
+
   return categories
     .map((tag) => ({
       tag,
-      rules: rules.filter((rule) => rule.tags.includes(tag)),
+      rules: rules.filter((rule) => rule?.tags?.includes(tag)),
     }))
     .sort((a, b) => b.rules.length - a.rules.length);
 }

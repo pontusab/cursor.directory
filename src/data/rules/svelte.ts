@@ -1,7 +1,7 @@
-export const svelteKitRules = [
+export const svelteRules = [
   {
     title: "SvelteKit Tailwind Cursor Rules",
-    tags: ["Svelte, SVelteKit, Tailwind"],
+    tags: ["Svelte", "SvelteKit", "Tailwind"],
     slug: "sveltekit-tailwind-cursor-rules",
     libs: ["sveltekit", "tailwind"],
     content: `
@@ -16,7 +16,7 @@ Key Principles
 
 SvelteKit Project Structure
 - Use the recommended SvelteKit project structure:
-  ```
+  \`\`\`
   - src/
     - lib/
     - routes/
@@ -24,7 +24,7 @@ SvelteKit Project Structure
   - static/
   - svelte.config.js
   - vite.config.js
-  ```
+  \`\`\`
 
 Component Development
 - Create .svelte files for Svelte components.
@@ -123,8 +123,6 @@ Refer to SvelteKit's official documentation for detailed information on componen
       url: "https://ethanjamesfox.com",
       avatar:
         "https://pbs.twimg.com/profile_images/1812246318946922496/EJYtXehK_400x400.jpg",
-      
-    }
-  }
+    },
+  },
 ];
-

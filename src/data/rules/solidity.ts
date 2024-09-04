@@ -88,8 +88,6 @@ export const solidityRules = [
     - Maintain up-to-date API documentation for smart contracts.
     - Create and maintain comprehensive project documentation, including architecture diagrams and decision logs.
     `,
-  },
-  {
     author: {
       name: "Alfredo Bonilla",
       url: "https://github.com/brolag",

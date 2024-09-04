@@ -1,4 +1,4 @@
-export const svelteKit5Rules = [
+export const svelteKitRules = [
   {
     title: "Svelte 5 and SvelteKit Development Guide",
     tags: ["Svelte", "SvelteKit", "Tailwind", "Paraglide.js"],

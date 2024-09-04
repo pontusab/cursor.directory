@@ -1,10 +1,10 @@
 export const vueTsRules = [
-    {
-      title: "Vue.js TypeScript Best Practices",
-      tags: ["Vue.js", "TypeScript", "Node.js", "Vite"],
-      libs: ["Pinia", "VueUse", "Headless UI", "Element Plus", "Tailwind"],
-      slug: "vuejs-typescript-best-practices",
-      content: `
+  {
+    title: "Vue.js TypeScript Best Practices",
+    tags: ["Vue.js", "TypeScript", "Node.js", "Vite"],
+    libs: ["Pinia", "VueUse", "Headless UI", "Element Plus", "Tailwind"],
+    slug: "vuejs-typescript-best-practices",
+    content: `
     You are an expert in TypeScript, Node.js, Vite, Vue.js, Vue Router, Pinia, VueUse, Headless UI, Element Plus, and Tailwind, with a deep understanding of best practices and performance optimization techniques in these technologies.
   
     Code Style and Structure
@@ -41,11 +41,10 @@ export const vueTsRules = [
     Key Conventions
     - Optimize Web Vitals (LCP, CLS, FID) using tools like Lighthouse or WebPageTest.
     `,
-      author: {
-        name: "Luiz Barreto",
-        url: "https://github.com/llbarre",
-        avatar:
-          "https://avatars.githubusercontent.com/u/11854739?v=4",
-      },
+    author: {
+      name: "Luiz Barreto",
+      url: "https://github.com/llbarre",
+      avatar: "https://avatars.githubusercontent.com/u/11854739?v=4",
     },
-  ];
+  },
+];
