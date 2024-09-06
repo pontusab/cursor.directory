@@ -12,11 +12,13 @@ import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
 import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
+import { htmlAndCssRules } from "./rules/htmlandcss";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
 import { metaPromptRules } from "./rules/meta-prompt";
 import { nestjsRules } from "./rules/nestjs";
 import { nextjsRules } from "./rules/nextjs";
+import { nuxtJsRules } from "./rules/nuxtjs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
@@ -30,8 +32,6 @@ import { tauriRules } from "./rules/tauri";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
-import { htmlAndCssRules } from "./rules/htmlandcss";
-
 
 export const rules = [
   ...astroRules,
@@ -67,7 +67,7 @@ export const rules = [
   ...solanaRules,
   ...svelteRules,
   ...htmlAndCssRules,
-
+  ...nuxtJsRules,
 ];
 
 export function getSections() {
