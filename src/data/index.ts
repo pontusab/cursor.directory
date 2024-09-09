@@ -33,6 +33,7 @@ import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { uiuxRules } from "./rules/uiux-design";
+import { fastifyRules } from "./rules/fastify";
 
 export const rules = [
   ...astroRules,
@@ -70,6 +71,7 @@ export const rules = [
   ...htmlAndCssRules,
   ...nuxtJsRules,
   ...uiuxRules,
+  ...fastifyRules,
 ];
 
 export function getSections() {
