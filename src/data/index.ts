@@ -34,6 +34,8 @@ import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { uiuxRules } from "./rules/uiux-design";
 import { ionicRules } from "./rules/ionic";
+import { fastifyRules } from "./rules/fastify";
+
 export const rules = [
   ...astroRules,
   ...nextjsRules,
@@ -71,6 +73,7 @@ export const rules = [
   ...nuxtJsRules,
   ...uiuxRules,
   ...ionicRules,
+  ...fastifyRules,
 ];
 
 export function getSections() {
