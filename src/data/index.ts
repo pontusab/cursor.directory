@@ -33,6 +33,7 @@ import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { uiuxRules } from "./rules/uiux-design";
+import { ionicRules } from "./rules/ionic";
 import { fastifyRules } from "./rules/fastify";
 
 export const rules = [
@@ -71,6 +72,7 @@ export const rules = [
   ...htmlAndCssRules,
   ...nuxtJsRules,
   ...uiuxRules,
+  ...ionicRules,
   ...fastifyRules,
 ];
 
