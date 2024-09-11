@@ -35,6 +35,7 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { uiuxRules } from "./rules/uiux-design";
 import { ionicRules } from "./rules/ionic";
 import { fastifyRules } from "./rules/fastify";
+import { pixiJsRules } from "./rules/pixijs";
 
 export const rules = [
   ...astroRules,
@@ -74,6 +75,7 @@ export const rules = [
   ...uiuxRules,
   ...ionicRules,
   ...fastifyRules,
+  ...pixiJsRules,
 ];
 
 export function getSections() {
