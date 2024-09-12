@@ -1,14 +1,13 @@
 "use client";
 
+import { SearchInput } from "@/components/search-input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-import { Input } from "@/components/ui/input";
 import { getSections } from "@/data";
-import { PlusIcon, Search } from "lucide-react";
+import { PlusIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { SearchInput } from "@/components/search-input";
 
 const allSections = getSections();
 
@@ -39,8 +38,16 @@ export function Menu() {
   return (
     <aside className="w-64 p-4 flex flex-col">
       {/* Search input */}
-      <SearchInput onSearch={(term) => setSections(allSections.filter((section) => section.tag.toLowerCase().includes(term)))} clearSearch={clearSearch} />
-      <Separator className="mb-4 -mt-1 z-10" />
+      <SearchInput
+        onSearch={(term) =>
+          setSections(
+            allSections.filter((section) =>
+              section.tag.toLowerCase().includes(term),
+            ),
+          )
+        }
+        clearSearch={clearSearch}
+      />
       <ScrollArea className="flex-grow">
         <div className="space-y-1">
           {sections.map((section) => (

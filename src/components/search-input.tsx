@@ -1,5 +1,5 @@
-import { Search, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { Search, X } from "lucide-react";
 import { useState } from "react";
 
 interface SearchInputProps {
@@ -23,22 +23,25 @@ export const SearchInput = ({ onSearch, clearSearch }: SearchInputProps) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ml-3 mr-2 mb-3">
       <Input
         type="text"
         placeholder="Search..."
         value={searchTerm}
         onChange={handleSearch}
-        className="border-none focus:!ring-0 focus:!border-none bg-transparent"
+        className="border-none focus:!ring-0 focus:!border-none bg-transparent text-primary outline-none !placeholder-[#606060] border border-border text-sm text-[#606060] pl-0"
       />
       {searchTerm ? (
         <X
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-[#606060] cursor-pointer"
           size={16}
           onClick={handleClear}
         />
       ) : (
-        <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
+        <Search
+          className="absolute right-0 top-1/2 -translate-y-1/2 text-[#606060]"
+          size={16}
+        />
       )}
     </div>
   );

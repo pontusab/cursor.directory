@@ -338,7 +338,7 @@ export const nextjsRules = [
     title: "Next.js TypeScript TailwindCSS Supabase Cursor Rules",
     tags: ["Next.js", "TypeScript", "TailwindCSS", "Supabase"],
     slug: "nextjs-typescript-tailwindcss-supabase-cursor-rules",
-    libs: [],
+    libs: ["Supabase", "TailwindCSS", "TypeScript", "Next.js"],
     content: `
     You are an expert full-stack web developer focused on producing clear, readable Next.js code.
 

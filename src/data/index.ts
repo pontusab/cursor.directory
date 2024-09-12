@@ -8,17 +8,20 @@ import { djangoRules } from "./rules/django";
 import { dotnetRules } from "./rules/dotnet";
 import { expoReactNativeRules } from "./rules/expo";
 import { fastapiRules } from "./rules/fastapi";
+import { fastifyRules } from "./rules/fastify";
 import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
 import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
+import { ionicRules } from "./rules/ionic";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
 import { metaPromptRules } from "./rules/meta-prompt";
 import { nestjsRules } from "./rules/nestjs";
 import { nextjsRules } from "./rules/nextjs";
 import { nuxtJsRules } from "./rules/nuxtjs";
+import { pixiJsRules } from "./rules/pixijs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
@@ -29,13 +32,10 @@ import { svelteRules } from "./rules/svelte";
 import { svelteKitRules } from "./rules/sveltekit";
 import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
+import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
-import { uiuxRules } from "./rules/uiux-design";
-import { ionicRules } from "./rules/ionic";
-import { fastifyRules } from "./rules/fastify";
-import { pixiJsRules } from "./rules/pixijs";
 
 export const rules = [
   ...astroRules,
@@ -87,4 +87,8 @@ export function getSections() {
       rules: rules.filter((rule) => rule?.tags?.includes(tag)),
     }))
     .sort((a, b) => b.rules.length - a.rules.length);
+}
+
+export function getRuleBySlug(slug: string) {
+  return rules.find((rule) => rule.slug === slug);
 }
