@@ -8,18 +8,11 @@ export const metadata = {
   description: "Popular rules for Cursor for frameworks, libraries and more.",
 };
 
-export const revalidate = 300; // Revalidate every 5 minutes (300 seconds)
+export const revalidate = 300; // Revalidate every 5 minutes
 
-export async function generateStaticParams() {
-  const popularRules = await getPopularRules();
-  return popularRules.map((section) => ({
-    tag: section.tag,
-  }));
-}
+const popularRules = await getPopularRules();
 
 export default async function Page() {
-  const popularRules = await getPopularRules();
-
   return (
     <>
       <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
@@ -28,7 +21,7 @@ export default async function Page() {
 
       <main className="flex-1 p-6 pt-4 md:pt-16 space-y-8">
         <Tabs />
-        {popularRules.map(
+        {popularRules?.map(
           (section: { tag: string; rules: Rule[] }, idx: number) => (
             <section key={section.tag} id={section.tag}>
               <h3 className="text-lg font-semibold mb-4">{section.tag}</h3>
