@@ -1,7 +1,30 @@
 export const videos = [
-   {
+  {
+    title: "Cursor AI tutorial for beginners",
+    description:
+      "In this episode, I am joined by Ras Mic, a full stack engineer & YouTuber, where we dive deep into the frameworks and strategies on how to best use Cursor AI. Mic shares his unique insights into how to use and set up Cursor to make the experience of building on top of Cursor as easy and seamless as possible. Learn how to use Cursor like a pro!",
+    url: "https://www.youtube.com/embed/gqUQbjsYZLQ",
+    author: {
+      name: "Greg Isenberg",
+      image:
+        "https://yt3.ggpht.com/sRSt1MT1n-FL1JTsZCcW35Vbio2kVTIrvU2TRDPZd0IBxPa8TDLsZtCLPzPaljwEvdy4kBojjw=s88-c-k-c0x00ffffff-no-rj",
+    },
+  },
+  {
+    title: "Using Cursor + Claude 3.5 Sonnet + Tailwind to ship 20x faster",
+    description:
+      "Using Cursor + Claude 3.5 Sonnet + Tailwind to ship 20x faster",
+    url: "https://www.youtube.com/embed/bEU15KXIAVk",
+    author: {
+      name: "Sahil Lavingia",
+      image:
+        "https://yt3.ggpht.com/7Hvm8iHnumiLr8aWtftr6rNckmhqt7FvhbxmUMD9eB55v_BSDmCPiFtCVRgR2JowNyz6al4Ohg=s88-c-k-c0x00ffffff-no-rj",
+    },
+  },
+  {
     title: "Introduction to Cursor - AI Code Editor",
-    description: "Discover Cursor: The revolutionary AI-powered code editor that’s transforming how developers work. Learn about its key features, natural language coding capabilities, and how it compares to traditional IDEs. Perfect for both beginners and experienced coders looking to boost productivity",
+    description:
+      "Discover Cursor: The revolutionary AI-powered code editor that’s transforming how developers work. Learn about its key features, natural language coding capabilities, and how it compares to traditional IDEs. Perfect for both beginners and experienced coders looking to boost productivity",
     url: "https://www.youtube.com/embed/sKxUEnylsQg",
     author: {
       name: "Tech•sistence",
@@ -79,21 +102,21 @@ export const videos = [
     url: "https://www.youtube.com/embed/42zmF9ARSWM",
     description:
       "Coding with Cursor: Session 4 ft. @shaoruu - developer at Cursor and Cursor Composer Creator",
-      author: {
-        name: "Sahil Lavingia",
-        image:
-          "https://yt3.ggpht.com/7Hvm8iHnumiLr8aWtftr6rNckmhqt7FvhbxmUMD9eB55v_BSDmCPiFtCVRgR2JowNyz6al4Ohg=s88-c-k-c0x00ffffff-no-rj",
-      },
+    author: {
+      name: "Sahil Lavingia",
+      image:
+        "https://yt3.ggpht.com/7Hvm8iHnumiLr8aWtftr6rNckmhqt7FvhbxmUMD9eB55v_BSDmCPiFtCVRgR2JowNyz6al4Ohg=s88-c-k-c0x00ffffff-no-rj",
+    },
   },
   {
     title: "Let's dig into CursorAI, do's don't, how to use it",
     url: "https://www.youtube.com/embed/_SN7fqSNThg?si=UYS8khW30im4bfxz",
     description:
       "@pierre_vannier walks through CursorAI, what it is, how to use it, and how to get the most out of it with Python and fastapi",
-      author: {
-        name: "Pierre Vannier",
-        image:
-          "https://yt3.ggpht.com/CmdYMKlESb6P6DoDZ11hbEzzZMbnIWLLn1Bovrcv3AjxRWdbGnUrgG0RtvycO04OLOrFs2emBg=s176-c-k-c0x00ffffff-no-rj-mo",
-      },
+    author: {
+      name: "Pierre Vannier",
+      image:
+        "https://yt3.ggpht.com/CmdYMKlESb6P6DoDZ11hbEzzZMbnIWLLn1Bovrcv3AjxRWdbGnUrgG0RtvycO04OLOrFs2emBg=s176-c-k-c0x00ffffff-no-rj-mo",
+    },
   },
 ];
