@@ -15,6 +15,7 @@ import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
 import { ionicRules } from "./rules/ionic";
+import { javaRules } from "./rules/java";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
 import { metaPromptRules } from "./rules/meta-prompt";
@@ -51,6 +52,7 @@ export const rules = [
   ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
+  ...javaRules,
   ...juliaRules,
   ...dataAnalystRules,
   ...goRules,
