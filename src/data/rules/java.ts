@@ -1,6 +1,6 @@
 export const javaRules = [
   {
-    tags: ["java", "spring", "springboot"],
+    tags: ["Java", "Spring", "Spring-Boot"],
     title: "Java Spring Cursor Rules",
     slug: "java-spring-cursor-rules",
     content: `

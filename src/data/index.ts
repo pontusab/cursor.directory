@@ -52,6 +52,7 @@ export const rules = [
   ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
+  ...javaRules,
   ...juliaRules,
   ...dataAnalystRules,
   ...goRules,
