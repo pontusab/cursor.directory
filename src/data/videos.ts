@@ -119,4 +119,15 @@ export const videos = [
         "https://yt3.ggpht.com/CmdYMKlESb6P6DoDZ11hbEzzZMbnIWLLn1Bovrcv3AjxRWdbGnUrgG0RtvycO04OLOrFs2emBg=s176-c-k-c0x00ffffff-no-rj-mo",
     },
   },
+  {
+    title: "Cursor Composer Tutorial: Building a directory in 30 minutes from scratch",
+    url: "https://www.youtube.com/embed/nUTR11D8q08?si=aqh18rsdLbRWAOol",
+    description:
+      "@krisbuildsstuff shows how to build web directory using Cursor Composer and V0 Dev. You'll learn to build a tool listing, implement submission features, design individual pages, and organize tools into categories, and deploy with Vercel.",
+    author: {
+      name: "Kris Builds Stuff",
+      image:
+        "https://yt3.ggpht.com/XKgFFRlHWCIKHRXl1JFMBRW9VpHHVRUIpuTAudnHdPXAlSWINd7rRca8fSeqFf1lwkwmIvHbuA=s48-c-k-c0x00ffffff-no-rj",
+    },
+  },
 ];
