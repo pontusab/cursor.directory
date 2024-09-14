@@ -28,6 +28,7 @@ import { reactNativeRules } from "./rules/react-native";
 import { rustRules } from "./rules/rust";
 import { solanaRules } from "./rules/solana";
 import { solidityRules } from "./rules/solidity";
+import { strapiRules } from ".rules/strapi";
 import { svelteRules } from "./rules/svelte";
 import { svelteKitRules } from "./rules/sveltekit";
 import { swiftuiRules } from "./rules/swift";
@@ -76,6 +77,7 @@ export const rules = [
   ...ionicRules,
   ...fastifyRules,
   ...pixiJsRules,
+  ...strapiRules,
 ];
 
 export function getSections() {
