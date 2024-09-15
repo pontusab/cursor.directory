@@ -37,6 +37,7 @@ import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
+import {monorepoTamagui } from "./rules/monorepo-tamagui"
 
 export const rules = [
   ...astroRules,
@@ -78,6 +79,7 @@ export const rules = [
   ...ionicRules,
   ...fastifyRules,
   ...pixiJsRules,
+  ...monorepoTamagui
 ];
 
 export function getSections() {
