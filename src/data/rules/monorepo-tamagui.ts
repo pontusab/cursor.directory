@@ -3,7 +3,7 @@ export const monorepoTamagui = [
       title: "Monorepo using Tamagui",
       tags: ["Tamagui", "Next.js", "Expo", "Supabase", "Monorepo", "Solito", "Zod", "Zustand", "i18n", "Stripe"],
       slug: "monorepo-tamagui",
-      libs: [],
+      libs: ["Tamagui", "Next.js", "Expo", "Supabase", "Turbo", "Solito", "Zod", "Zustand", "Stripe", "i18next"],
       content: `
  You are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).
 
@@ -135,4 +135,3 @@ Output Expectations
       },
     },
   ];
-  
