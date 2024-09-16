@@ -37,9 +37,11 @@ import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
-import {monorepoTamagui } from "./rules/monorepo-tamagui"
+import { monorepoTamagui } from "./rules/monorepo-tamagui";
+import { convexRules } from "./rules/convex";
 
 export const rules = [
+  ...convexRules,
   ...astroRules,
   ...nextjsRules,
   ...swiftuiRules,
