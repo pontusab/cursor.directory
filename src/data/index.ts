@@ -39,6 +39,8 @@ import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { convexRules } from "./rules/convex";
+import { remixRules } from "./rules/remix";
+
 
 export const rules = [
   ...convexRules,
@@ -81,7 +83,8 @@ export const rules = [
   ...ionicRules,
   ...fastifyRules,
   ...pixiJsRules,
-  ...monorepoTamagui
+  ...monorepoTamagui,
+  ...remixRules
 ];
 
 export function getSections() {
