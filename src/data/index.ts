@@ -15,6 +15,7 @@ import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
 import { ionicRules } from "./rules/ionic";
+import { javaRules } from "./rules/java";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
 import { metaPromptRules } from "./rules/meta-prompt";
@@ -37,8 +38,13 @@ import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
+import { monorepoTamagui } from "./rules/monorepo-tamagui";
+import { convexRules } from "./rules/convex";
+import { remixRules } from "./rules/remix";
+
 
 export const rules = [
+  ...convexRules,
   ...astroRules,
   ...nextjsRules,
   ...swiftuiRules,
@@ -52,6 +58,7 @@ export const rules = [
   ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
+  ...javaRules,
   ...juliaRules,
   ...dataAnalystRules,
   ...goRules,
@@ -78,6 +85,8 @@ export const rules = [
   ...fastifyRules,
   ...pixiJsRules,
   ...strapiRules,
+  ...monorepoTamagui,
+  ...remixRules
 ];
 
 export function getSections() {
