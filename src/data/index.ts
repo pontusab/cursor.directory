@@ -8,13 +8,11 @@ import { djangoRules } from "./rules/django";
 import { dotnetRules } from "./rules/dotnet";
 import { expoReactNativeRules } from "./rules/expo";
 import { fastapiRules } from "./rules/fastapi";
-import { fastifyRules } from "./rules/fastify";
 import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
 import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
-import { ionicRules } from "./rules/ionic";
 import { javaRules } from "./rules/java";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
@@ -22,7 +20,6 @@ import { metaPromptRules } from "./rules/meta-prompt";
 import { nestjsRules } from "./rules/nestjs";
 import { nextjsRules } from "./rules/nextjs";
 import { nuxtJsRules } from "./rules/nuxtjs";
-import { pixiJsRules } from "./rules/pixijs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
@@ -33,10 +30,14 @@ import { svelteRules } from "./rules/svelte";
 import { svelteKitRules } from "./rules/sveltekit";
 import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
-import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
+import { uiuxRules } from "./rules/uiux-design";
+import { ionicRules } from "./rules/ionic";
+import { fastifyRules } from "./rules/fastify";
+import { pixiJsRules } from "./rules/pixijs";
+import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { convexRules } from "./rules/convex";
 import { remixRules } from "./rules/remix";
@@ -83,6 +84,7 @@ export const rules = [
   ...ionicRules,
   ...fastifyRules,
   ...pixiJsRules,
+  ...technicalTutorialsRules,
   ...monorepoTamagui,
   ...remixRules
 ];
