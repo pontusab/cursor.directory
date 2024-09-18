@@ -1,11 +1,11 @@
 import { Menu } from "@/components/menu";
 import { RuleCard } from "@/components/rule-card";
-import { rules } from "@/data";
+import { getRuleBySlug, rules } from "@/data";
 
 export async function generateMetadata({
   params,
 }: { params: { slug: string } }) {
-  const rule = rules.find((rule) => rule.slug === params.slug);
+  const rule = getRuleBySlug(params.slug);
 
   return {
     title: `${rule?.title} rule by ${rule?.author?.name}`,
@@ -20,7 +20,11 @@ export async function generateStaticParams() {
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const rule = rules.find((rule) => rule.slug === params.slug);
+  const rule = getRuleBySlug(params.slug);
+
+  if (!rule) {
+    return <div>Rule not found</div>;
+  }
 
   return (
     <>
@@ -29,8 +33,10 @@ export default function Page({ params }: { params: { slug: string } }) {
       </div>
 
       <main className="flex-1 p-6 pt-16">
-        {rule && <RuleCard rule={rule} isPage={true} />}
+        <RuleCard rule={rule} isPage={true} />
       </main>
     </>
   );
 }
+
+export const dynamic = "force-static";

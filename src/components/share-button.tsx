@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Copy, Share } from "lucide-react";
+import { Check, Share } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 

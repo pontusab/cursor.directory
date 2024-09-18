@@ -54,7 +54,7 @@ export function Header() {
             </DialogHeader>
 
             <DialogDescription>
-              Copy and add a .cursorrules file in the root of your project." "
+              Copy and add a .cursorrules file in the root of your project.
               <br />
               <br />
               The instructions in the .cursorrules file will be included for

@@ -59,7 +59,7 @@ export default function RootLayout({
               rel="noreferrer"
             >
               <Button
-                className="size-[48px] bg-[#F5F5F3]/30 text-black border border-black rounded-full font-medium md:hidden fixed bottom-4 left-6 z-10 backdrop-blur-lg dark:bg-[#F5F5F3]/30 dark:text-white dark:border-white"
+                className="hidden size-[48px] bg-[#F5F5F3]/30 text-black border border-black rounded-full font-medium fixed bottom-4 left-6 z-10 backdrop-blur-lg dark:bg-[#F5F5F3]/30 dark:text-white dark:border-white"
                 variant="outline"
                 size="icon"
               >

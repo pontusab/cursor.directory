@@ -65,6 +65,8 @@ export const ionicRules = [
   `,
     author: {
       name: "Fahad Malk",
+      url: "https://github.com/fahad-malk",
+      avatar: "https://avatars.githubusercontent.com/u/4982",
     },
   },
 ];

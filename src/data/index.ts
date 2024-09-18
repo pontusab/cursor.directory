@@ -13,6 +13,7 @@ import { flutterRules } from "./rules/flutter";
 import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
+import { javaRules } from "./rules/java";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
 import { metaPromptRules } from "./rules/meta-prompt";
@@ -37,8 +38,13 @@ import { ionicRules } from "./rules/ionic";
 import { fastifyRules } from "./rules/fastify";
 import { pixiJsRules } from "./rules/pixijs";
 import { technicalTutorialsRules } from "./rules/technical-tutorials";
+import { monorepoTamagui } from "./rules/monorepo-tamagui";
+import { convexRules } from "./rules/convex";
+import { remixRules } from "./rules/remix";
+
 
 export const rules = [
+  ...convexRules,
   ...astroRules,
   ...nextjsRules,
   ...swiftuiRules,
@@ -52,6 +58,7 @@ export const rules = [
   ...metaPromptRules,
   ...expoReactNativeRules,
   ...reactNativeRules,
+  ...javaRules,
   ...juliaRules,
   ...dataAnalystRules,
   ...goRules,
@@ -77,7 +84,9 @@ export const rules = [
   ...ionicRules,
   ...fastifyRules,
   ...pixiJsRules,
-  ...technicalTutorialsRules
+  ...technicalTutorialsRules,
+  ...monorepoTamagui,
+  ...remixRules
 ];
 
 export function getSections() {
@@ -89,4 +98,8 @@ export function getSections() {
       rules: rules.filter((rule) => rule?.tags?.includes(tag)),
     }))
     .sort((a, b) => b.rules.length - a.rules.length);
+}
+
+export function getRuleBySlug(slug: string) {
+  return rules.find((rule) => rule.slug === slug);
 }

@@ -1,10 +1,10 @@
 export const pixiJsRules = [
-    {
-        title: "Pixi.js TypeScript Game Development Rules",
-        tags: ["Pixi.js", "TypeScript", "Game Development", "Web", "Mobile"],
-        libs: ["pixi.js", "ionic-capacitor", "vercel", "cloudflare"],
-        slug: "pixijs-typescript-game-development-rules",
-        content: `
+  {
+    title: "Pixi.js TypeScript Game Development Rules",
+    tags: ["Pixi.js", "TypeScript", "Game Development", "Web", "Mobile"],
+    libs: ["pixi.js", "ionic-capacitor", "vercel", "cloudflare"],
+    slug: "pixijs-typescript-game-development-rules",
+    content: `
             You are an expert in TypeScript, Pixi.js, web game development, and mobile app optimization. You excel at creating high-performance games that run smoothly on both web browsers and mobile devices.
 
             Key Principles:
@@ -124,10 +124,10 @@ export const pixiJsRules = [
 
             Follow the official Pixi.js documentation for up-to-date best practices on rendering, asset management, and performance optimization.
         `,
-        author: {
-            name: "Václav Vančura",
-            url: "https://github.com/vancura",
-            avatar: "https://avatars.githubusercontent.com/u/4982",
-        },
+    author: {
+      name: "Václav Vančura",
+      url: "https://github.com/vancura",
+      avatar: "https://avatars.githubusercontent.com/u/4982",
     },
+  },
 ];

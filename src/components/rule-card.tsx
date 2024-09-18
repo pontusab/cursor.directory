@@ -1,6 +1,10 @@
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn, generateNameAbbr, isImageUrl } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
@@ -31,7 +35,7 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
       >
         <div className="group-hover:flex hidden right-4 bottom-4 absolute z-10 space-x-2">
           <ShareButton slug={rule.slug} />
-          <CopyButton content={rule.content} />
+          <CopyButton content={rule.content} slug={rule.slug} />
         </div>
 
         <Link href={`/${rule.slug}`}>
@@ -46,14 +50,18 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
           <CardTitle className="text-sm">{rule.author.name}</CardTitle>
           <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
             <Avatar className="size-6">
-              {
-                isImageUrl(rule.author.avatar) ? <AvatarImage src={rule.author.avatar} alt={rule.author.name} /> : <AvatarFallback>{generateNameAbbr(rule.author.name)}</AvatarFallback>
-              }
+              {isImageUrl(rule.author.avatar) ? (
+                <AvatarImage src={rule.author.avatar} alt={rule.author.name} />
+              ) : (
+                <AvatarFallback>
+                  {generateNameAbbr(rule.author.name)}
+                </AvatarFallback>
+              )}
             </Avatar>
           </a>
         </div>
-        {
-          rule.libs && rule.libs.length > 0 && <Popover>
+        {rule.libs && rule.libs.length > 0 && (
+          <Popover>
             <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
               {rule.libs.slice(0, 2).map((lib) => (
                 <span
@@ -80,7 +88,7 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
               ))}
             </PopoverContent>
           </Popover>
-        }
+        )}
       </CardHeader>
     </Card>
   );
