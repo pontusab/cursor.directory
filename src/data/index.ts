@@ -10,6 +10,7 @@ import { expoReactNativeRules } from "./rules/expo";
 import { fastapiRules } from "./rules/fastapi";
 import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
+import { frontEndRules } from "./rules/front-end";
 import { gatsbyRules } from "./rules/gastby";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
@@ -52,6 +53,7 @@ export const rules = [
   ...railsRules,
   ...fastapiRules,
   ...flaskRules,
+  ...frontEndRules,
   ...djangoRules,
   ...cRules,
   ...vueTsRules,
