@@ -42,6 +42,7 @@ import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { convexRules } from "./rules/convex";
 import { remixRules } from "./rules/remix";
+import { salesforceRules } from "./rules/salesforce";
 
 
 export const rules = [
@@ -88,8 +89,10 @@ export const rules = [
   ...pixiJsRules,
   ...technicalTutorialsRules,
   ...monorepoTamagui,
-  ...remixRules
+  ...remixRules,
+  ...salesforceRules
 ];
+
 
 export function getSections() {
   const categories = Array.from(new Set(rules.flatMap((rule) => rule.tags)));
