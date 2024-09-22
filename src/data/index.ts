@@ -43,6 +43,7 @@ import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { convexRules } from "./rules/convex";
 import { remixRules } from "./rules/remix";
 import { salesforceRules } from "./rules/salesforce";
+import { wordpressRules } from "./rules/wordpress";
 
 
 export const rules = [
@@ -90,7 +91,8 @@ export const rules = [
   ...technicalTutorialsRules,
   ...monorepoTamagui,
   ...remixRules,
-  ...salesforceRules
+  ...salesforceRules,
+  ...wordpressRules
 ];
 
 
