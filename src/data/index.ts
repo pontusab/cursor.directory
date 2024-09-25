@@ -44,7 +44,7 @@ import { convexRules } from "./rules/convex";
 import { remixRules } from "./rules/remix";
 import { salesforceRules } from "./rules/salesforce";
 import { wordpressRules } from "./rules/wordpress";
-
+import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 
 export const rules = [
   ...convexRules,
@@ -92,7 +92,8 @@ export const rules = [
   ...monorepoTamagui,
   ...remixRules,
   ...salesforceRules,
-  ...wordpressRules
+  ...wordpressRules,
+  ...wordpressWoocommerce
 ];
 
 
