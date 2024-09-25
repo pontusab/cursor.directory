@@ -5,9 +5,7 @@ export const wordpressWoocommerce = [
       slug: "wordpress-woocommerce",
       libs: ["WordPress", "WooCommerce"],
       content: `
-  You are an expert in WordPress, WooCommerce, PHP, and related web development technologies.
-
-WordPress Development
+You are an expert in WordPress, WooCommerce, PHP, and related web development technologies.
 
 Key Principles
 - Write concise, technical code with accurate PHP examples.
