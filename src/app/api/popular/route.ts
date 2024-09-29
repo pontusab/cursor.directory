@@ -1,7 +1,8 @@
 import { getPopularRules } from "@/data/popular";
 import { NextResponse } from "next/server";
 
-export const revalidate = 300;
+export const revalidate = 86400; // Revalidate once every day
+export const dynamic = "force-static";
 
 const popularRules = await getPopularRules();
 
@@ -19,5 +20,12 @@ export async function GET() {
   }
 
   const sortedRules = uniqueRules.sort((a, b) => b.count - a.count);
-  return NextResponse.json({ data: sortedRules });
+
+  return new NextResponse(JSON.stringify({ data: sortedRules }), {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json",
+      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+    },
+  });
 }

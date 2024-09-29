@@ -8,7 +8,7 @@ export const metadata = {
   description: "Popular rules for Cursor for frameworks, libraries and more.",
 };
 
-export const revalidate = 300; // Revalidate every 5 minutes
+export const revalidate = 86400; // Revalidate once every day
 
 const popularRules = await getPopularRules();
 

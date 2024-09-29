@@ -14,6 +14,47 @@ import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
   title: "Cursor Directory",
   description: "Find the best cursor rules for your framework and language",
+  icons: [
+    {
+      rel: "icon",
+      url: "https://cdn.midday.ai/cursor/favicon.png",
+    },
+  ],
+  openGraph: {
+    title: "Cursor Directory",
+    description: "Find the best cursor rules for your framework and language",
+    url: "https://cursor.directory",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        width: 1800,
+        height: 1600,
+      },
+    ],
+  },
+  twitter: {
+    title: "Cursor Directory",
+    description: "Find the best cursor rules for your framework and language",
+    images: [
+      {
+        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        width: 1800,
+        height: 1600,
+      },
+    ],
+  },
 };
 
 export const viewport = {
