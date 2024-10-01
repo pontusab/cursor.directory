@@ -83,8 +83,16 @@ If you want to add new prompts to an existing rule, follow these steps:
      - **name**: Your full name or GitHub username.
      - **URL**: A link to your GitHub, Twitter, website, or any other profile you want to share. This is optional but recommended.
      - **avatar**: The URL path to an image or avatar that represents you. You can use a photo from a service like Gravatar or any image hosting service.
-  
-### 5. Create a PR
+
+### 5. How to Use Cursor Rules in Your Project.
+
+  - First, create a `.cursorrules` file in the root directory of your project.
+  - Navigate to the Cursor directory and copy the relevant rules.
+  - Paste these rules into the `.cursorrules` file.
+  - When using the Cursor AI editor (in the chat box or composer), inform the AI to "follow the cursor rules" to ensure the prompts align with the rules youdefined in the `.cursorrules` file. The AI will generate output that adheres to the guidelines set in your custom rules.
+
+
+### 6. Create a PR
 
 
 ## Getting Started
