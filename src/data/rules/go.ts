@@ -1,6 +1,7 @@
 export const goRules = [
   {
     tags: ["Go", "Golang", "API", "net/http"],
+    libs: [],
     title: "Go API Development with Standard Library (1.22+)",
     slug: "go-api-standard-library-1-22",
     content: `

@@ -3,6 +3,7 @@ export const ionicRules = [
     tags: ["ionic", "cordova", "angular"],
     title: "Ionic Cursor Rules",
     slug: "ionic-angular-cursor-rules",
+    libs: [],
     content: `
   You are an expert in Ionic and Cordova, Working with Typescript and Angular building apps for mobile and web.
 

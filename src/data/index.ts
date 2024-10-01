@@ -46,7 +46,22 @@ import { salesforceRules } from "./rules/salesforce";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 
-export const rules = [
+interface Rule {
+  title: string;
+  slug: string;
+  tags: string[];
+  libs: string[];
+  content: string;
+  author: Author;
+}
+
+interface Author {
+  name: string;
+  url: string;
+  avatar: string;
+}
+
+export const rules: Rule[] = [
   ...convexRules,
   ...astroRules,
   ...nextjsRules,
