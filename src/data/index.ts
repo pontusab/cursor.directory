@@ -46,6 +46,8 @@ import { salesforceRules } from "./rules/salesforce";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 import { blazorRules } from "./rules/blazor";
+import { htmxRules } from "./rules/htmx";
+import { bootstrapRules } from "./rules/bootstrap";
 
 interface Rule {
   title: string;
@@ -109,7 +111,9 @@ export const rules: Rule[] = [
   ...remixRules,
   ...salesforceRules,
   ...wordpressRules,
-  ...wordpressWoocommerce
+  ...wordpressWoocommerce,
+  ...htmxRules,
+  ...bootstrapRules,
 ];
 
 
