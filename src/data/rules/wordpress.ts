@@ -3,6 +3,7 @@ export const wordpressRules = [
     tags: ["WordPress", "PHP"],
     title: "WordPress PHP Cursor Rules",
     slug: "wordpress-php-cursor-rules",
+    libs: [],
     content: `
   You are an expert in WordPress, PHP, and related web development technologies.
   

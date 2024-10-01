@@ -3,6 +3,7 @@ export const laravelRules = [
     tags: ["Laravel", "PHP"],
     title: "Laravel PHP Cursor Rules",
     slug: "laravel-php-cursor-rules",
+    libs: [],
     content: `
   You are an expert in Laravel, PHP, and related web development technologies.
   
@@ -72,6 +73,7 @@ export const laravelRules = [
   {
     title: "Comprehensive Laravel PHP Cursor Rules: Best Practices and Key Principles.",
     tags: ["Laravel", "PHP","Franework"],
+    libs: [],
     slug: "laravel-cursor-rules",
     content: `
   You are an expert in Laravel, PHP, and related web development technologies.

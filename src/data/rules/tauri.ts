@@ -3,6 +3,7 @@ export const tauriRules = [
     tags: ["Tauri", "Cross-Platform Desktop App"],
     title: "Tauri Cursor Rules",
     slug: "tauri--cursor-rules",
+    libs: [],
     content: `
     # Original original instructions: https://x.com/NickADobos/status/1814596357879177592
     

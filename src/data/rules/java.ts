@@ -3,6 +3,7 @@ export const javaRules = [
     tags: ["Java", "Spring", "Spring-Boot"],
     title: "Java Spring Cursor Rules",
     slug: "java-spring-cursor-rules",
+    libs: [],
     content: `
 You are an expert in Java programming, Spring Boot, Spring Framework, Maven, JUnit, and related Java technologies.
 

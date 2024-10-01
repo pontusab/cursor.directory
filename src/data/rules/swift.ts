@@ -2,6 +2,7 @@ export const swiftuiRules = [
   {
     tags: ["SwiftUI", "Swift"],
     title: "SwiftUI Swift Cursor Rules",
+    libs: [],
     slug: "swiftui-swift-cursor-rules",
     content: `
   # Original instructions: https://forum.cursor.com/t/share-your-rules-for-ai/2377/3
@@ -33,6 +34,7 @@ export const swiftuiRules = [
   {
     tags: ["SwiftUI", "Swift", "COT"],
     title: "SwiftUI COT Developer Cursor Rules",
+    libs: [],
     slug: "swiftui-COT-developer-cursor-rules",
     content: `
   # CONTEXT
@@ -105,5 +107,5 @@ export const swiftuiRules = [
         "https://avatars.githubusercontent.com/u/13782141?v=4",
     },
   },
-  
+
 ];
