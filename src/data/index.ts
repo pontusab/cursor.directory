@@ -45,6 +45,7 @@ import { remixRules } from "./rules/remix";
 import { salesforceRules } from "./rules/salesforce";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+import { blazorRules } from "./rules/blazor";
 
 export const rules = [
   ...convexRules,
