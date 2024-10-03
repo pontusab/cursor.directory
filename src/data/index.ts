@@ -48,6 +48,8 @@ import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 import { blazorRules } from "./rules/blazor";
 import { htmxRules } from "./rules/htmx";
 import { bootstrapRules } from "./rules/bootstrap";
+import { vivadoRules } from "./rules/vivado";
+
 
 interface Rule {
   title: string;
@@ -114,6 +116,7 @@ export const rules: Rule[] = [
   ...wordpressWoocommerce,
   ...htmxRules,
   ...bootstrapRules,
+  ...vivadoRules,
 ];
 
 
