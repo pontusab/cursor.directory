@@ -48,6 +48,7 @@ import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 import { blazorRules } from "./rules/blazor";
 import { htmxRules } from "./rules/htmx";
 import { bootstrapRules } from "./rules/bootstrap";
+import { jaxRules } from "./rules/jax";
 
 interface Rule {
   title: string;
@@ -66,6 +67,7 @@ interface Author {
 
 export const rules: Rule[] = [
   ...convexRules,
+  ...jaxRules,
   ...astroRules,
   ...nextjsRules,
   ...swiftuiRules,
