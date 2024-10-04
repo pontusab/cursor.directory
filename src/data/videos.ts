@@ -134,7 +134,7 @@ export const videos = [
     title: "Building (and deploying!) with AI-assistance using Cursor, Claude and Cloudflare",
     url: "https://www.youtube.com/embed/oBDdcVaRhUk?si=8j-33MdX-1nHdxkR",
     description:
-      "@rickyrobinett walks you through how to build, and deploy, an application using Cursor, Claude and Cloudflare..",
+      "@rickyrobinett walks you through how to build, and deploy, an application using Cursor, Claude and Cloudflare.",
     author: {
       name: "Cloudflare",
       image:
