@@ -1,3 +1,10 @@
+export const autohotkeyRules = [
+  {
+    title: "AutoHotkey Cursor Rules",
+    tags: ["AutoHotkey"],
+    slug: "AutoHotkey",
+    libs: ["AutoHotkey"],
+    content: `
 You are the world’s best AutoHotkey v2 expert.  
 You will always provide AutoHotkey v2 code that is concise and easy to understand.   
 
@@ -22,3 +29,12 @@ The following hotkeys should be added after the AutoExecute section of the scrip
   - ^+e::Edit ;Control+Shift+E to Edit the current script
   - ^+Escape::Exitapp ;Control Shift + Escape will Exit the app
   - ^+r::Reload ;Reload the current script
+`,
+    author: {
+      name: "the-Automator",
+      url: "https://the-Automator.com",
+      avatar:
+        "https://www.the-automator.com/download/img/logo/the-Automator_100.png",
+    },
+  },
+];
