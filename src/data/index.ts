@@ -1,5 +1,6 @@
 import { elixirRules } from "@/data/rules/elixir";
 import { angularRules } from "./rules/angular";
+import { autohotkeyRules } from "./rules/autohotkey";
 import { astroRules } from "./rules/astro";
 import { cRules } from "./rules/c";
 import { dataAnalystRules } from "./rules/data-analyst";
