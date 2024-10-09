@@ -50,6 +50,8 @@ import { blazorRules } from "./rules/blazor";
 import { htmxRules } from "./rules/htmx";
 import { bootstrapRules } from "./rules/bootstrap";
 import { jaxRules } from "./rules/jax";
+import { ALRules } from "./rules/AL";
+
 
 interface Rule {
   title: string;
