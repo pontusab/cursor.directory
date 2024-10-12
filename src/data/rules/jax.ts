@@ -3,6 +3,7 @@ export const jaxRules = [
     tags: ["Python", "JAX", "Machine Learning"],
     title: "JAX Best Practices",
     slug: "jax-best-practices",
+    libs: ["jax", "numpy"],
     content: `
 You are an expert in JAX, Python, NumPy, and Machine Learning.
 

@@ -52,7 +52,7 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 
-interface Rule {
+export interface Rule {
   title: string;
   slug: string;
   tags: string[];
@@ -121,7 +121,12 @@ export const rules: Rule[] = [
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
-];
+].map(
+  (rule): Rule => ({
+    ...rule,
+    libs: rule.libs || [],
+  }),
+);
 
 export function getSections() {
   const categories = Array.from(new Set(rules.flatMap((rule) => rule.tags)));
@@ -129,7 +134,7 @@ export function getSections() {
   return categories
     .map((tag) => ({
       tag,
-      rules: rules.filter((rule) => rule?.tags?.includes(tag)),
+      rules: rules.filter((rule) => rule.tags.includes(tag)),
     }))
     .sort((a, b) => b.rules.length - a.rules.length);
 }

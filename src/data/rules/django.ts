@@ -3,7 +3,7 @@ export const djangoRules = [
     tags: ["Django", "Python", "Web Development"],
     title: "Django Python Cursor Rules",
     slug: "django-python-cursor-rules",
-    libs: [],
+    libs: ["django", "python"],
     content: `
   You are an expert in Python, Django, and scalable web application development.
 

@@ -3,7 +3,7 @@ export const ALRules = [
     tags: ["AL", "Business Central"],
     title: "AL Microsoft Business Central Development Cursor Rules",
     slug: "al-buisnesscentral-development-cursor-rules",
-    libs: [],
+    libs: ["al", "business-central"],
     content: `
 You are an expert in AL, and Microsoft Business Central development.
 
@@ -69,8 +69,7 @@ https://learn.microsoft.com/ja-jp/dynamics365/business-central/dev-itpro/develop
     author: {
       name: "David Bulpitt",
       url: "https://blog.d3developments.co.uk",
-      avatar:
-        "https://blog.d3developments.co.uk/favicon.ico",
+      avatar: "https://blog.d3developments.co.uk/favicon.ico",
     },
   },
 ];
