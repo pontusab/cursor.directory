@@ -5,19 +5,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 
-const tabs = [
-  {
-    name: "All",
-    path: "/",
-  },
-  {
-    name: "Popular",
-    path: "/popular",
-  },
-];
 
-export function Tabs() {
+
+export function Tabs({type}: {type: "rules" | "prompts"}) {
   const selectedTab = usePathname();
+
+  const tabs = [
+    {
+      name: "All",
+      path: `/${type}`,
+    },
+    {
+      name: "Popular",
+      path: `/${type}/popular`,
+    },
+  ];
 
   return (
     <div className="flex items-center">

@@ -1,5 +1,6 @@
-import { getRuleBySlug, rules } from "@/data";
+import { rules } from "@/data";
 import { NextResponse } from "next/server";
+import { getItemBySlug } from "@/lib/utils";
 
 export const dynamic = "force-static";
 export const revalidate = 86400; // Revalidate once every day
@@ -20,7 +21,7 @@ export async function GET(
     return NextResponse.json({ error: "No slug provided" }, { status: 400 });
   }
 
-  const rule = getRuleBySlug(slug);
+  const rule = getItemBySlug(rules, slug);
 
   if (!rule) {
     return NextResponse.json({ error: "Rule not found" }, { status: 404 });

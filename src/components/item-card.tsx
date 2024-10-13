@@ -11,20 +11,9 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";
 import { ShareButton } from "./share-button";
+import type { Prompt, Rule } from "@/types";
 
-export type Rule = {
-  libs?: string[];
-  content: string;
-  title?: string;
-  slug: string;
-  author: {
-    name: string;
-    url: string;
-    avatar: string;
-  };
-};
-
-export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
+export function ItemCard({ item, isPage }: { item: Rule | Prompt; isPage?: boolean }) {
   return (
     <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square flex flex-col">
       <CardContent
@@ -34,36 +23,36 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         )}
       >
         <div className="group-hover:flex hidden right-4 bottom-4 absolute z-10 space-x-2">
-          <ShareButton slug={rule.slug} />
-          <CopyButton content={rule.content} slug={rule.slug} />
+          <ShareButton slug={item.slug} />
+          <CopyButton content={item.content} slug={item.slug} />
         </div>
 
-        <Link href={`/${rule.slug}`}>
+        <Link href={`/${item.slug}`}>
           <ScrollArea className="h-full">
-            <code className="text-sm block pr-3">{rule.content}</code>
+            <code className="text-sm block pr-3">{item.content}</code>
           </ScrollArea>
         </Link>
       </CardContent>
 
       <CardHeader className="p-0 space-y-1">
         <div className="flex items-center justify-between">
-          <CardTitle className="text-sm">{rule.author.name}</CardTitle>
-          <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
+          <CardTitle className="text-sm">{item.author.name}</CardTitle>
+          <a href={item.author.url} target="_blank" rel="noopener noreferrer">
             <Avatar className="size-6">
-              {isImageUrl(rule.author.avatar) ? (
-                <AvatarImage src={rule.author.avatar} alt={rule.author.name} />
+              {isImageUrl(item.author.avatar) ? (
+                <AvatarImage src={item.author.avatar} alt={item.author.name} />
               ) : (
                 <AvatarFallback>
-                  {generateNameAbbr(rule.author.name)}
+                  {generateNameAbbr(item.author.name)}
                 </AvatarFallback>
               )}
             </Avatar>
           </a>
         </div>
-        {rule.libs && rule.libs.length > 0 && (
+        {item.libs && item.libs.length > 0 && (
           <Popover>
             <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
-              {rule.libs.slice(0, 2).map((lib) => (
+              {item.libs.slice(0, 2).map((lib) => (
                 <span
                   key={lib}
                   className="text-xs text-[#878787] font-mono flex-shrink-0"
@@ -71,15 +60,15 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
                   {lib}
                 </span>
               ))}
-              {rule.libs.length > 2 && (
+              {item.libs.length > 2 && (
                 <span className="text-xs text-[#878787] font-mono flex gap-1 items-center">
-                  <span>+{rule.libs.length - 2} more</span>
+                  <span>+{item.libs.length - 2} more</span>
                   <ChevronDown className="w-3 h-3" />
                 </span>
               )}
             </PopoverTrigger>
             <PopoverContent>
-              {rule.libs.map((lib) => (
+              {item.libs.map((lib) => (
                 <div key={lib} className="flex flex-col justify-center gap-2">
                   <span className="text-xs text-[#878787] font-mono flex-shrink-0">
                     {lib}

@@ -1,6 +1,6 @@
+
 import { Banner } from "@/components/banner";
 import "./globals.css";
-import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
@@ -10,6 +10,7 @@ import { GeistSans } from "geist/font/sans";
 import { PlusIcon } from "lucide-react";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Cursor Directory",
@@ -89,8 +90,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-
           <div className="flex">
             {children}
 

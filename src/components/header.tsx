@@ -9,8 +9,11 @@ import {
   DialogTrigger,
 } from "./ui/dialog";
 import { SubscribeForm } from "./ui/subscribe-form";
+import { rules } from "@/data";
+import { prompts } from "@/data/prompts";
+import { instructions } from "@/data/instructions";
 
-export function Header() {
+export function Header({ isHome }: { isHome?: boolean }) {
   return (
     <div className="md:fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center bg-background backdrop-filter backdrop-blur-sm bg-opacity-30">
       <Link href="/" className="font-medium font-mono text-sm">
@@ -18,7 +21,10 @@ export function Header() {
       </Link>
 
       <div className="flex items-center gap-4">
-        <div className="hidden md:block">
+        {
+          !isHome && (
+            <>
+            <div className="hidden md:block">
           <SubscribeForm group="newsletter" placeholder="Get latest updates" />
         </div>
 
@@ -35,9 +41,36 @@ export function Header() {
           <span>Live</span>
         </Link>
 
-        <Link href="/learn" className="text-sm font-medium">
-          Learn
-        </Link>
+       {
+        rules.length > 0 && (
+          <Link href="/rules" className="text-sm font-medium">
+            Rules
+          </Link>
+        )
+       }
+
+       {
+        prompts.length > 0 && (
+          <Link href="/prompts" className="text-sm font-medium">
+            Prompts
+          </Link>
+          )
+        }
+
+        {
+          instructions.length > 0 && (
+            <Link href="/instructions" className="text-sm font-medium">
+                Instructions
+              </Link>
+            )
+          }
+
+          <Link href="/learn" className="text-sm font-medium">
+            Learn
+              </Link>
+            </>
+          )
+        }
 
         <Dialog>
           <DialogTrigger asChild>

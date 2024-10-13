@@ -4,14 +4,31 @@ import { SearchInput } from "@/components/search-input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-import { getSections } from "@/data";
 import { PlusIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import type { Rule, Prompt, Instruction } from "@/types";
+import { rules } from "@/data";
+import { prompts } from "@/data/prompts";
+import { getSections } from "@/lib/utils";
 
-const allSections = getSections();
+interface MenuProps {
+  type: "rules" | "prompts" | "instructions";
+}
 
-export function Menu() {
+export function Menu({ type }: MenuProps) {
+  let items: Rule[] | Prompt[] | Instruction[] = [];
+  let allSections: { tag: string; items: Rule[] | Prompt[] | Instruction[] }[] = [];
+
+  if (type === "rules") {
+    items = rules;
+    allSections = getSections<Rule>(rules);
+  } else if (type === "prompts") {
+    items = prompts;
+    allSections = getSections<Prompt>(prompts);
+  }
+  // else if (type === "instructions") items = instructions;
+
   const router = useRouter();
   const [sections, setSections] = useState(allSections);
 
@@ -59,7 +76,7 @@ export function Menu() {
             >
               {section.tag}
               <span className="ml-auto text-[#878787]">
-                {section.rules.length}
+                {section.items.length}
               </span>
             </Button>
           ))}
