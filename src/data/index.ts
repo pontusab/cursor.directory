@@ -51,6 +51,7 @@ import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+import { terraformRules } from "./rules/terraform";
 
 export interface Rule {
   title: string;
@@ -121,6 +122,7 @@ export const rules: Rule[] = [
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
+  ...terraformRules
 ].map(
   (rule): Rule => ({
     ...rule,
