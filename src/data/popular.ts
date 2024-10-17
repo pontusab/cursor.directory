@@ -1,12 +1,14 @@
 import { redis } from "@/lib/redis";
-import { getSections } from ".";
+import { getSections } from "@/lib/utils";
+import { rules } from "@/data";
+
 export async function getPopularRules() {
-  const sections = getSections();
+  const sections = getSections(rules);
 
   const sectionsWithCounts = await Promise.all(
     sections.map(async (section) => {
       const rulesWithCounts = await Promise.all(
-        section.rules.map(async (rule) => {
+        section.items.map(async (rule) => {
           const count = await redis.get(`rules:${rule.slug}`);
           return {
             ...rule,

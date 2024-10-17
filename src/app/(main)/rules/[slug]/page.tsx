@@ -1,11 +1,12 @@
 import { Menu } from "@/components/menu";
-import { RuleCard } from "@/components/rule-card";
-import { getRuleBySlug, rules } from "@/data";
+import { ItemCard } from "@/components/item-card";
+import { rules } from "@/data";
+import { getItemBySlug } from "@/lib/utils";
 
 export async function generateMetadata({
   params,
 }: { params: { slug: string } }) {
-  const rule = getRuleBySlug(params.slug);
+  const rule = getItemBySlug(rules, params.slug);
 
   return {
     title: `${rule?.title} rule by ${rule?.author?.name}`,
@@ -20,7 +21,7 @@ export async function generateStaticParams() {
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const rule = getRuleBySlug(params.slug);
+  const rule = getItemBySlug(rules, params.slug);
 
   if (!rule) {
     return <div>Rule not found</div>;
@@ -29,11 +30,11 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
-        <Menu />
+        <Menu type="rules" />
       </div>
 
       <main className="flex-1 p-6 pt-16">
-        <RuleCard rule={rule} isPage={true} />
+        <ItemCard item={rule} isPage={true} />
       </main>
     </>
   );

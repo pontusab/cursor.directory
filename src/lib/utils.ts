@@ -1,3 +1,4 @@
+import { Prompt, Rule } from "@/types";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -31,4 +32,19 @@ export function generateNameAbbr(name: string): string {
   const match = name.match(firstCharRegex);
 
   return match ? match[0].toUpperCase() : "";
+}
+
+export function getSections<T extends { tags: string[] }>(items: T[]) {
+  const categories = Array.from(new Set(items.flatMap((item) => item.tags)));
+
+  return categories
+    .map((tag) => ({
+      tag,
+      items: items.filter((item) => item.tags.includes(tag)),
+    }))
+    .sort((a, b) => b.items.length - a.items.length);
+}
+
+export function getItemBySlug(items: Rule[] | Prompt[], slug: string) {
+  return items.find((item) => item.slug === slug);
 }
