@@ -279,4 +279,21 @@ export const laravelRules = [
         "https://avatars.githubusercontent.com/u/18596312?v=4",
     },
   },
+  {
+    title: "Minimal Laravel PHP Cursor Rules",
+    tags: ["Laravel", "PHP"],
+    libs: ["laravel"],
+    slug: "minimal-laravel-php-cursor-rules",
+    content: `
+  Write code that follows Laravel & PHP guidelines from spatie.be.
+  Do not remove the PHPDoc blocks or comments from the code.
+  Use snake_case for naming regular variables. Otherwise, follow the guidelines.
+`,
+    author: {
+      name: "Marcial Paul Gargoles",
+      url: "https://github.com/marcialpaulg",
+      avatar:
+        "https://avatars.githubusercontent.com/u/6005221?v=4",
+    },
+  },
 ];
