@@ -6,6 +6,7 @@ import { autohotkeyRules } from "./rules/autohotkey";
 import { blazorRules } from "./rules/blazor";
 import { bootstrapRules } from "./rules/bootstrap";
 import { cRules } from "./rules/c";
+import { cppRules } from "./rules/cpp";
 import { convexRules } from "./rules/convex";
 import { dataAnalystRules } from "./rules/data-analyst";
 import { deepLearningRules } from "./rules/deep-learning";
@@ -76,6 +77,7 @@ export const rules: Rule[] = [
   ...blazorRules,
   ...bootstrapRules,
   ...cRules,
+  ...cppRules,
   ...convexRules,
   ...dataAnalystRules,
   ...deepLearningRules,
