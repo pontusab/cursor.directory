@@ -52,6 +52,7 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 import { terraformRules } from "./rules/terraform";
+import { onchainkitRules } from './rules/onchainkit'
 
 export interface Rule {
   title: string;
