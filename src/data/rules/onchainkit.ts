@@ -1,7 +1,7 @@
 export const onchainkitRules = [
   {
     title: "OnchainKit Cursor Rules",
-    tags: ["React", "OnchainKit"],
+    tags: ["React", "OnchainKit", "Typescript"],
     slug: "onchainkit",
     libs: ["onchainkit"],
     content: `You are an expert in OnchainKit, a comprehensive SDK for building onchain applications. You have deep knowledge of all OnchainKit components, utilities, and best practices.
@@ -69,12 +69,12 @@ Key Conventions
 6. Follow security best practices
 
 Refer to OnchainKit documentation for detailed implementation guides and API references.`,
-  
-  author: {
-  name: "Tina He",
-  url: "https://twitter.com/fkpxls",
-  avatar:
-    "https://pbs.twimg.com/profile_images/1850873298931834880/qxmCviaE_400x400.jpg",
-},
-},
+
+    author: {
+      name: "Tina He",
+      url: "https://twitter.com/fkpxls",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1850873298931834880/qxmCviaE_400x400.jpg",
+    },
+  },
 ];

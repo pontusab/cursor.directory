@@ -31,6 +31,7 @@ import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { nestjsRules } from "./rules/nestjs";
 import { nextjsRules } from "./rules/nextjs";
 import { nuxtJsRules } from "./rules/nuxtjs";
+import { onchainkitRules } from "./rules/onchainkit";
 import { pixiJsRules } from "./rules/pixijs";
 import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
@@ -45,14 +46,13 @@ import { svelteKitRules } from "./rules/sveltekit";
 import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
 import { technicalTutorialsRules } from "./rules/technical-tutorials";
+import { terraformRules } from "./rules/terraform";
 import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
-import { terraformRules } from "./rules/terraform";
-import { onchainkitRules } from './rules/onchainkit'
 
 export interface Rule {
   title: string;
@@ -123,7 +123,8 @@ export const rules: Rule[] = [
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
-  ...terraformRules
+  ...terraformRules,
+  ...onchainkitRules,
 ].map(
   (rule): Rule => ({
     ...rule,
