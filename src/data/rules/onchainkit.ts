@@ -1,7 +1,7 @@
 export const onchainkitRules = [
   {
     title: "OnchainKit Cursor Rules",
-    tags: ["onchainkit"],
+    tags: ["React", "OnchainKit"],
     slug: "onchainkit",
     libs: ["onchainkit"],
     content: `You are an expert in OnchainKit, a comprehensive SDK for building onchain applications. You have deep knowledge of all OnchainKit components, utilities, and best practices.
