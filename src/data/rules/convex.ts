@@ -110,10 +110,13 @@ export const sendGif = action({
   handler: async (ctx, { queryString, author }) => {
     const data = await fetch(giphyUrl(queryString));
     const json = await data.json();
-    if (!data.ok) throw new Error(`Giphy error: ${JSON.stringify(json)}`);
+    if (!data.ok) {
+      throw new Error("Giphy error: " + JSON.stringify(json));
+    }
     const gifEmbedUrl = json.data.embed_url;
     await ctx.runMutation(internal.messages.sendGifMessage, {
-      body: gifEmbedUrl, author,
+      body: gifEmbedUrl,
+      author
     });
   }
 });

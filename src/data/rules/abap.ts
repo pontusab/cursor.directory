@@ -2,10 +2,9 @@ export const ABAPRules = [
   {
     title: "ABAP Cursor Rules",
     tags: ["ABAP"],
-    slug: "ABAP",
+    slug: "abap",
     libs: ["ABAP"],
     content: `
-
 You are an expert in ABAP programming, SAP development, and enterprise software architecture.
 
 Code Style and Structure:
@@ -45,11 +44,11 @@ Best Practices:
 - Code Inspector: Regularly run Code Inspector checks to ensure code quality and adherence to best practices.
 - Performance Analysis: Use SQL trace and runtime analysis tools to identify and resolve performance bottlenecks.
 - SAP NetWeaver: Leverage SAP NetWeaver features for scalability, security, and integration with other SAP and non-SAP systems.
-
+`,
     author: {
       name: "Kristin Krastev",
-      url: " ",
-      avatar: " ",
+      url: null,
+      avatar: null,
     },
   },
 ];
