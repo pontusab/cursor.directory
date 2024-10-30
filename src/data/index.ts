@@ -53,6 +53,8 @@ import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+import { luaRules } from "./rules/lua";
+
 
 export interface Rule {
   title: string;
@@ -125,6 +127,7 @@ export const rules: Rule[] = [
   ...wordpressWoocommerce,
   ...terraformRules,
   ...onchainkitRules,
+  ...luaRules,
 ].map(
   (rule): Rule => ({
     ...rule,
