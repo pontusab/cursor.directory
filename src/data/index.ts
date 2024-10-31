@@ -54,7 +54,7 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 import { luaRules } from "./rules/lua";
-
+import { androidRules } from "./rules/android";
 
 export interface Rule {
   title: string;
@@ -128,6 +128,7 @@ export const rules: Rule[] = [
   ...terraformRules,
   ...onchainkitRules,
   ...luaRules,
+  ...androidRules,
 ].map(
   (rule): Rule => ({
     ...rule,
