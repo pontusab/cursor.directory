@@ -1,12 +1,9 @@
 export const androidRules = [
   {
     title: "Android Cursor Rules",
-    tags: ["android-kotlin"],
-    slug: "android-kotlin",
-    author:{
-      name:"aman satija",
-      server:"http://amansatija.com"
-    }
+    tags: ["android","kotlin"],
+    slug: "android",
+    libs: ["android"],
     content: `
 You are a Senior Kotlin programmer with experience in the Android framework and a preference for clean programming and design patterns.
 
@@ -130,6 +127,11 @@ Generate code, corrections, and refactorings that comply with the basic principl
 
 - Use the standard widget testing for flutter
 - Use integration tests for each api module.   
-`
-  }
+`,
+    author:{
+      name:"aman satija",
+      url:"http://amansatija.com",
+      avatar:null
+    },
+  },
 ]
