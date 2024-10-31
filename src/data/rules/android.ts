@@ -1,8 +1,12 @@
-export const AndroidKotlinRules = [
+export const androidRules = [
   {
     title: "Android Cursor Rules",
     tags: ["android-kotlin"],
     slug: "android-kotlin",
+    author:{
+      name:"aman satija",
+      server:"http://amansatija.com"
+    }
     content: `
 You are a Senior Kotlin programmer with experience in the Android framework and a preference for clean programming and design patterns.
 
