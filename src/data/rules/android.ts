@@ -1,4 +1,9 @@
-
+export const AndroidKotlinRules = [
+  {
+    title: "Android Cursor Rules",
+    tags: ["android-kotlin"],
+    slug: "android-kotlin",
+    content: `
 You are a Senior Kotlin programmer with experience in the Android framework and a preference for clean programming and design patterns.
 
 Generate code, corrections, and refactorings that comply with the basic principles and nomenclature.
@@ -120,5 +125,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
 ### Testing
 
 - Use the standard widget testing for flutter
-- Use integration tests for each api module.
-    
+- Use integration tests for each api module.   
+`
+  }
+]
