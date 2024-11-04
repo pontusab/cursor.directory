@@ -21,10 +21,10 @@
     "@biomejs/cli-win32-arm64" "1.8.3"
     "@biomejs/cli-win32-x64" "1.8.3"
 
-"@biomejs/cli-darwin-arm64@1.8.3":
+"@biomejs/cli-win32-x64@1.8.3":
   version "1.8.3"
-  resolved "https://registry.npmjs.org/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-1.8.3.tgz"
-  integrity sha512-9DYOjclFpKrH/m1Oz75SSExR8VKvNSSsLnVIqdnKexj6NwmiMlKk94Wa1kZEdv6MCOHGHgyyoV57Cw8WzL5n3A==
+  resolved "https://registry.npmjs.org/@biomejs/cli-win32-x64/-/cli-win32-x64-1.8.3.tgz"
+  integrity sha512-/PJ59vA1pnQeKahemaQf4Nyj7IKUvGQSc3Ze1uIGi+Wvr1xF7rGobSrAAG01T/gUDG21vkDsZYM03NAmPiVkqg==
 
 "@floating-ui/core@^1.6.0":
   version "1.6.7"
@@ -102,10 +102,10 @@
   resolved "https://registry.npmjs.org/@next/env/-/env-14.2.6.tgz"
   integrity sha512-bs5DFKV+08EjWrl8EB+KKqev1ZTNONH1vFCaHh911aaB362NnP32UDTbE9VQhyiAgbFqJsfDkSxFERNDDb3j0g==
 
-"@next/swc-darwin-arm64@14.2.6":
+"@next/swc-win32-x64-msvc@14.2.6":
   version "14.2.6"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.6.tgz"
-  integrity sha512-BtJZb+hYXGaVJJivpnDoi3JFVn80SHKCiiRUW3kk1SY6UCUy5dWFFSbh+tGi5lHAughzeduMyxbLt3pspvXNSg==
+  resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.6.tgz"
+  integrity sha512-NANtw+ead1rSDK1jxmzq3TYkl03UNK2KHqUYf1nIhNci6NkeqBD4s1njSzYGIlSHxCK+wSaL8RXZm4v+NF/pMw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -714,11 +714,6 @@ foreground-child@^3.1.0:
   dependencies:
     cross-spawn "^7.0.0"
     signal-exit "^4.0.1"
-
-fsevents@~2.3.2:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
-  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.2:
   version "1.1.2"
