@@ -2,7 +2,14 @@ export const nextjsRules = [
   {
     title: "Next.js React Redux TypeScript Cursor Rules",
     tags: ["Next.js", "React", "Redux", "TypeScript"],
-    libs: ["shadcn", "radix", "tailwind", "redux-toolkit", "DOMPurify"],
+    libs: [
+      "shadcn",
+      "radix",
+      "tailwind",
+      "redux-toolkit",
+      "DOMPurify",
+      "next-i18next",
+    ],
     slug: "nextjs-react-redux-typescript-cursor-rules",
     content: `This comprehensive guide outlines best practices, conventions, and standards for development with modern web technologies including ReactJS, NextJS, Redux, TypeScript, JavaScript, HTML, CSS, and UI frameworks.
 
