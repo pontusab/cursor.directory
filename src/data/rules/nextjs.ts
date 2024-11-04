@@ -9,6 +9,7 @@ export const nextjsRules = [
       "redux-toolkit",
       "DOMPurify",
       "next-i18next",
+      "zod",
     ],
     slug: "nextjs-react-redux-typescript-cursor-rules",
     content: `This comprehensive guide outlines best practices, conventions, and standards for development with modern web technologies including ReactJS, NextJS, Redux, TypeScript, JavaScript, HTML, CSS, and UI frameworks.
