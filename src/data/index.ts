@@ -18,6 +18,7 @@ import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
 import { frontEndRules } from "./rules/front-end";
 import { gatsbyRules } from "./rules/gastby";
+import { globalRules } from "./rules/global";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
 import { htmxRules } from "./rules/htmx";
@@ -93,6 +94,7 @@ export const rules: Rule[] = [
   ...flutterRules,
   ...frontEndRules,
   ...gatsbyRules,
+  ...globalRules,
   ...goRules,
   ...htmlAndCssRules,
   ...htmxRules,
