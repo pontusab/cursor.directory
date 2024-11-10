@@ -56,6 +56,7 @@ import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
 import { luaRules } from "./rules/lua";
 import { androidRules } from "./rules/android";
 import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
+import { gdscriptRules } from "./rules/gdscript";
 
 export interface Rule {
   title: string;
@@ -131,6 +132,7 @@ export const rules: Rule[] = [
   ...luaRules,
   ...androidRules,
   ...ghostTailwindcssRules,
+  ...gdscriptRules,
 ].map(
   (rule): Rule => ({
     ...rule,
