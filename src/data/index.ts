@@ -49,6 +49,7 @@ import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
 import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
+import { usdPythonOmniverseKITdevRules as usdRules } from "./rules/usdPythonOmniverseKITdev";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
@@ -57,6 +58,7 @@ import { luaRules } from "./rules/lua";
 import { androidRules } from "./rules/android";
 import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { devopsRules } from "./rules/devops-backend";
+
 
 export interface Rule {
   title: string;
@@ -123,6 +125,7 @@ export const rules: Rule[] = [
   ...technicalTutorialsRules,
   ...uiuxRules,
   ...unityCSharpRules,
+  ...(Array.isArray(usdRules) ? usdRules : [usdRules]),
   ...vueTsRules,
   ...webDevelopmentRules,
   ...wordpressRules,
