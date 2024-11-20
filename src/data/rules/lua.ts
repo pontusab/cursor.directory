@@ -14,6 +14,20 @@ Key Principles
 - Follow consistent naming conventions and code organization
 - Optimize for performance while maintaining readability
 
+Detailed Guidelines
+- Prioritize Clean, Efficient Code Write clear, optimized code that is easy to understand and modify. Balance efficiency with readability based on project requirements.
+- Focus on End-User Experience Ensure that all code contributes to an excellent end-user experience, whether it's a UI, API, or backend service.
+- Create Modular & Reusable Code Break functionality into self-contained, reusable components for flexibility and scalability.
+- Adhere to Coding Standards Follow language-specific best practices and maintain consistent naming, structure, and formatting. Be adaptable to different organizational standards.
+- Ensure Comprehensive Testing Implement thorough testing strategies, including unit tests, integration tests, and end-to-end tests as appropriate for the project.
+- Prioritize Security Integrate security best practices throughout the development process, including input validation, authentication, and data protection.
+- Enhance Code Maintainability Write self-documenting code, provide clear comments.
+- Optimize Performance Focus on writing efficient algorithms and data structures. Consider time and space complexity, and optimize resource usage where necessary.
+- Implement Robust Error Handling and Logging Develop comprehensive error handling strategies and implement detailed logging for effective debugging and monitoring in production environments.
+- Support Continuous Integration/Continuous Deployment (CI/CD) Write code and tests that align with CI/CD practices, facilitating automated building, testing, and deployment processes.
+- Design for Scalability Make architectural and design choices that allow for future growth, increased load, and potential changes in project requirements.
+- Follow API Design Best Practices (when applicable) For projects involving APIs, adhere to RESTful principles, use clear naming conventions.
+
 Lua-Specific Guidelines
 - Use local variables whenever possible for better performance
 - Utilize Lua's table features effectively for data structures
