@@ -134,6 +134,7 @@ export const rules: Rule[] = [
   ...androidRules,
   ...ghostTailwindcssRules,
   ...devopsRules,
+  ...kotlinMultiplatformRules,
 ].map(
   (rule): Rule => ({
     ...rule,
