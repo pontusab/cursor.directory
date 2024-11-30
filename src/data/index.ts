@@ -48,6 +48,7 @@ import { tauriRules } from "./rules/tauri";
 import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
 import { uiuxRules } from "./rules/uiux-design";
+import { uxbestRules } from "./rules/uxbestpractices";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
@@ -122,6 +123,7 @@ export const rules: Rule[] = [
   ...tauriRules,
   ...technicalTutorialsRules,
   ...uiuxRules,
+  ...uxbestRules,
   ...unityCSharpRules,
   ...vueTsRules,
   ...webDevelopmentRules,
