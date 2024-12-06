@@ -1,4 +1,4 @@
-export const salesforceRules = [
+export const servicenowRules = [
     {
       tags: ["ServiceNow", "Saas", "developer.servicenow.com"],
       title: "ServiceNow Development",
