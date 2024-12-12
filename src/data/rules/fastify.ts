@@ -2,7 +2,7 @@ export const fastifyRules = [
   {
     tags: ["Fastify", "typescript"],
     title: "Fastify TypeScript Cursor Rules",
-    libs: [],
+    libs: ["fastify", "typescript"],
     slug: "fastify-typescript-cursor-rules",
     content: `
 You are a senior TypeScript programmer with experience in the Fastify framework and a preference for clean programming and design patterns.

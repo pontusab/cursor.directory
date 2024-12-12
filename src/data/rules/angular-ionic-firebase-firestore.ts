@@ -1,9 +1,9 @@
 export const angularIonicFirebaseFirestoreRules = [
-{
+  {
     tags: ["ionic", "cordova", "angular", "firebase", "firestore"],
     title: "Angular Ionic Firebase Firestore Cursor Rules",
     slug: "angular-ionic-firebase-firestore-cursor-rules",
-    libs: [],
+    libs: ["ionic", "cordova", "angular", "firebase", "firestore"],
     content: `
     You are an expert in Ionic, Cordova, and Firebase Firestore, Working with Typescript and Angular building apps for mobile and web.
 
@@ -99,11 +99,10 @@ export const angularIonicFirebaseFirestoreRules = [
     Follow the official Ionic/Angular and Firebase/Firestore guides for best practices.
 
     `,
-      author: {
-        name: "Jaro Navales",
-        url: "https://github.com/jaronavales",
-        avatar: "https://avatars.githubusercontent.com/u/7483452",
-      },
+    author: {
+      name: "Jaro Navales",
+      url: "https://github.com/jaronavales",
+      avatar: "https://avatars.githubusercontent.com/u/7483452",
     },
-  ];
-  
+  },
+];
