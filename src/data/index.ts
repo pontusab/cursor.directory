@@ -1,5 +1,6 @@
 import { elixirRules } from "@/data/rules/elixir";
 import { ALRules } from "./rules/al";
+import { androidRules } from "./rules/android";
 import { angularRules } from "./rules/angular";
 import { astroRules } from "./rules/astro";
 import { autohotkeyRules } from "./rules/autohotkey";
@@ -9,6 +10,7 @@ import { cRules } from "./rules/c";
 import { convexRules } from "./rules/convex";
 import { dataAnalystRules } from "./rules/data-analyst";
 import { deepLearningRules } from "./rules/deep-learning";
+import { devopsRules } from "./rules/devops-backend";
 import { djangoRules } from "./rules/django";
 import { dotnetRules } from "./rules/dotnet";
 import { expoReactNativeRules } from "./rules/expo";
@@ -18,6 +20,7 @@ import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
 import { frontEndRules } from "./rules/front-end";
 import { gatsbyRules } from "./rules/gastby";
+import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
 import { htmxRules } from "./rules/htmx";
@@ -26,6 +29,7 @@ import { javaRules } from "./rules/java";
 import { jaxRules } from "./rules/jax";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
+import { luaRules } from "./rules/lua";
 import { metaPromptRules } from "./rules/meta-prompt";
 import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { nestjsRules } from "./rules/nestjs";
@@ -47,17 +51,13 @@ import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
 import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
+import { typescriptRules } from "./rules/typescript";
 import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
-import { luaRules } from "./rules/lua";
-import { androidRules } from "./rules/android";
-import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
-import { devopsRules } from "./rules/devops-backend";
-
 export interface Rule {
   title: string;
   slug: string;
@@ -133,6 +133,7 @@ export const rules: Rule[] = [
   ...androidRules,
   ...ghostTailwindcssRules,
   ...devopsRules,
+  ...typescriptRules,
 ].map(
   (rule): Rule => ({
     ...rule,
