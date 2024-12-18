@@ -57,6 +57,7 @@ import { luaRules } from "./rules/lua";
 import { androidRules } from "./rules/android";
 import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { devopsRules } from "./rules/devops-backend";
+import { chromeExtensionRules } from "./rules/chrome-extension";
 
 export interface Rule {
   title: string;
@@ -133,6 +134,7 @@ export const rules: Rule[] = [
   ...androidRules,
   ...ghostTailwindcssRules,
   ...devopsRules,
+  ...chromeExtensionRules,
 ].map(
   (rule): Rule => ({
     ...rule,
