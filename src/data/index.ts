@@ -7,6 +7,7 @@ import { blazorRules } from "./rules/blazor";
 import { bootstrapRules } from "./rules/bootstrap";
 import { cRules } from "./rules/c";
 import { convexRules } from "./rules/convex";
+import { cppRules } from "./rules/cpp";
 import { dataAnalystRules } from "./rules/data-analyst";
 import { deepLearningRules } from "./rules/deep-learning";
 import { djangoRules } from "./rules/django";
@@ -83,6 +84,7 @@ export const rules: Rule[] = [
   ...bootstrapRules,
   ...cRules,
   ...convexRules,
+  ...cppRules,
   ...dataAnalystRules,
   ...deepLearningRules,
   ...djangoRules,
