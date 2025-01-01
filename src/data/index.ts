@@ -143,7 +143,7 @@ export const rules: Rule[] = [
   (rule): Rule => ({
     ...rule,
     libs: rule.libs || [],
-  })
+  }),
 );
 
 export function getSections() {
