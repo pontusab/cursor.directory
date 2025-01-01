@@ -59,6 +59,7 @@ import { androidRules } from "./rules/android";
 import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { devopsRules } from "./rules/devops-backend";
 import { chromeExtensionRules } from "./rules/chrome-extension";
+import { webScrapingRules } from "./rules/webScraping";
 
 export interface Rule {
   title: string;
@@ -137,11 +138,12 @@ export const rules: Rule[] = [
   ...ghostTailwindcssRules,
   ...devopsRules,
   ...chromeExtensionRules,
+  ...webScrapingRules,
 ].map(
   (rule): Rule => ({
     ...rule,
     libs: rule.libs || [],
-  }),
+  })
 );
 
 export function getSections() {
