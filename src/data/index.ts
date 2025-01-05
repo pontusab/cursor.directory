@@ -10,6 +10,7 @@ import { bootstrapRules } from "./rules/bootstrap";
 import { cRules } from "./rules/c";
 import { chromeExtensionRules } from "./rules/chrome-extension";
 import { convexRules } from "./rules/convex";
+import { cosmwasmRules } from "./rules/cosmwasm";
 import { cppRules } from "./rules/cpp";
 import { dataAnalystRules } from "./rules/data-analyst";
 import { deepLearningRules } from "./rules/deep-learning";
@@ -145,6 +146,7 @@ export const rules: Rule[] = [
   ...webScrapingRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
+  ...cosmwasmRules,
 ].map(
   (rule): Rule => ({
     ...rule,
