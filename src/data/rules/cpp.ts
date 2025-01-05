@@ -3,7 +3,7 @@ export const cppRules = [
     tags: ["cpp", "c++", "Backend Development"],
     title: "C++ Development Cursor Rules",
     slug: "c++-development-cursor-rules",
-    libs: [],
+    libs: ["cpp", "c++"],
     content: `
     # C++ Development Rules
 
@@ -76,8 +76,7 @@ export const cppRules = [
     author: {
       name: "Dudi Viachleder",
       url: "https://github.com/dudi-w",
-      avatar:
-        "https://github.com/dudi-w.png",
+      avatar: "https://github.com/dudi-w.png",
     },
   },
 ];

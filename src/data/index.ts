@@ -57,6 +57,7 @@ import { swiftuiRules } from "./rules/swift";
 import { tauriRules } from "./rules/tauri";
 import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
+import { typescriptRules } from "./rules/typescript";
 import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vivadoRules } from "./rules/vivado";
@@ -72,9 +73,9 @@ export interface Rule {
   tags: string[];
   libs: string[];
   content: string;
-  author: {
+  author?: {
     name: string;
-    url: string;
+    url: string | null;
     avatar: string | null;
   };
 }
@@ -86,6 +87,7 @@ export const rules: Rule[] = [
   ...astroRules,
   ...autohotkeyRules,
   ...blazorRules,
+  ...cosmwasmRules,
   ...bootstrapRules,
   ...chromeExtensionRules,
   ...convexRules,
@@ -146,7 +148,7 @@ export const rules: Rule[] = [
   ...webScrapingRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
-  ...cosmwasmRules,
+  ...typescriptRules,
 ].map(
   (rule): Rule => ({
     ...rule,
