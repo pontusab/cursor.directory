@@ -1,15 +1,18 @@
 import { elixirRules } from "@/data/rules/elixir";
 import { ALRules } from "./rules/al";
+import { androidRules } from "./rules/android";
 import { angularRules } from "./rules/angular";
 import { astroRules } from "./rules/astro";
 import { autohotkeyRules } from "./rules/autohotkey";
 import { blazorRules } from "./rules/blazor";
 import { bootstrapRules } from "./rules/bootstrap";
 import { cRules } from "./rules/c";
+import { chromeExtensionRules } from "./rules/chrome-extension";
 import { convexRules } from "./rules/convex";
 import { cppRules } from "./rules/cpp";
 import { dataAnalystRules } from "./rules/data-analyst";
 import { deepLearningRules } from "./rules/deep-learning";
+import { devopsRules } from "./rules/devops-backend";
 import { djangoRules } from "./rules/django";
 import { dotnetRules } from "./rules/dotnet";
 import { expoReactNativeRules } from "./rules/expo";
@@ -19,6 +22,7 @@ import { flaskRules } from "./rules/flask";
 import { flutterRules } from "./rules/flutter";
 import { frontEndRules } from "./rules/front-end";
 import { gatsbyRules } from "./rules/gastby";
+import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
 import { htmxRules } from "./rules/htmx";
@@ -27,6 +31,7 @@ import { javaRules } from "./rules/java";
 import { jaxRules } from "./rules/jax";
 import { juliaRules } from "./rules/julia";
 import { laravelRules } from "./rules/laravel";
+import { luaRules } from "./rules/lua";
 import { metaPromptRules } from "./rules/meta-prompt";
 import { monorepoTamagui } from "./rules/monorepo-tamagui";
 import { nestjsRules } from "./rules/nestjs";
@@ -50,6 +55,7 @@ import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
 import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
+import { vivadoRules } from "./rules/vivado";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
@@ -78,16 +84,19 @@ interface Author {
 
 export const rules: Rule[] = [
   ...ALRules,
+  ...androidRules,
   ...angularRules,
   ...astroRules,
   ...autohotkeyRules,
   ...blazorRules,
   ...bootstrapRules,
-  ...cRules,
+  ...chromeExtensionRules,
   ...convexRules,
   ...cppRules,
+  ...cRules,
   ...dataAnalystRules,
   ...deepLearningRules,
+  ...devopsRules,
   ...djangoRules,
   ...dotnetRules,
   ...elixirRules,
@@ -98,6 +107,7 @@ export const rules: Rule[] = [
   ...flutterRules,
   ...frontEndRules,
   ...gatsbyRules,
+  ...ghostTailwindcssRules,
   ...goRules,
   ...htmlAndCssRules,
   ...htmxRules,
@@ -106,11 +116,13 @@ export const rules: Rule[] = [
   ...jaxRules,
   ...juliaRules,
   ...laravelRules,
+  ...luaRules,
   ...metaPromptRules,
   ...monorepoTamagui,
   ...nestjsRules,
   ...nextjsRules,
   ...nuxtJsRules,
+  ...onchainkitRules,
   ...pixiJsRules,
   ...pythonRules,
   ...railsRules,
@@ -125,8 +137,10 @@ export const rules: Rule[] = [
   ...swiftuiRules,
   ...tauriRules,
   ...technicalTutorialsRules,
+  ...terraformRules,
   ...uiuxRules,
   ...unityCSharpRules,
+  ...vivadoRules,
   ...vueTsRules,
   ...webDevelopmentRules,
   ...wordpressRules,
