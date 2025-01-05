@@ -58,11 +58,13 @@ import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
 import { uiuxRules } from "./rules/uiux-design";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
+import { usdPythonOmniverseKITdevRules as usdRules } from "./rules/usdPythonOmniverseKITdev";
 import { vivadoRules } from "./rules/vivado";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+
 
 export interface Rule {
   title: string;
@@ -130,6 +132,7 @@ export const rules: Rule[] = [
   ...technicalTutorialsRules,
   ...uiuxRules,
   ...unityCSharpRules,
+  ...(Array.isArray(usdRules) ? usdRules : [usdRules]),
   ...vueTsRules,
   ...webDevelopmentRules,
   ...wordpressRules,
