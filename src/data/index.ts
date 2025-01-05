@@ -60,6 +60,12 @@ import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+import { luaRules } from "./rules/lua";
+import { androidRules } from "./rules/android";
+import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
+import { devopsRules } from "./rules/devops-backend";
+import { chromeExtensionRules } from "./rules/chrome-extension";
+import { webScrapingRules } from "./rules/webScraping";
 
 export interface Rule {
   title: string;
@@ -139,6 +145,14 @@ export const rules: Rule[] = [
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
+  ...terraformRules,
+  ...onchainkitRules,
+  ...luaRules,
+  ...androidRules,
+  ...ghostTailwindcssRules,
+  ...devopsRules,
+  ...chromeExtensionRules,
+  ...webScrapingRules,
 ].map(
   (rule): Rule => ({
     ...rule,
