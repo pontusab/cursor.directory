@@ -58,14 +58,9 @@ import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vivadoRules } from "./rules/vivado";
 import { vueTsRules } from "./rules/vue";
 import { webDevelopmentRules } from "./rules/web-development";
+import { webScrapingRules } from "./rules/web-scraping";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
-import { luaRules } from "./rules/lua";
-import { androidRules } from "./rules/android";
-import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
-import { devopsRules } from "./rules/devops-backend";
-import { chromeExtensionRules } from "./rules/chrome-extension";
-import { webScrapingRules } from "./rules/webScraping";
 
 export interface Rule {
   title: string;
@@ -73,13 +68,11 @@ export interface Rule {
   tags: string[];
   libs: string[];
   content: string;
-  author: Author;
-}
-
-interface Author {
-  name: string;
-  url: string;
-  avatar: string;
+  author: {
+    name: string;
+    url: string;
+    avatar: string | null;
+  };
 }
 
 export const rules: Rule[] = [
@@ -145,13 +138,6 @@ export const rules: Rule[] = [
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
-  ...terraformRules,
-  ...onchainkitRules,
-  ...luaRules,
-  ...androidRules,
-  ...ghostTailwindcssRules,
-  ...devopsRules,
-  ...chromeExtensionRules,
   ...webScrapingRules,
 ].map(
   (rule): Rule => ({
