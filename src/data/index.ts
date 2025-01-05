@@ -61,6 +61,11 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { webScrapingRules } from "./rules/web-scraping";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+import { luaRules } from "./rules/lua";
+import { androidRules } from "./rules/android";
+import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
+import { devopsRules } from "./rules/devops-backend";
+import { robocorpRules } from "./rules/robocorp";
 
 export interface Rule {
   title: string;
@@ -138,6 +143,13 @@ export const rules: Rule[] = [
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
+  ...terraformRules,
+  ...onchainkitRules,
+  ...luaRules,
+  ...androidRules,
+  ...ghostTailwindcssRules,
+  ...devopsRules,
+  ...robocorpRules,
   ...webScrapingRules,
 ].map(
   (rule): Rule => ({
