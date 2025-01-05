@@ -43,6 +43,7 @@ import { pythonRules } from "./rules/python";
 import { railsRules } from "./rules/rails";
 import { reactNativeRules } from "./rules/react-native";
 import { remixRules } from "./rules/remix";
+import { robocorpRules } from "./rules/robocorp";
 import { rustRules } from "./rules/rust";
 import { salesforceRules } from "./rules/salesforce";
 import { solanaRules } from "./rules/solana";
@@ -61,11 +62,6 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { webScrapingRules } from "./rules/web-scraping";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
-import { luaRules } from "./rules/lua";
-import { androidRules } from "./rules/android";
-import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
-import { devopsRules } from "./rules/devops-backend";
-import { robocorpRules } from "./rules/robocorp";
 
 export interface Rule {
   title: string;
@@ -126,6 +122,7 @@ export const rules: Rule[] = [
   ...railsRules,
   ...reactNativeRules,
   ...remixRules,
+  ...robocorpRules,
   ...rustRules,
   ...salesforceRules,
   ...solanaRules,
@@ -141,16 +138,9 @@ export const rules: Rule[] = [
   ...vivadoRules,
   ...vueTsRules,
   ...webDevelopmentRules,
+  ...webScrapingRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
-  ...terraformRules,
-  ...onchainkitRules,
-  ...luaRules,
-  ...androidRules,
-  ...ghostTailwindcssRules,
-  ...devopsRules,
-  ...robocorpRules,
-  ...webScrapingRules,
 ].map(
   (rule): Rule => ({
     ...rule,
