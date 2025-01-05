@@ -2,6 +2,7 @@ import { elixirRules } from "@/data/rules/elixir";
 import { ALRules } from "./rules/al";
 import { androidRules } from "./rules/android";
 import { angularRules } from "./rules/angular";
+import { angularIonicFirebaseFirestoreRules } from "./rules/angular-ionic-firebase-firestore";
 import { astroRules } from "./rules/astro";
 import { autohotkeyRules } from "./rules/autohotkey";
 import { blazorRules } from "./rules/blazor";
@@ -106,6 +107,7 @@ export const rules: Rule[] = [
   ...htmlAndCssRules,
   ...htmxRules,
   ...ionicRules,
+  ...angularIonicFirebaseFirestoreRules,
   ...javaRules,
   ...jaxRules,
   ...juliaRules,
