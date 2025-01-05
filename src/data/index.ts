@@ -5,8 +5,6 @@ import { angularRules } from "./rules/angular";
 import { astroRules } from "./rules/astro";
 import { autohotkeyRules } from "./rules/autohotkey";
 import { blazorRules } from "./rules/blazor";
-import { blazorRules } from "./rules/blazor";
-import { bootstrapRules } from "./rules/bootstrap";
 import { bootstrapRules } from "./rules/bootstrap";
 import { cRules } from "./rules/c";
 import { chromeExtensionRules } from "./rules/chrome-extension";
@@ -27,7 +25,6 @@ import { gatsbyRules } from "./rules/gastby";
 import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { goRules } from "./rules/go";
 import { htmlAndCssRules } from "./rules/htmlandcss";
-import { htmxRules } from "./rules/htmx";
 import { htmxRules } from "./rules/htmx";
 import { ionicRules } from "./rules/ionic";
 import { javaRules } from "./rules/java";
@@ -81,16 +78,19 @@ interface Author {
 
 export const rules: Rule[] = [
   ...ALRules,
+  ...androidRules,
   ...angularRules,
   ...astroRules,
   ...autohotkeyRules,
   ...blazorRules,
   ...bootstrapRules,
-  ...cRules,
+  ...chromeExtensionRules,
   ...convexRules,
   ...cppRules,
+  ...cRules,
   ...dataAnalystRules,
   ...deepLearningRules,
+  ...devopsRules,
   ...djangoRules,
   ...dotnetRules,
   ...elixirRules,
@@ -101,6 +101,7 @@ export const rules: Rule[] = [
   ...flutterRules,
   ...frontEndRules,
   ...gatsbyRules,
+  ...ghostTailwindcssRules,
   ...goRules,
   ...htmlAndCssRules,
   ...htmxRules,
@@ -109,11 +110,13 @@ export const rules: Rule[] = [
   ...jaxRules,
   ...juliaRules,
   ...laravelRules,
+  ...luaRules,
   ...metaPromptRules,
   ...monorepoTamagui,
   ...nestjsRules,
   ...nextjsRules,
   ...nuxtJsRules,
+  ...onchainkitRules,
   ...pixiJsRules,
   ...pythonRules,
   ...railsRules,
@@ -128,22 +131,14 @@ export const rules: Rule[] = [
   ...swiftuiRules,
   ...tauriRules,
   ...technicalTutorialsRules,
+  ...terraformRules,
   ...uiuxRules,
   ...unityCSharpRules,
+  ...vivadoRules,
   ...vueTsRules,
   ...webDevelopmentRules,
   ...wordpressRules,
   ...wordpressWoocommerce,
-  ...terraformRules,
-  ...onchainkitRules,
-  ...luaRules,
-  ...androidRules,
-  ...ghostTailwindcssRules,
-  ...devopsRules,
-  ...chromeExtensionRules,
-  ...htmxRules,
-  ...bootstrapRules,
-  ...vivadoRules,
 ].map(
   (rule): Rule => ({
     ...rule,
