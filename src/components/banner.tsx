@@ -1,17 +1,178 @@
 "use client";
 
 import { XIcon } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Banner() {
   const [isVisible, setIsVisible] = useState(true);
+  const [showLanguine, setShowLanguine] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(true); // Start as true
+  const [animateDirection, setAnimateDirection] = useState<"up" | "down">("up");
+
+  useEffect(() => {
+    // Initial animation up
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 300);
+
+    const timer = setTimeout(() => {
+      setIsAnimating(true);
+      setAnimateDirection("down");
+      // Animate midday banner down first
+      setTimeout(() => {
+        setShowLanguine(true);
+        setAnimateDirection("up");
+        // Then animate languine banner up
+        setTimeout(() => {
+          setIsAnimating(false);
+        }, 300);
+      }, 300);
+    }, 8000); // Changed to 8 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleClose = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    setIsVisible(false);
+    setIsAnimating(true);
+    setAnimateDirection("down");
+    setTimeout(() => {
+      if (showLanguine) {
+        setShowLanguine(false);
+      } else {
+        setIsVisible(false);
+      }
+      setIsAnimating(false);
+    }, 300);
   };
 
   if (!isVisible) return null;
+
+  const slideClass = isAnimating
+    ? animateDirection === "down"
+      ? "animate-out slide-out-to-bottom duration-300"
+      : "animate-in slide-in-from-bottom-full duration-300"
+    : "";
+
+  if (showLanguine) {
+    return (
+      <a
+        href="https://languine.ai?utm_source=directory"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div
+          className={`fixed overflow-hidden ${slideClass} z-50 bottom-2 md:bottom-4 right-2 md:right-4 w-[calc(100vw-16px)] max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group`}
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-4 top-7"
+          >
+            <path
+              d="M16.7534 19.4328V15.601H19.0896V19.4328H16.7534Z"
+              fill="currentColor"
+            />
+            <path
+              d="M14.1123 19.4328V15.601H16.4485V19.4328H14.1123Z"
+              fill="currentColor"
+            />
+            <path
+              d="M11.4722 19.4328V15.601H13.8084V19.4328H11.4722Z"
+              fill="currentColor"
+            />
+            <path
+              d="M8.83154 19.4328V15.601H11.1677V19.4328H8.83154Z"
+              fill="currentColor"
+            />
+            <path
+              d="M6.19238 19.4328V15.601H8.52857V19.4328H6.19238Z"
+              fill="currentColor"
+            />
+            <path
+              d="M3.55127 19.4328V15.601H5.88746V19.4328H3.55127Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.910645 19.4328V15.601H3.24683V19.4328H0.910645Z"
+              fill="currentColor"
+            />
+            <path
+              d="M6.91895 15.8689V11.0791H7.21257V15.8689H6.91895ZM7.5062 15.8689V11.0791H7.79983V15.8689H7.5062Z"
+              fill="currentColor"
+            />
+            <path
+              d="M3.55127 15.6744V11.8425H5.88746V15.6744H3.55127Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.910645 15.6744V11.8425H3.24683V15.6744H0.910645Z"
+              fill="currentColor"
+            />
+            <path
+              d="M6.91895 12.1104V7.32056H7.21257V12.1104H6.91895ZM7.5062 12.1104V7.32056H7.79983V12.1104H7.5062Z"
+              fill="currentColor"
+            />
+            <path
+              d="M3.55127 11.9159V8.08405H5.88746V11.9159H3.55127Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.910645 11.9159V8.08405H3.24683V11.9159H0.910645Z"
+              fill="currentColor"
+            />
+            <path
+              d="M6.91895 8.35202V3.56219H7.21257V8.35202H6.91895ZM7.5062 8.35202V3.56219H7.79983V8.35202H7.5062Z"
+              fill="currentColor"
+            />
+            <path
+              d="M3.55127 8.15749V4.32562H5.88746V8.15749H3.55127Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.910645 8.15749V4.32562H3.24683V8.15749H0.910645Z"
+              fill="currentColor"
+            />
+            <path
+              d="M7.50637 4.59354V2.2335H6.19238V1.91785H7.8V4.59354H7.50637ZM6.91912 4.59354V2.8648H6.19238V2.54915H7.21274V4.59354H6.91912Z"
+              fill="currentColor"
+            />
+            <path
+              d="M3.55127 4.399V0.567139H5.88746V4.399H3.55127Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.910645 4.399V0.567139H3.24683V4.399H0.910645Z"
+              fill="currentColor"
+            />
+          </svg>
+
+          <div className="flex justify-between">
+            <div className="flex flex-col space-y-0.5 pl-[40px]">
+              <div className="flex space-x-2 items-center">
+                <span className="text-sm font-medium">Languine</span>
+              </div>
+              <p className="text-xs text-[#878787]">
+                Translate your application with AI. Fast, accurate, and easy to
+                integrate. ↗
+              </p>
+            </div>
+
+            <button
+              type="button"
+              className="absolute right-1.5 top-1.5 text-[#878787] hidden group-hover:block"
+              onClick={handleClose}
+            >
+              <XIcon className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </a>
+    );
+  }
 
   return (
     <a
@@ -19,7 +180,9 @@ export function Banner() {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="fixed overflow-hidden animate-in slide-in-from-bottom-full z-50 bottom-2 md:bottom-4 right-2 md:right-4 w-[calc(100vw-16px)] max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group">
+      <div
+        className={`fixed overflow-hidden ${slideClass} z-50 bottom-2 md:bottom-4 right-2 md:right-4 w-[calc(100vw-16px)] max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={50}
