@@ -5,7 +5,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import type { Rule } from "@/data";
 import { cn, generateNameAbbr, isImageUrl } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
@@ -28,9 +27,9 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         </div>
 
         <Link href={`/${rule.slug}`}>
-          <ScrollArea className="h-full">
+          <div className="h-full overflow-y-auto">
             <code className="text-sm block pr-3">{rule.content}</code>
-          </ScrollArea>
+          </div>
         </Link>
       </CardContent>
 

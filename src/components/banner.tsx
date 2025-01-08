@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 
 export function Banner() {
   const [isVisible, setIsVisible] = useState(true);
-  const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
+  const [currentBannerIndex, setCurrentBannerIndex] = useState(
+    Math.floor(Math.random() * 2),
+  ); // Random initial banner
   const [isAnimating, setIsAnimating] = useState(true); // Start as true
   const [animateDirection, setAnimateDirection] = useState<"up" | "down">("up");
 
