@@ -5,9 +5,11 @@ import { useEffect, useState } from "react";
 
 export function Banner() {
   const [isVisible, setIsVisible] = useState(true);
-  const [currentBannerIndex, setCurrentBannerIndex] = useState(
-    Math.floor(Math.random() * 2),
-  ); // Random initial banner
+  const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
+
+  useEffect(() => {
+    setCurrentBannerIndex(Math.floor(Math.random() * 2));
+  }, []); // Run once on mount
   const [isAnimating, setIsAnimating] = useState(true); // Start as true
   const [animateDirection, setAnimateDirection] = useState<"up" | "down">("up");
 
@@ -185,7 +187,7 @@ export function Banner() {
   return (
     <a href={currentBanner.href} target="_blank" rel="noreferrer">
       <div
-        className={`fixed overflow-hidden ${slideClass} z-50 bottom-2 md:bottom-4 right-2 md:right-4 w-[calc(100vw-16px)] max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group`}
+        className={`fixed overflow-hidden ${slideClass} z-50 bottom-4 md:bottom-4 left-4 md:left-auto right-4 md:right-4 w-[calc(100vw-32px)] md:w-[calc(100vw-16px)] md:max-w-[350px] border border-border p-4 transition-all bg-background h-[88px] group`}
       >
         {currentBanner.logo}
 
