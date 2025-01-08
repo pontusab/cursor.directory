@@ -2,9 +2,9 @@ import { Menu } from "@/components/menu";
 import { RuleCard } from "@/components/rule-card";
 import { getRuleBySlug, rules } from "@/data";
 
-export async function generateMetadata({
-  params,
-}: { params: { slug: string } }) {
+type Params = Promise<{ slug: string }>;
+
+export async function generateMetadata({ params }: { params: Params }) {
   const { slug } = await params;
   const rule = getRuleBySlug(slug);
 
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: Params }) {
   const { slug } = await params;
   const rule = getRuleBySlug(slug);
 
