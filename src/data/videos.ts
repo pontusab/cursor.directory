@@ -150,4 +150,13 @@ export const videos = [
         "https://yt3.ggpht.com/F3ahPSZ8266o3g-63hgpAYmLBxR2-Pove0uuE8OSKbcVRmuonb5wKAfCocdVrJ8bh8J315QwKA=s88-c-k-c0x00ffffff-no-rj",
     },
   },
+  {
+    "title": "Master Cursor Rules and Fix AI Code Mistakes—Here’s How",
+    "description": "Frustrated with AI messing up your code? Here’s how I use Cursor Rules to make it work for me. ",
+    "url": "https://www.youtube.com/embed/FLdCJe3Fxzw?si=5Z0SzMIY0RE4Mhra",
+    "author": {
+      "name": "Richardson Dackam",
+      "image": "https://yt3.ggpht.com/wfdn_1ByKhAo3OaoSF3dXcKUM79Slz8p7m2DSLdk_nkCrDBdRAqFYieWziwmVTfiMf0sM2YhNA=s176-c-k-c0x00ffffff-no-rj"
+    }
+  }
 ];
