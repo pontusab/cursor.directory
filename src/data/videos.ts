@@ -1,11 +1,11 @@
 export const videos = [
   {
     "title": "Cursor AI for Beginners: A Complete Guide",
-    "description": "Are you new to Cursor AI and wondering how to get started? I'm going to show you how Cursor AI works (No Experience Needed).",
-    "url": "https://youtu.be/YG459bD8qmw?si=Nzmpk7MABvKshrsw",
+    "description": "Are you new to Cursor AI and wondering how to get started? In this video you'll learn exactly how to use Cursor AI (No Experience Needed).",
+    "url": "https://www.youtube.com/embed/YG459bD8qmw",
     "author": {
       "name": "Richardson Dackam",
-      "image": "https://img.youtube.com/vi/YG459bD8qmw/maxresdefault.jpg"
+      "image": "https://yt3.ggpht.com/wfdn_1ByKhAo3OaoSF3dXcKUM79Slz8p7m2DSLdk_nkCrDBdRAqFYieWziwmVTfiMf0sM2YhNA=s176-c-k-c0x00ffffff-no-rj"
     }
   },
   {
