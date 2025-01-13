@@ -66,6 +66,7 @@ import { webDevelopmentRules } from "./rules/web-development";
 import { webScrapingRules } from "./rules/web-scraping";
 import { wordpressRules } from "./rules/wordpress";
 import { wordpressWoocommerce } from "./rules/wordpress-woocommerce";
+import {nextjsNewRules} from "./rules/nextjsNewRules";
 
 export interface Rule {
   title: string;
@@ -149,6 +150,7 @@ export const rules: Rule[] = [
   ...wordpressRules,
   ...wordpressWoocommerce,
   ...typescriptRules,
+  ...nextjsNewRules,
 ].map(
   (rule): Rule => ({
     ...rule,
