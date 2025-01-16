@@ -5,24 +5,12 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import type { Rule } from "@/data";
 import { cn, generateNameAbbr, isImageUrl } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";
 import { ShareButton } from "./share-button";
-
-export type Rule = {
-  libs?: string[];
-  content: string;
-  title?: string;
-  slug: string;
-  author: {
-    name: string;
-    url: string;
-    avatar: string;
-  };
-};
 
 export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
   return (
@@ -39,26 +27,31 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         </div>
 
         <Link href={`/${rule.slug}`}>
-          <ScrollArea className="h-full">
+          <div className="h-full overflow-y-auto">
             <code className="text-sm block pr-3">{rule.content}</code>
-          </ScrollArea>
+          </div>
         </Link>
       </CardContent>
 
       <CardHeader className="p-0 space-y-1">
         <div className="flex items-center justify-between">
-          <CardTitle className="text-sm">{rule.author.name}</CardTitle>
-          <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
-            <Avatar className="size-6">
-              {isImageUrl(rule.author.avatar) ? (
-                <AvatarImage src={rule.author.avatar} alt={rule.author.name} />
-              ) : (
-                <AvatarFallback>
-                  {generateNameAbbr(rule.author.name)}
-                </AvatarFallback>
-              )}
-            </Avatar>
-          </a>
+          <CardTitle className="text-sm">{rule.author?.name}</CardTitle>
+          {rule.author?.url && (
+            <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
+              <Avatar className="size-6">
+                {rule.author.avatar && isImageUrl(rule.author.avatar) ? (
+                  <AvatarImage
+                    src={rule.author.avatar}
+                    alt={rule.author.name}
+                  />
+                ) : (
+                  <AvatarFallback>
+                    {generateNameAbbr(rule.author.name)}
+                  </AvatarFallback>
+                )}
+              </Avatar>
+            </a>
+          )}
         </div>
         {rule.libs && rule.libs.length > 0 && (
           <Popover>

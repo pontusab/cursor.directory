@@ -1,6 +1,7 @@
 import { Menu } from "@/components/menu";
-import { type Rule, RuleCard } from "@/components/rule-card";
+import { RuleCard } from "@/components/rule-card";
 import { Tabs } from "@/components/tabs";
+import type { Rule } from "@/data";
 import { getPopularRules } from "@/data/popular";
 
 export const metadata = {

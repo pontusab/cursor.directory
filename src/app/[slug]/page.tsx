@@ -2,10 +2,11 @@ import { Menu } from "@/components/menu";
 import { RuleCard } from "@/components/rule-card";
 import { getRuleBySlug, rules } from "@/data";
 
-export async function generateMetadata({
-  params,
-}: { params: { slug: string } }) {
-  const rule = getRuleBySlug(params.slug);
+type Params = Promise<{ slug: string }>;
+
+export async function generateMetadata({ params }: { params: Params }) {
+  const { slug } = await params;
+  const rule = getRuleBySlug(slug);
 
   return {
     title: `${rule?.title} rule by ${rule?.author?.name}`,
@@ -19,8 +20,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const rule = getRuleBySlug(params.slug);
+export default async function Page({ params }: { params: Params }) {
+  const { slug } = await params;
+  const rule = getRuleBySlug(slug);
 
   if (!rule) {
     return <div>Rule not found</div>;
