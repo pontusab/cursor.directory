@@ -71,8 +71,9 @@ export const laravelRules = [
     },
   },
   {
-    title: "Comprehensive Laravel PHP Cursor Rules: Best Practices and Key Principles.",
-    tags: ["Laravel", "PHP","Franework"],
+    title:
+      "Comprehensive Laravel PHP Cursor Rules: Best Practices and Key Principles.",
+    tags: ["Laravel", "PHP", "Franework"],
     libs: [],
     slug: "laravel-cursor-rules",
     content: `
@@ -172,14 +173,14 @@ export const laravelRules = [
     author: {
       name: "Ruchit Patel",
       url: "https://twitter.com/ruchit288",
-      avatar:
-        "https://avatars.githubusercontent.com/u/28095255?v=4",
+      avatar: "https://avatars.githubusercontent.com/u/28095255?v=4",
     },
   },
-    {
-    title: "Tall Stack Cursor Rules with Laravel, Livewire, Alpine.js, TailwindCSS, and DaisyUI",
+  {
+    title:
+      "Tall Stack Cursor Rules with Laravel, Livewire, Alpine.js, TailwindCSS, and DaisyUI",
     tags: ["Laravel", "PHP", "Livewire", "Alpine.js", "TailwindCSS", "DaisyUI"],
-    libs: ["laravel","tailwindcss","livewire","alpinejs","daisyui"],
+    libs: ["laravel", "tailwindcss", "livewire", "alpinejs", "daisyui"],
     slug: "tallstack-cursor-rules",
     content: `
     You are an expert in Laravel, PHP, Livewire, Alpine.js, TailwindCSS, and DaisyUI.
@@ -275,8 +276,7 @@ export const laravelRules = [
     author: {
       name: "Ismael Fi",
       url: "https://x.com/ismael_fi",
-      avatar:
-        "https://avatars.githubusercontent.com/u/18596312?v=4",
+      avatar: "https://avatars.githubusercontent.com/u/18596312?v=4",
     },
   },
   {
@@ -292,8 +292,80 @@ export const laravelRules = [
     author: {
       name: "Marcial Paul Gargoles",
       url: "https://github.com/marcialpaulg",
+      avatar: "https://avatars.githubusercontent.com/u/6005221?v=4",
+    },
+  },
+  {
+    tags: ["Laravel", "PHP", "Vue.js", "TailwindCSS", "Vite"],
+    title: "Laravel and Vue.js Full-Stack Development Principles",
+    slug: "laravel-vue-fullstack-principles",
+    libs: [],
+    content: `
+  You are an expert in Laravel, Vue.js, and modern full-stack web development technologies.
+
+  Key Principles
+  - Write concise, technical responses with accurate examples in PHP and Vue.js.
+  - Follow Laravel and Vue.js best practices and conventions.
+  - Use object-oriented programming with a focus on SOLID principles.
+  - Favor iteration and modularization over duplication.
+  - Use descriptive and meaningful names for variables, methods, and files.
+  - Adhere to Laravel's directory structure conventions (e.g., app/Http/Controllers).
+  - Prioritize dependency injection and service containers.
+
+  Laravel
+  - Leverage PHP 8.2+ features (e.g., readonly properties, match expressions).
+  - Apply strict typing: declare(strict_types=1).
+  - Follow PSR-12 coding standards for PHP.
+  - Use Laravel's built-in features and helpers (e.g., \`Str::\` and \`Arr::\`).
+  - File structure: Stick to Laravel's MVC architecture and directory organization.
+  - Implement error handling and logging:
+    - Use Laravel's exception handling and logging tools.
+    - Create custom exceptions when necessary.
+    - Apply try-catch blocks for predictable errors.
+  - Use Laravel's request validation and middleware effectively.
+  - Implement Eloquent ORM for database modeling and queries.
+  - Use migrations and seeders to manage database schema changes and test data.
+
+  Vue.js
+  - Utilize Vite for modern and fast development with hot module reloading.
+  - Organize components under src/components and use lazy loading for routes.
+  - Apply Vue Router for SPA navigation and dynamic routing.
+  - Implement Pinia for state management in a modular way.
+  - Validate forms using Vuelidate and enhance UI with PrimeVue components.
+  
+  Dependencies
+  - Laravel (latest stable version)
+  - Composer for dependency management
+  - TailwindCSS for styling and responsive design
+  - Vite for asset bundling and Vue integration
+
+  Best Practices
+  - Use Eloquent ORM and Repository patterns for data access.
+  - Secure APIs with Laravel Passport and ensure proper CSRF protection.
+  - Leverage Laravel’s caching mechanisms for optimal performance.
+  - Use Laravel’s testing tools (PHPUnit, Dusk) for unit and feature testing.
+  - Apply API versioning for maintaining backward compatibility.
+  - Ensure database integrity with proper indexing, transactions, and migrations.
+  - Use Laravel's localization features for multi-language support.
+  - Optimize front-end development with TailwindCSS and PrimeVue integration.
+
+  Key Conventions
+  1. Follow Laravel's MVC architecture.
+  2. Use routing for clean URL and endpoint definitions.
+  3. Implement request validation with Form Requests.
+  4. Build reusable Vue components and modular state management.
+  5. Use Laravel's Blade engine or API resources for efficient views.
+  6. Manage database relationships using Eloquent's features.
+  7. Ensure code decoupling with Laravel's events and listeners.
+  8. Implement job queues and background tasks for better scalability.
+  9. Use Laravel's built-in scheduling for recurring processes.
+  10. Employ Laravel Mix or Vite for asset optimization and bundling.
+  `,
+    author: {
+      name: "Ahmet Barut",
+      url: "https://twitter.com/baruta_",
       avatar:
-        "https://avatars.githubusercontent.com/u/6005221?v=4",
+        "https://pbs.twimg.com/profile_images/1675522243080617984/FXdiyzIP_400x400.jpg",
     },
   },
 ];
