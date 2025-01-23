@@ -1,5 +1,6 @@
 import { elixirRules } from "@/data/rules/elixir";
 import { ALRules } from "./rules/al";
+import { prismaRules } from "./rules/prisma";
 import { androidRules } from "./rules/android";
 import { angularRules } from "./rules/angular";
 import { angularIonicFirebaseFirestoreRules } from "./rules/angular-ionic-firebase-firestore";
