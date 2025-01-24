@@ -59,6 +59,7 @@ import { technicalTutorialsRules } from "./rules/technical-tutorials";
 import { terraformRules } from "./rules/terraform";
 import { typescriptRules } from "./rules/typescript";
 import { uiuxRules } from "./rules/uiux-design";
+import { uxbestRules } from "./rules/uxbestpractices";
 import { unityCSharpRules } from "./rules/unity-c-sharp";
 import { vivadoRules } from "./rules/vivado";
 import { vueTsRules } from "./rules/vue";
@@ -141,6 +142,7 @@ export const rules: Rule[] = [
   ...technicalTutorialsRules,
   ...terraformRules,
   ...uiuxRules,
+  ...uxbestRules,
   ...unityCSharpRules,
   ...vivadoRules,
   ...vueTsRules,
