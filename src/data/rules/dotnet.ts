@@ -16,6 +16,12 @@ export const dotnetRules = [
   - Prefer LINQ and lambda expressions for collection operations.
   - Use descriptive variable and method names (e.g., 'IsUserSignedIn', 'CalculateTotal').
   - Structure files according to .NET conventions (Controllers, Models, Services, etc.).
+  - Before creating any new classes:
+    1. Check the provided list of existing files or classes if available
+    2. Look for existing classes or files with similar names or purposes
+    3. Only create new classes if no suitable existing classes are found
+    4. Search for existing classes if they are referenced but not created, before creating new ones
+    5. Search in other projects for existing classes, e.g., Shared, Abstractions, etc.
 
   ## Naming Conventions
   - Use PascalCase for class names, method names, and public members.
