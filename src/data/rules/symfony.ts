@@ -5,7 +5,7 @@ export const symfonyRules = [
     slug: "symfony-php-cursor-rules",
     libs: [],
     content: `
-  # Symfony Development Guidelines
+  # Symfony Development Guidelines 
 
 ## Core Principles
 - Write concise, technical responses with accurate PHP/Symfony examples
