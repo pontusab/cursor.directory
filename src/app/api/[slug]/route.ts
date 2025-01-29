@@ -10,11 +10,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function GET(
-  _: Request,
-  { params }: { params: { slug: string } },
-) {
-  const { slug } = params;
+type Params = Promise<{ slug: string }>;
+
+export async function GET(_: Request, segmentData: { params: Params }) {
+  const { slug } = await segmentData.params;
 
   if (!slug) {
     return NextResponse.json({ error: "No slug provided" }, { status: 400 });

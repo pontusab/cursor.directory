@@ -12,7 +12,9 @@ export const voteAction = actionClient
     }),
   )
   .action(async ({ parsedInput: { slug } }) => {
-    const clientIP = headers().get("x-forwarded-for");
+    const clientIP = await headers().then((headers) =>
+      headers.get("x-forwarded-for"),
+    );
 
     const hasVoted = await redis.sadd(`rules:${slug}:ip:${clientIP}`, true);
 

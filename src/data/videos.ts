@@ -1,5 +1,14 @@
 export const videos = [
   {
+    "title": "Cursor AI for Beginners: A Complete Guide",
+    "description": "Are you new to Cursor AI and wondering how to get started? In this video you'll learn exactly how to use Cursor AI (No Experience Needed).",
+    "url": "https://www.youtube.com/embed/YG459bD8qmw",
+    "author": {
+      "name": "Richardson Dackam",
+      "image": "https://yt3.ggpht.com/wfdn_1ByKhAo3OaoSF3dXcKUM79Slz8p7m2DSLdk_nkCrDBdRAqFYieWziwmVTfiMf0sM2YhNA=s176-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  {
     title: "Cursor AI tutorial for beginners",
     description:
       "In this episode, I am joined by Ras Mic, a full stack engineer & YouTuber, where we dive deep into the frameworks and strategies on how to best use Cursor AI. Mic shares his unique insights into how to use and set up Cursor to make the experience of building on top of Cursor as easy and seamless as possible. Learn how to use Cursor like a pro!",
@@ -141,4 +150,13 @@ export const videos = [
         "https://yt3.ggpht.com/F3ahPSZ8266o3g-63hgpAYmLBxR2-Pove0uuE8OSKbcVRmuonb5wKAfCocdVrJ8bh8J315QwKA=s88-c-k-c0x00ffffff-no-rj",
     },
   },
+  {
+    "title": "Master Cursor Rules and Fix AI Code Mistakes—Here’s How",
+    "description": "Frustrated with AI messing up your code? Here’s how I use Cursor Rules to make it work for me. ",
+    "url": "https://www.youtube.com/embed/FLdCJe3Fxzw?si=5Z0SzMIY0RE4Mhra",
+    "author": {
+      "name": "Richardson Dackam",
+      "image": "https://yt3.ggpht.com/wfdn_1ByKhAo3OaoSF3dXcKUM79Slz8p7m2DSLdk_nkCrDBdRAqFYieWziwmVTfiMf0sM2YhNA=s176-c-k-c0x00ffffff-no-rj"
+    }
+  }
 ];
