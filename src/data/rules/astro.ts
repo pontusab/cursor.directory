@@ -9,7 +9,7 @@ export const astroRules = [
 
   Key Principles
   - Write concise, technical responses with accurate Astro examples.
-  - Leverage Astro's partial hydration and multi-framework support effectively.
+  - Leverage Astro's partial hydration and islands architecture effectively.
   - Prioritize static generation and minimal JavaScript for optimal performance.
   - Use descriptive variable names and follow Astro's naming conventions.
   - Organize files using Astro's file-based routing system.
@@ -26,10 +26,10 @@ export const astroRules = [
 
   Component Development
   - Create .astro files for Astro components.
-  - Use framework-specific components (React, Vue, Svelte) when necessary.
+  - Use framework-specific components (React, Vue, Svelte) only when required.
   - Implement proper component composition and reusability.
   - Use Astro's component props for data passing.
-  - Leverage Astro's built-in components like <Markdown /> when appropriate.
+  - Leverage Astro's content-driven components when appropriate.
 
   Routing and Pages
   - Utilize Astro's file-based routing system in the src/pages/ directory.
@@ -40,44 +40,44 @@ export const astroRules = [
   Content Management
   - Use Markdown (.md) or MDX (.mdx) files for content-heavy pages.
   - Leverage Astro's built-in support for frontmatter in Markdown files.
-  - Implement content collections for organized content management.
+  - Implement typed content collections for organized content management.
 
   Styling
   - Use Astro's scoped styling with <style> tags in .astro files.
   - Leverage global styles when necessary, importing them in layouts.
   - Utilize CSS preprocessing with Sass or Less if required.
-  - Implement responsive design using CSS custom properties and media queries.
+  - Implement responsive design using modern CSS features and media queries.
 
   Performance Optimization
   - Minimize use of client-side JavaScript; leverage Astro's static generation.
   - Use the client:* directives judiciously for partial hydration:
     - client:load for immediately needed interactivity
     - client:idle for non-critical interactivity
-    - client:visible for components that should hydrate when visible
-  - Implement proper lazy loading for images and other assets.
-  - Utilize Astro's built-in asset optimization features.
+    - client:visible for components that hydrate when visible
+  - Implement modern image handling through Astro's asset pipeline.
+  - Utilize Astro's built-in optimization features for all assets.
 
   Data Fetching
   - Use Astro.props for passing data to components.
   - Implement getStaticPaths() for fetching data at build time.
-  - Use Astro.glob() for working with local files efficiently.
+  - Use content collections for efficient content management.
   - Implement proper error handling for data fetching operations.
 
   SEO and Meta Tags
-  - Use Astro's <head> tag for adding meta information.
-  - Implement canonical URLs for proper SEO.
-  - Use the <SEO> component pattern for reusable SEO setups.
+  - Use Astro's metadata utilities for structured SEO implementation.
+  - Implement canonical URLs and semantic markup for SEO.
+  - Follow modern SEO patterns with proper schema.org markup.
 
   Integrations and Plugins
   - Utilize Astro integrations for extending functionality.
   - Use Astro's built-in assets handling for optimized image delivery.
   - Implement proper configuration for integrations in astro.config.mjs.
-  - Use Astro's official integrations when available for better compatibility.
+  - Prefer Astro's official integrations for better compatibility.
 
   Build and Deployment
   - Optimize the build process using Astro's build command.
   - Implement proper environment variable handling for different environments.
-  - Use static hosting platforms compatible with Astro (Netlify, Vercel, etc.).
+  - Use static hosting platforms compatible with Astro (Netlify, Vercel, GitHub Pages, etc.).
   - Implement proper CI/CD pipelines for automated builds and deployments.
 
   Styling with Tailwind CSS
@@ -105,7 +105,7 @@ export const astroRules = [
   2. Use TypeScript for enhanced type safety and developer experience.
   3. Implement proper error handling and logging.
   4. Leverage Astro's RSS feed generation for content-heavy sites.
-  5. Use Astro's Image component for optimized image delivery.
+  5. Use Astro's modern asset handling for optimized delivery.
 
   Performance Metrics
   - Prioritize Core Web Vitals (LCP, FID, CLS) in development.
