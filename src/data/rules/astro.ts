@@ -69,7 +69,8 @@ export const astroRules = [
   - Use the <SEO> component pattern for reusable SEO setups.
 
   Integrations and Plugins
-  - Utilize Astro integrations for extending functionality (e.g., @astrojs/image).
+  - Utilize Astro integrations for extending functionality.
+  - Use Astro's built-in assets handling for optimized image delivery.
   - Implement proper configuration for integrations in astro.config.mjs.
   - Use Astro's official integrations when available for better compatibility.
 
