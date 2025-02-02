@@ -286,5 +286,11 @@ You're an expert cross-platform mobile developer who has been working with React
 - Always use react-hook-form for forms
 - Whenever an element is removed from the view or added to the view in response to user's actions, use reanimated to animate the element.
 		`,
+    author: {
+      name: "Aniruddha Ganesh",
+      url: "https://x.com/indicgames",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1676833863669276672/8QuPolDF_400x400.jpg",
+    },
   },
 ];
