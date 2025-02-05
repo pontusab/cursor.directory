@@ -2,59 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force scrollbar styles globally */
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #666666 #2a2a2a; /* Firefox */
+}
+
+/* Force Webkit scrollbar styles (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666666 !important;
+  border-radius: 4px !important;
+  border: none !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888888 !important;
+}
+
 @layer base {
   :root {
-    --background: 0, 0%, 95%;
-    --foreground: 210 40% 2%;
-    --card: 0 0% 90%;
-    --card-foreground: 210 40% 2%;
-    --popover: 0, 0%, 95%;
-    --popover-foreground: 210 40% 2%;
-    --primary: 210 40% 2%;
-    --primary-foreground: 222.2 47.4% 88.8%;
-    --secondary: 217.2 32.6% 82.5%;
-    --secondary-foreground: 210 40% 2%;
-    --muted: 217.2 32.6% 82.5%;
-    --muted-foreground: 215 20.2% 34.9%;
-    --accent: 0 0% 83%;
-    --accent-foreground: 210 40% 2%;
-    --destructive: 0 62.8% 69.4%;
-    --destructive-foreground: 210 40% 2%;
-    --border: 0 0% 83%;
-    --input: 217.2 32.6% 82.5%;
-    --ring: 212.7 26.8% 16.1%;
-    --chart-1: 40 70% 50%;
-    --chart-2: 340 60% 55%;
-    --chart-3: 210 80% 45%;
-    --chart-4: 100 65% 40%;
-    --chart-5: 160 75% 45%;
+    --background: 0, 0%, 98%;
+    --foreground: 0, 0%, 12%;
+    --card: 0 0% 94%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0, 0%, 98%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 220, 6%, 40%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220, 5%, 84%;
+    --secondary-foreground: 0 0% 12%;
+    --muted: 220, 5%, 84%;
+    --muted-foreground: 220, 6%, 40%;
+    --accent: 220, 5%, 89%;
+    --accent-foreground: 0 0% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220, 5%, 84%;
+    --input: 220, 5%, 84%;
+    --ring: 220, 6%, 40%;
+    --chart-1: 220, 15%, 45%;
+    --chart-2: 220, 10%, 55%;
+    --chart-3: 220, 8%, 65%;
+    --chart-4: 220, 12%, 35%;
+    --chart-5: 220, 6%, 75%;
   }
 
   .dark {
-    --background: 0, 0%, 5%;
-    --foreground: 210 40% 98%;
-    --card: 0 0% 10%;
-    --card-foreground: 210 40% 98%;
-    --popover: 0, 0%, 5%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 0 0% 17%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 0 0% 17%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --background: 0, 0%, 12%;
+    --foreground: 0, 0%, 98%;
+    --card: 0 0% 16%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0, 0%, 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 220, 5%, 84%;
+    --primary-foreground: 0 0% 12%;
+    --secondary: 220, 6%, 25%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220, 6%, 25%;
+    --muted-foreground: 220, 5%, 74%;
+    --accent: 220, 6%, 20%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220, 6%, 25%;
+    --input: 220, 6%, 25%;
+    --ring: 220, 5%, 84%;
+    --chart-1: 220, 15%, 75%;
+    --chart-2: 220, 10%, 65%;
+    --chart-3: 220, 8%, 85%;
+    --chart-4: 220, 12%, 55%;
+    --chart-5: 220, 6%, 95%;
   }
 }
 
@@ -70,7 +97,26 @@
 }
 
 .metall {
-  border: 2px solid #121212;
-  background: radial-gradient(741.61% 493.66% at -64.2% -418.75%, rgba(89, 96, 106, 0.81) 2.51%, rgba(85, 91, 105, 0.81) 6.06%, rgba(176, 176, 176, 0.82) 11.51%, rgba(95, 101, 115, 0.64) 17.5%, rgba(169, 171, 179, 0.86) 23.07%, rgba(182, 185, 192, 0.83) 33.45%, rgba(242, 243, 245, 0.81) 45%, rgba(98, 107, 116, 0.76) 60%, rgba(114, 122, 130, 0.77) 60%, rgba(142, 149, 157, 0.87) 60.79%, rgba(239, 239, 241, 0.85) 68.08%, rgba(105, 112, 122, 0.74) 74.82%, rgba(87, 93, 107, 0.83) 78.81%, rgba(99, 106, 116, 0.80) 83.61%, rgba(241, 241, 243, 0.78) 93.62%, rgba(151, 154, 163, 0.73) 97.03%, rgba(177, 179, 185, 0.79) 98.83%);
+  border: 1px solid #404040;
+  background: radial-gradient(
+    741.61% 493.66% at -64.2% -418.75%,
+    #4a4a4a 2.51%,
+    #525252 6.06%,
+    #666666 11.51%,
+    #737373 17.5%,
+    #808080 23.07%,
+    #999999 33.45%,
+    #a6a6a6 45%,
+    #8c8c8c 60%,
+    #808080 60%,
+    #737373 60.79%,
+    #666666 68.08%,
+    #595959 74.82%,
+    #4d4d4d 78.81%,
+    #404040 83.61%,
+    #333333 93.62%,
+    #262626 97.03%,
+    #1a1a1a 98.83%
+  );
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
