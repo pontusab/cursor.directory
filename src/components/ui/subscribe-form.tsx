@@ -3,6 +3,7 @@
 import { subscribeAction } from "@/actions/subscribe-action";
 import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useFormStatus } from "react-dom";
 
@@ -35,6 +36,11 @@ type Props = {
 
 export function SubscribeForm({ group, placeholder, className }: Props) {
   const [isSubmitted, setSubmitted] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname === "/generate") {
+    return null;
+  }
 
   return (
     <div className="mr-4">
