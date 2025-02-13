@@ -4,23 +4,54 @@ import { motion } from "motion/react";
 
 const expertise = [
   {
-    name: "Node.js",
+    name: "React",
     description:
-      "Node.js is a runtime environment for JavaScript that allows you to run JavaScript code outside of a web browser.",
+      "React is a JavaScript library for building user interfaces with a component-based architecture and virtual DOM.",
+  },
+  {
+    name: "TypeScript",
+    description:
+      "TypeScript adds static typing to JavaScript, enabling better tooling, error detection, and code maintainability.",
   },
   {
     name: "Next.js",
     description:
-      "Next.js is a React framework for building server-side rendered (SSR) web applications.",
+      "Next.js is a React framework that enables server-side rendering, static site generation, and API routes.",
   },
   {
-    name: "App Router",
+    name: "Node.js",
     description:
-      "App Router is a new routing system for Next.js that allows you to create server-side rendered (SSR) web applications.",
+      "Node.js enables JavaScript execution outside browsers, perfect for building scalable network applications.",
   },
   {
-    name: "React",
-    description: "React is a JavaScript library for building user interfaces.",
+    name: "Python",
+    description:
+      "Python is a high-level programming language known for its simplicity, readability and extensive library ecosystem.",
+  },
+  {
+    name: "FastAPI",
+    description:
+      "FastAPI is a modern Python web framework for building APIs with automatic OpenAPI documentation and type checking.",
+  },
+  {
+    name: "Flutter",
+    description:
+      "Flutter is Google's UI toolkit for building natively compiled applications from a single codebase.",
+  },
+  {
+    name: "Angular",
+    description:
+      "Angular is a platform for building mobile and desktop web applications using TypeScript and dependency injection.",
+  },
+  {
+    name: "C++",
+    description:
+      "C++ is a powerful systems programming language supporting object-oriented, procedural and generic programming.",
+  },
+  {
+    name: "Django",
+    description:
+      "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
   },
 ];
 
@@ -30,10 +61,10 @@ export function GenerateList() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="w-full overflow-hidden h-[140px] relative mt-8"
+      className="w-full overflow-hidden h-[120px] sm:h-[160px] relative mt-4 sm:mt-8"
     >
-      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-background to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-background to-transparent z-10" />
 
       <div className="flex">
         <motion.div
@@ -44,18 +75,18 @@ export function GenerateList() {
             repeat: Number.POSITIVE_INFINITY,
             ease: "linear",
           }}
-          className="flex flex-row gap-4"
+          className="flex flex-row gap-2 sm:gap-4"
         >
           {[...expertise, ...expertise].map((item, index) => (
             <motion.div
               key={`${item}-${index.toString()}`}
-              className="px-6 py-3 border border-border w-[220px] h-full"
+              className="px-2 py-2 border border-border w-[180px] sm:w-[240px] h-full"
             >
               <div className="flex flex-col gap-1">
-                <span className="text-[#878787] text-xs line-clamp-2 h-[75px] text-[11px] font-mono">
+                <span className="text-[#878787] text-[10px] sm:text-[11px] h-[55px] sm:h-[75px] overflow-hidden font-mono bg-[#121212] p-2 leading-4">
                   {item.description}
                 </span>
-                <span className="text-primary font-mono text-sm truncate text-[11px]">
+                <span className="text-primary font-mono text-[10px] sm:text-[11px] truncate px-1 pt-2">
                   {item.name}
                 </span>
               </div>
