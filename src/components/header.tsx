@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 import {
   Dialog,
@@ -11,6 +14,9 @@ import {
 import { SubscribeForm } from "./ui/subscribe-form";
 
 export function Header() {
+  const pathname = usePathname();
+  const isGeneratePage = pathname === "/generate";
+
   return (
     <div className="md:fixed top-0 z-10 px-6 py-2 w-full flex justify-between items-center bg-background backdrop-filter backdrop-blur-sm bg-opacity-30">
       <Link href="/" className="font-medium font-mono text-sm">
@@ -23,19 +29,16 @@ export function Header() {
         </div>
 
         <Link
-          href="/live"
-          className="flex items-center gap-2 text-sm font-medium"
+          href="/generate"
+          className={`flex items-center gap-2 text-sm font-medium ${isGeneratePage ? "text-primary" : ""}`}
         >
-          <div className="font-semibold text-sm font-mono">
-            <span className="relative ml-auto flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-red-400" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
-            </span>
-          </div>
-          <span>Live</span>
+          Generate rule
         </Link>
 
-        <Link href="/learn" className="text-sm font-medium">
+        <Link
+          href="/learn"
+          className={`text-sm font-medium ${isGeneratePage ? "text-[#878787]" : ""}`}
+        >
           Learn
         </Link>
 
@@ -43,7 +46,7 @@ export function Header() {
           <DialogTrigger asChild>
             <Button
               variant="ghost"
-              className="hover:bg-transparent p-0 text-sm font-medium"
+              className={`hover:bg-transparent p-0 text-sm font-medium ${isGeneratePage ? "text-[#878787]" : ""}`}
             >
               About
             </Button>

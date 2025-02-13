@@ -79,7 +79,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn(
         `${GeistSans.variable} ${GeistMono.variable}`,
-        "whitespace-pre-line antialiased bg-background text-foreground",
+        "whitespace-pre-line antialiased bg-background text-foreground dark",
       )}
     >
       <body>
