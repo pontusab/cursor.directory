@@ -170,3 +170,8 @@ export function getSections() {
 export function getRuleBySlug(slug: string) {
   return rules.find((rule) => rule.slug === slug);
 }
+
+export type Section = {
+  tag: string;
+  rules: Rule[];
+};
