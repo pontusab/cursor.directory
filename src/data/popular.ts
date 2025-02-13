@@ -1,5 +1,6 @@
 import { redis } from "@/lib/redis";
 import { getSections } from ".";
+
 export async function getPopularRules() {
   const sections = getSections();
 

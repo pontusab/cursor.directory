@@ -32,12 +32,13 @@ export function RuleList({ sections }: { sections: Section[] }) {
         <section key={section.tag} id={section.tag}>
           <h3 className="text-lg font-semibold mb-4">{section.tag}</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
-            {section.rules.slice(0, visibleItems).map((rule, idx2) => (
+            {section.rules.map((rule, idx2) => (
               <RuleCard key={`${idx}-${idx2.toString()}`} rule={rule} />
             ))}
           </div>
         </section>
       ))}
+
       {visibleItems < sections.length && (
         <div className="flex justify-center mt-8">
           <button
