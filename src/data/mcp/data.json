@@ -1,6 +1,6 @@
 [
   {
-    "name": "Liniear",
+    "name": "Linear",
     "url": "https://github.com/jerhadf/linear-mcp-server",
     "description": "This server provides integration with Linear's issue tracking system through MCP, allowing LLMs to interact with Linear issues.",
     "logo": "https://cdn.brandfetch.io/iduDa181eM/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
