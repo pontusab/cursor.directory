@@ -89,7 +89,7 @@ export function Header() {
                   Submit
                 </Button>
               </a>
-              <div className="flex items-center space-x-1 mt-8 justify-center">
+              <span className="flex items-center space-x-1 mt-8 justify-center">
                 Made by{" "}
                 <a href="https://midday.ai">
                   <svg
@@ -111,7 +111,7 @@ export function Header() {
                     />
                   </svg>
                 </a>
-              </div>
+              </span>
             </DialogDescription>
           </DialogContent>
         </Dialog>
