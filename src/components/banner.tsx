@@ -176,7 +176,8 @@ export function Banner() {
     }, 300);
   };
 
-  if (!isVisible || pathname === "/generate") return null;
+  if (!isVisible || pathname === "/generate" || pathname === "/mcp")
+    return null;
 
   const slideClass = isAnimating
     ? animateDirection === "down"
