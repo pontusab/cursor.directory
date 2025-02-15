@@ -10,6 +10,7 @@ import { GeistSans } from "geist/font/sans";
 import { PlusIcon } from "lucide-react";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 export const metadata: Metadata = {
   title: "Cursor Directory",
@@ -91,8 +92,8 @@ export default function RootLayout({
         >
           <Header />
 
-          <div className="flex">
-            {children}
+          <div className="flex w-full h-full">
+            <NuqsAdapter>{children}</NuqsAdapter>
 
             <a
               href="https://github.com/pontusab/cursor.directory"
