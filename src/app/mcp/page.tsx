@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex justify-center min-h-screen w-full mt-36">
+    <div className="flex justify-center min-h-screen w-full mt-12 md:mt-36">
       <Search />
     </div>
   );
