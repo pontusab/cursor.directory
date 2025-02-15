@@ -14,9 +14,6 @@ export function GithubSignin() {
       onClick={() => {
         supabase.auth.signInWithOAuth({
           provider: "github",
-          options: {
-            redirectTo: `${window.location.origin}/api/auth/callback`,
-          },
         });
       }}
     >
