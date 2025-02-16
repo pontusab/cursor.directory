@@ -1,48 +1,12 @@
-import { useState } from "react";
+import { useQueryState } from "nuqs";
 
-export function GenerateInput({
-  value,
-  setValue,
-  onSubmit,
-  isLoading,
-}: {
-  value: string;
-  setValue: (value: string) => void;
-  onSubmit: (packageJson?: string) => void;
-  isLoading: boolean;
-}) {
-  const [isDragging, setIsDragging] = useState(false);
-  const placeholder =
-    "Search for a rule or MCP server, or drag and drop your package.json";
+export function GenerateInput() {
+  const [search, setSearch] = useQueryState("q", { defaultValue: "" });
 
-  const handleDragOver = (e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragging(true);
-  };
-
-  const handleDragLeave = (e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragging(false);
-  };
-
-  const handleDrop = async (e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragging(false);
-
-    const file = e.dataTransfer.files[0];
-    if (file?.name?.endsWith("package.json")) {
-      const text = await file.text();
-
-      setValue("package.json");
-      onSubmit(text);
-    }
-  };
+  const placeholder = "Search for a rule or MCP server...";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!value.trim()) return;
-    onSubmit();
-    setValue("");
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -54,22 +18,16 @@ export function GenerateInput({
 
   return (
     <div className="w-full max-w-2xl mx-auto h-[60px] bg-[#121212] border border-[#2C2C2]">
-      <form
-        className="h-full w-full"
-        onDragOver={handleDragOver}
-        onDragLeave={handleDragLeave}
-        onDrop={handleDrop}
-        onSubmit={handleSubmit}
-      >
+      <form className="h-full w-full" onSubmit={handleSubmit}>
         <div className="relative h-full">
           <input
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             onKeyDown={handleKeyDown}
-            className="w-full text-[#585858] text-xs bg-transparent p-4 resize-none focus:outline-none"
+            className="w-full text-[#585858] text-xs bg-transparent p-4 resize-none focus:outline-none pt-5"
           />
 
-          {!value && (
+          {!search && (
             <div className="absolute top-4 left-4 pointer-events-none">
               {placeholder.split("").map((char, index) => (
                 <span
@@ -89,18 +47,6 @@ export function GenerateInput({
           )}
         </div>
       </form>
-      <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            filter: blur(2px);
-          }
-          to {
-            opacity: 1;
-            filter: blur(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }

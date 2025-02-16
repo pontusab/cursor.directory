@@ -18,22 +18,52 @@
     "logo": "https://cdn.brandfetch.io/idjSeCeMle/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
   {
-    "name": "Slack MCP Server",
-    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
-    "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
-    "logo": "https://cdn.brandfetch.io/idJ_HhtG0Z/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+    "name": "Supabase",
+    "url": "https://github.com/supabase-community/mcp-supabase/tree/main/packages/mcp-server-postgrest",
+    "description": "This is an MCP server for PostgREST. It allows LLMs perform database queries and operations on Postgres databases via PostgREST.",
+    "logo": "https://cdn.brandfetch.io/idsSceG8fK/w/436/h/449/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
   {
-    "name": "Sentry MCP Server",
+    "name": "Vercel",
+    "url": "https://github.com/nganiet/mcp-vercel",
+    "description": "Integrates with Vercel's serverless infrastructure to provide a lightweight endpoint for AI model interactions and tasks like chatbots, content generation, and data analysis.",
+    "logo": "https://cdn.brandfetch.io/idDpCfN4VD/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+  },
+  {
+    "name": "Sentry",
     "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry",
     "description": "A Model Context Protocol server for retrieving and analyzing issues from Sentry.io. This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
     "logo": "https://cdn.brandfetch.io/idag_928SW/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+  },
+  {
+    "name": "Neon",
+    "url": "https://github.com/neondatabase/mcp-server-neon",
+    "description": "Interact with the Neon serverless Postgres platform",
+    "logo": "https://pbs.twimg.com/profile_images/1658763245325254659/1o0WFQns_400x400.jpg"
+  },
+  {
+    "name": "Tinybird",
+    "url": "https://github.com/tinybirdco/mcp-tinybird",
+    "description": "Interface with the Tinybird serverless ClickHouse platform",
+    "logo": "https://pbs.twimg.com/profile_images/1876354325951217664/pDcUAeY2_400x400.png"
+  },
+  {
+    "name": "Stripe",
+    "url": "https://github.com/stripe/agent-toolkit",
+    "description": "Interact with the Stripe API",
+    "logo": "https://cdn.brandfetch.io/idxAg10C0L/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
   {
     "name": "Axiom",
     "url": "https://github.com/axiomhq/mcp-server-axiom",
     "description": "Query and analyze logs, traces, and event data using natural language",
     "logo": "https://cdn.brandfetch.io/ids3R5NX-p/theme/light/logo.svg"
+  },
+  {
+    "name": "Slack",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+    "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
+    "logo": "https://cdn.brandfetch.io/idJ_HhtG0Z/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
   {
     "name": "Browserbase",
@@ -51,12 +81,6 @@
     "url": "https://github.com/e2b-dev/mcp-server",
     "description": "Execute code in secure cloud sandboxes",
     "logo": "https://cdn.brandfetch.io/id8E4Bu5Zl/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-  },
-  {
-    "name": "Neon",
-    "url": "https://github.com/neondatabase/mcp-server-neon",
-    "description": "Interact with the Neon serverless Postgres platform",
-    "logo": "https://pbs.twimg.com/profile_images/1658763245325254659/1o0WFQns_400x400.jpg"
   },
   {
     "name": "Obsidian Markdown Notes",
@@ -79,18 +103,6 @@
     "name": "Search1API",
     "url": "https://github.com/fatwang2/search1api-mcp",
     "description": "Unified API for search, crawling, and sitemaps"
-  },
-  {
-    "name": "Stripe",
-    "url": "https://github.com/stripe/agent-toolkit",
-    "description": "Interact with the Stripe API",
-    "logo": "https://cdn.brandfetch.io/idxAg10C0L/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-  },
-  {
-    "name": "Tinybird",
-    "url": "https://github.com/tinybirdco/mcp-tinybird",
-    "description": "Interface with the Tinybird serverless ClickHouse platform",
-    "logo": "https://pbs.twimg.com/profile_images/1876354325951217664/pDcUAeY2_400x400.png"
   },
   {
     "name": "Docker",

@@ -94,8 +94,11 @@
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.glass {
-  background-image: url("/glass.png");
-  background-position: center;
-  background-repeat: no-repeat;
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

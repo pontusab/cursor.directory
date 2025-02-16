@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <>
+    <div className="flex w-full h-full">
       <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
         <Menu />
       </div>
@@ -60,6 +60,6 @@ export default function Page() {
           ))}
         </div>
       </main>
-    </>
+    </div>
   );
 }

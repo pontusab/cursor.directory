@@ -1,11 +1,13 @@
 "use client";
 
 import { XIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export function Banner() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
+  const pathname = usePathname();
 
   useEffect(() => {
     setCurrentBannerIndex(Math.floor(Math.random() * 2));
@@ -133,6 +135,17 @@ export function Banner() {
   ];
 
   useEffect(() => {
+    // Show banner after 2s delay on pathname change
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
     // Initial animation up
     setTimeout(() => {
       setIsAnimating(false);
@@ -162,7 +175,7 @@ export function Banner() {
       clearTimeout(timer);
       clearInterval(interval);
     };
-  }, []);
+  }, [isVisible]);
 
   const handleClose = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
