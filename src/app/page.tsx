@@ -8,11 +8,13 @@ export const metadata: Metadata = {
     "Enhance your Cursor with custom rules, find MCP servers, and join a community of Cursor enthusiasts.",
 };
 
+// Add force-static and revalidate configuration
+export const dynamic = "force-static";
 export const revalidate = 86400; // Revalidate once every day
 
-const popularRules = await getPopularRules();
+export default async function Page() {
+  const popularRules = await getPopularRules();
 
-export default function Page() {
   return (
     <div className="flex justify-center min-h-screen w-full px-2 mt-[15%]">
       <div className="w-full max-w-6xl">

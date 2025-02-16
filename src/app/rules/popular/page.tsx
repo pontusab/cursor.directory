@@ -8,11 +8,12 @@ export const metadata = {
   description: "Popular rules for Cursor for frameworks, libraries and more.",
 };
 
+export const dynamic = "force-static";
 export const revalidate = 86400; // Revalidate once every day
 
-const popularRules = await getPopularRules();
-
 export default async function Page() {
+  const popularRules = await getPopularRules();
+
   return (
     <div className="flex w-full h-full">
       <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
