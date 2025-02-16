@@ -7,7 +7,7 @@
   },
   {
     "name": "Github",
-    "url": "https://github.com/jerhadf/linear-mcp-server",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
     "description": "This server provides integration with Github's issue tracking system through MCP, allowing LLMs to interact with Github issues.",
     "logo": "https://cdn.brandfetch.io/idZAyF9rlg/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
