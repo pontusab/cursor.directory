@@ -141,5 +141,10 @@
     "name": "Google Drive",
     "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
     "description": "File access and search capabilities for Google Drive"
+  },
+  {
+    "name": "BrowserTools MCP",
+    "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
+    "description": "Analyze logs & interact with your browser for rapid debugging"
   }
 ]
