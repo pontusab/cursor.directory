@@ -30,7 +30,7 @@ export function Generate({ sections }: { sections: Section[] }) {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
           >
             <RuleList sections={sections} small />
           </motion.div>
