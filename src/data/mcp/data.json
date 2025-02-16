@@ -158,5 +158,11 @@
     "name": "BrowserTools MCP",
     "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
     "description": "Analyze logs & interact with your browser for rapid debugging"
+  },
+  {
+    "name": "Tavily",
+    "url": "https://github.com/tavily-ai/tavily-mcp",
+    "description": "Search engine for AI agents (search + extract)",
+    "logo": "https://tavily.com/favicon.ico"
   }
 ]
