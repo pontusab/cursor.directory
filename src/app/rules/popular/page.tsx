@@ -14,7 +14,7 @@ const popularRules = await getPopularRules();
 
 export default async function Page() {
   return (
-    <>
+    <div className="flex w-full h-full">
       <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
         <Menu />
       </div>
@@ -23,6 +23,6 @@ export default async function Page() {
         <Tabs />
         <RuleList sections={popularRules} />
       </main>
-    </>
+    </div>
   );
 }

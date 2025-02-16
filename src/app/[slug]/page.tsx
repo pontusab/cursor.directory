@@ -29,7 +29,7 @@ export default async function Page({ params }: { params: Params }) {
   }
 
   return (
-    <>
+    <div className="flex w-full h-full">
       <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
         <Menu />
       </div>
@@ -37,7 +37,7 @@ export default async function Page({ params }: { params: Params }) {
       <main className="flex-1 p-6 pt-16">
         <RuleCard rule={rule} isPage={true} />
       </main>
-    </>
+    </div>
   );
 }
 

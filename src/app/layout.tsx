@@ -92,23 +92,21 @@ export default function RootLayout({
         >
           <Header />
 
-          <div className="flex w-full h-full">
-            <NuqsAdapter>{children}</NuqsAdapter>
+          <NuqsAdapter>{children}</NuqsAdapter>
 
-            <a
-              href="https://github.com/pontusab/cursor.directory"
-              target="_blank"
-              rel="noreferrer"
+          <a
+            href="https://github.com/pontusab/cursor.directory"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              className="hidden size-[48px] bg-[#F5F5F3]/30 text-black border border-black rounded-full font-medium fixed bottom-4 left-6 z-10 backdrop-blur-lg dark:bg-[#F5F5F3]/30 dark:text-white dark:border-white"
+              variant="outline"
+              size="icon"
             >
-              <Button
-                className="hidden size-[48px] bg-[#F5F5F3]/30 text-black border border-black rounded-full font-medium fixed bottom-4 left-6 z-10 backdrop-blur-lg dark:bg-[#F5F5F3]/30 dark:text-white dark:border-white"
-                variant="outline"
-                size="icon"
-              >
-                <PlusIcon className="w-4 h-4" />
-              </Button>
-            </a>
-          </div>
+              <PlusIcon className="w-4 h-4" />
+            </Button>
+          </a>
 
           <Banner />
           <Toaster />

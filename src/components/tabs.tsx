@@ -8,11 +8,11 @@ import { Button } from "./ui/button";
 const tabs = [
   {
     name: "All",
-    path: "/",
+    path: "/rules",
   },
   {
     name: "Popular",
-    path: "/popular",
+    path: "/rules/popular",
   },
 ];
 

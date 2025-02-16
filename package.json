@@ -36,6 +36,7 @@
     "react": "^19",
     "react-dom": "^19",
     "server-only": "^0.0.1",
+    "slugify": "^1.6.6",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",

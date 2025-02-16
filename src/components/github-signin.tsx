@@ -10,7 +10,7 @@ export function GithubSignin() {
   return (
     <Button
       variant="outline"
-      className="border-dashed border-border w-full"
+      className="border border-border rounded-full"
       onClick={() => {
         supabase.auth.signInWithOAuth({
           provider: "github",

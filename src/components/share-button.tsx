@@ -1,10 +1,14 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { Check, Share } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
-export function ShareButton({ slug }: { slug: string }) {
+export function ShareButton({
+  slug,
+  small,
+}: { slug: string; small?: boolean }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -20,10 +24,17 @@ export function ShareButton({ slug }: { slug: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="text-xs bg-black text-white dark:bg-white dark:text-black p-2 rounded-full size-9 flex items-center justify-center"
+      className={cn(
+        "text-xs bg-black text-white dark:bg-white dark:text-black rounded-full flex items-center justify-center",
+        small ? "p-1.5 size-7" : "p-2 size-9",
+      )}
       type="button"
     >
-      {copied ? <Check className="w-4 h-4" /> : <Share className="w-4 h-4" />}
+      {copied ? (
+        <Check className={small ? "w-3 h-3" : "w-4 h-4"} />
+      ) : (
+        <Share className={small ? "w-3 h-3" : "w-4 h-4"} />
+      )}
     </button>
   );
 }

@@ -16,7 +16,7 @@ export function Menu() {
   const [sections, setSections] = useState(allSections);
 
   const handleClick = (tag: string) => {
-    router.push("/", { scroll: false });
+    router.push("/rules", { scroll: false });
 
     const element = document.getElementById(tag);
     if (!element) return;
