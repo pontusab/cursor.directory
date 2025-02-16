@@ -1,7 +1,7 @@
 "use client";
 
 export function GenerateTitle() {
-  const text = "Generate Cursor Rule from Your Dependencies";
+  const text = "Discover Cursor Rules & MCP Servers";
 
   return (
     <div className="text-center mb-6">
@@ -14,6 +14,18 @@ export function GenerateTitle() {
       >
         {text}
       </h1>
+
+      <p
+        className="text-[#878787] text-sm"
+        style={{
+          opacity: 0,
+          animation: "fadeIn 0.2s ease forwards 0.1s",
+        }}
+      >
+        Browse community-submitted rules and MCP servers or generate custom ones{" "}
+        <br />
+        by dragging and dropping your package.json.
+      </p>
       <style jsx>{`
         @keyframes fadeIn {
           from {

@@ -1,6 +1,7 @@
 "use client";
 
 import { voteAction } from "@/actions/vote-action";
+import { cn } from "@/lib/utils";
 import { Check, Copy } from "lucide-react";
 import { useAction } from "next-safe-action/hooks";
 import { useState } from "react";
@@ -9,7 +10,12 @@ import { toast } from "sonner";
 export function CopyButton({
   content,
   slug,
-}: { content: string; slug: string }) {
+  small,
+}: {
+  content: string;
+  slug: string;
+  small?: boolean;
+}) {
   const [copied, setCopied] = useState(false);
   const { execute } = useAction(voteAction);
 
@@ -29,10 +35,17 @@ export function CopyButton({
   return (
     <button
       onClick={handleCopy}
-      className="text-xs bg-black text-white dark:bg-white dark:text-black p-2 rounded-full size-9 flex items-center justify-center"
+      className={cn(
+        "text-xs bg-black text-white dark:bg-white dark:text-black rounded-full flex items-center justify-center",
+        small ? "p-1.5 size-7" : "p-2 size-9",
+      )}
       type="button"
     >
-      {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+      {copied ? (
+        <Check className={small ? "w-3 h-3" : "w-4 h-4"} />
+      ) : (
+        <Copy className={small ? "w-3 h-3" : "w-4 h-4"} />
+      )}
     </button>
   );
 }

@@ -1,12 +1,19 @@
 "use client";
 
 import { RuleCard } from "@/components/rule-card";
+import { RuleCardSmall } from "@/components/rule-card-small";
 import type { Section } from "@/data";
 import { useEffect, useState } from "react";
 
 const ITEMS_PER_PAGE = 6;
 
-export function RuleList({ sections }: { sections: Section[] }) {
+export function RuleList({
+  sections,
+  small,
+}: {
+  sections: Section[];
+  small?: boolean;
+}) {
   const [visibleItems, setVisibleItems] = useState(ITEMS_PER_PAGE);
 
   const handleScroll = () => {
@@ -31,10 +38,22 @@ export function RuleList({ sections }: { sections: Section[] }) {
       {sections.slice(0, visibleItems).map((section, idx) => (
         <section key={section.tag} id={section.tag}>
           <h3 className="text-lg font-semibold mb-4">{section.tag}</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
-            {section.rules.map((rule, idx2) => (
-              <RuleCard key={`${idx}-${idx2.toString()}`} rule={rule} />
-            ))}
+          <div
+            className={`grid grid-cols-1 gap-4 mb-8 ${
+              small ? "lg:grid-cols-5" : "lg:grid-cols-2 xl:grid-cols-3"
+            }`}
+          >
+            {section.rules.map((rule, idx2) =>
+              small ? (
+                <RuleCardSmall
+                  key={`${idx}-${idx2.toString()}`}
+                  rule={rule}
+                  small
+                />
+              ) : (
+                <RuleCard key={`${idx}-${idx2.toString()}`} rule={rule} />
+              ),
+            )}
           </div>
         </section>
       ))}

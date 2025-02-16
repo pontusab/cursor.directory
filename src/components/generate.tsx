@@ -1,16 +1,17 @@
 "use client";
 
 import { generateRule } from "@/actions/generate-rule";
+import type { Section } from "@/data";
 import { cn } from "@/lib/utils";
 import { readStreamableValue } from "ai/rsc";
+import { motion } from "motion/react";
 import { useState } from "react";
-import { GenerateFooter } from "./generate-footer";
 import { GenerateInput } from "./generate-input";
-import { GenerateList } from "./generate-list";
 import { GenerateTitle } from "./generate-title";
 import { GeneratedResults } from "./generated-results";
+import { RuleList } from "./rule-list";
 
-export function Generate() {
+export function Generate({ sections }: { sections: Section[] }) {
   const [value, setValue] = useState<string>("");
   const [result, setResult] = useState<string>("");
   const [isLoading, setIsLoading] = useState(false);
@@ -40,7 +41,7 @@ export function Generate() {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 w-full max-w-[860px] relative mx-auto h-screen justify-center">
+      <div className="flex flex-col gap-4 w-full relative mx-auto h-screen">
         <div
           className={cn("transition-all duration-1000", {
             "blur-sm opacity-0": hasResult,
@@ -57,7 +58,13 @@ export function Generate() {
             />
           </div>
 
-          <GenerateList />
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
+          >
+            <RuleList sections={sections} small />
+          </motion.div>
         </div>
       </div>
 
@@ -71,14 +78,6 @@ export function Generate() {
           }}
         />
       )}
-
-      <div
-        className={cn("transition-all duration-1000", {
-          "blur-sm opacity-0": hasResult,
-        })}
-      >
-        <GenerateFooter />
-      </div>
     </div>
   );
 }

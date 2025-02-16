@@ -1,11 +1,9 @@
 "use client";
 
 import { XIcon } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export function Banner() {
-  const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(true);
   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
 
@@ -176,8 +174,7 @@ export function Banner() {
     }, 300);
   };
 
-  if (!isVisible || pathname === "/generate" || pathname === "/mcp")
-    return null;
+  if (!isVisible) return null;
 
   const slideClass = isAnimating
     ? animateDirection === "down"

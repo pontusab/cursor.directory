@@ -1,21 +1,23 @@
-import { Menu } from "@/components/menu";
-import { RuleList } from "@/components/rule-list";
-import { Tabs } from "@/components/tabs";
-import { getSections } from "@/data";
+import { Generate } from "@/components/generate";
+import { getPopularRules } from "@/data/popular";
+import type { Metadata } from "next";
 
-const sections = getSections();
+export const metadata: Metadata = {
+  title: "Cursor Directory - Cursor Rules & MCP Servers",
+  description:
+    "Enhance your Cursor with custom rules, find MCP servers, and join a community of Cursor enthusiasts.",
+};
+
+export const revalidate = 86400; // Revalidate once every day
+
+const popularRules = await getPopularRules();
 
 export default function Page() {
   return (
-    <>
-      <div className="hidden md:flex mt-12 sticky top-12 h-[calc(100vh-3rem)]">
-        <Menu />
+    <div className="flex justify-center min-h-screen w-full px-2 mt-[15%]">
+      <div className="w-full max-w-6xl">
+        <Generate sections={popularRules} />
       </div>
-
-      <main className="flex-1 p-6 pt-4 md:pt-16 space-y-8">
-        <Tabs />
-        <RuleList sections={sections} />
-      </main>
-    </>
+    </div>
   );
 }
