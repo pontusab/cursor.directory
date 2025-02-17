@@ -158,5 +158,11 @@
     "name": "BrowserTools MCP",
     "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
     "description": "Analyze logs & interact with your browser for rapid debugging"
+  },
+  {
+    "name": "Upstash MCP",
+    "url": "https://github.com/upstash/mcp-server",
+    "description": "MCP server for interacting with the Upstash serverless data platform",
+    "logo": "https://upstash.com/logo/upstash-icon-dark-bg.svg"
   }
 ]
