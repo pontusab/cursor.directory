@@ -162,6 +162,7 @@
   {
     "name": "Apify RAG Web Browser",
     "url": "https://apify.com/apify/rag-web-browser#anthropic-model-context-protocol-mcp-server",
-    "description": "Web browser for LLM apps similar to a web browser in ChatGPT. It queries Google Search, scrapes the top N pages from the results, and returns their cleaned content as Markdown."
+    "description": "Web browser for LLM apps similar to a web browser in ChatGPT. It queries Google Search, scrapes the top N pages from the results, and returns their cleaned content as Markdown.",
+    "logo": "https://apify.com/ext/apify-symbol-512px.svg"
   }
 ]
