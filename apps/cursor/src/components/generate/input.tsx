@@ -35,7 +35,11 @@ export function GenerateInput({
     setIsDragging(false);
 
     const file = e.dataTransfer.files[0];
-    if (file?.name?.endsWith("package.json")) {
+    if (
+      file?.name?.endsWith("package.json") ||
+      file?.name?.endsWith("requirements.txt") ||
+      file?.name?.endsWith(".cursorrules")
+    ) {
       const text = await file.text();
 
       setValue("Loading...");

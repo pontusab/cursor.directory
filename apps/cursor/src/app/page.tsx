@@ -16,7 +16,7 @@ export default async function Page() {
   const popularRules = await getPopularRules();
 
   return (
-    <div className="flex justify-center min-h-screen w-full px-2 mt-[15%]">
+    <div className="flex justify-center min-h-screen w-full px-2 mt-[10%]">
       <div className="w-full max-w-6xl">
         <GlobalSearch sections={popularRules} />
       </div>
