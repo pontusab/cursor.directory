@@ -1,10 +1,12 @@
 "use client";
 
+import { AdCard } from "@/components/ad-card";
 import { RuleCard } from "@/components/rule-card";
 import { RuleCardSmall } from "@/components/rule-card-small";
 import type { Section } from "@/data";
+import { ads } from "@/data/ads";
 import { useQueryState } from "nuqs";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -48,6 +50,15 @@ export function RuleList({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Function to get a random ad
+  const getRandomAd = () => {
+    const randomIndex = Math.floor(Math.random() * ads.length);
+    return ads[randomIndex];
+  };
+
+  // Keep track of total items to know when to insert ads
+  let totalItemsCount = 0;
+
   return (
     <>
       {filteredSections.slice(0, visibleItems).map((section, idx) => (
@@ -58,17 +69,21 @@ export function RuleList({
               small ? "lg:grid-cols-4" : "lg:grid-cols-2 xl:grid-cols-3"
             }`}
           >
-            {section.rules.map((rule, idx2) =>
-              small ? (
-                <RuleCardSmall
-                  key={`${idx}-${idx2.toString()}`}
-                  rule={rule}
-                  small
-                />
-              ) : (
-                <RuleCard key={`${idx}-${idx2.toString()}`} rule={rule} />
-              ),
-            )}
+            {section.rules.map((rule, idx2) => {
+              totalItemsCount++;
+              const shouldShowAd = totalItemsCount % 9 === 0;
+
+              return (
+                <Fragment key={`${idx}-${idx2.toString()}`}>
+                  {small ? (
+                    <RuleCardSmall rule={rule} small />
+                  ) : (
+                    <RuleCard key={`${idx}-${idx2.toString()}`} rule={rule} />
+                  )}
+                  {shouldShowAd && <AdCard ad={getRandomAd()} />}
+                </Fragment>
+              );
+            })}
           </div>
         </section>
       ))}

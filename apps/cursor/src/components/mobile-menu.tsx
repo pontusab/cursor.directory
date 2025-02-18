@@ -15,6 +15,7 @@ const navigationLinks = [
   { href: "/learn", label: "Learn" },
   { href: "/advertise", label: "Advertise" },
   { href: "/about", label: "About" },
+  { href: "/ads", label: "Ads" },
 ] as const;
 
 export function MobileMenu() {
