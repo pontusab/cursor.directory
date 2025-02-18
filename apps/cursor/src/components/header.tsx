@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MobileMenu } from "./mobile-menu";
-import { Button } from "./ui/button";
+import { UserMenu } from "./user-menu";
 
 const navigationLinks = [
   { href: "/rules", label: "Rules" },
@@ -41,14 +41,7 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href={`/login?next=${pathname}`}>
-            <Button
-              variant="outline"
-              className="bg-white text-black h-8 rounded-full"
-            >
-              Sign In
-            </Button>
-          </Link>
+          <UserMenu />
         </div>
       </div>
       <MobileMenu />

@@ -21,14 +21,14 @@ export default function About() {
             significantly accelerated our development process. This efficiency
             boost gave us the bandwidth to build our two startups,{" "}
             <a
-              href="https://midday.ai?utm_source=directory"
+              href="https://go.midday.ai/8cX3F4o"
               className="text-primary border-border border-dashed border-b-[1px]"
             >
               Midday
             </a>{" "}
             and{" "}
             <a
-              href="https://languine.ai?utm_source=direc"
+              href="https://go.midday.ai/NnI1CUO"
               className="text-primary border-border border-dashed border-b-[1px]"
             >
               Languine

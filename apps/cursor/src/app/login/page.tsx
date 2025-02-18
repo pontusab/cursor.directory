@@ -1,4 +1,5 @@
 import { GithubSignin } from "@/components/github-signin";
+import { GoogleSignin } from "@/components/google-signin";
 import { Suspense } from "react";
 
 export default function Login() {
@@ -12,7 +13,10 @@ export default function Login() {
 
         <div className="mt-10 flex flex-col gap-4">
           <Suspense fallback={null}>
-            <GithubSignin />
+            <div className="flex flex-col gap-4">
+              <GithubSignin />
+              <GoogleSignin />
+            </div>
           </Suspense>
         </div>
       </div>
