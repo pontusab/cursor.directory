@@ -11,6 +11,7 @@ const navigationLinks = [
   { href: "/mcp", label: "MCPs" },
   { href: "/generate", label: "Generate" },
   { href: "/learn", label: "Learn" },
+  { href: "/about", label: "About" },
 ] as const;
 
 export function Header() {
@@ -30,7 +31,9 @@ export function Header() {
               href={link.href}
               className={cn(
                 "flex items-center gap-2 text-sm font-medium",
-                pathname === link.href ? "text-primary" : "text-[#878787]",
+                pathname.includes(link.href)
+                  ? "text-primary"
+                  : "text-[#878787]",
               )}
             >
               {link.label}

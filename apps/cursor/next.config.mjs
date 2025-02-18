@@ -17,6 +17,9 @@ const nextConfig = {
       {
         hostname: "pbs.twimg.com",
       },
+      {
+        hostname: "midday.ai",
+      },
     ],
   },
 };

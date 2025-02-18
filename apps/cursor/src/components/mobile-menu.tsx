@@ -13,6 +13,7 @@ const navigationLinks = [
   { href: "/mcp", label: "MCP Store" },
   { href: "/generate", label: "Generate" },
   { href: "/learn", label: "Learn" },
+  { href: "/about", label: "About" },
 ] as const;
 
 export function MobileMenu() {
