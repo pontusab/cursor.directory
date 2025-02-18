@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "About Cursor Directory",
+  description: "Why we built Cursor Directory",
+};
+
 export default function About() {
   return (
     <div className="flex flex-col items-center justify-center max-w-screen-md mx-auto px-6 py-12">
