@@ -11,6 +11,7 @@ const navigationLinks = [
   { href: "/mcp", label: "MCPs" },
   { href: "/generate", label: "Generate" },
   { href: "/learn", label: "Learn" },
+  { href: "/advertise", label: "Advertise" },
   { href: "/about", label: "About" },
 ] as const;
 
@@ -24,7 +25,7 @@ export function Header() {
           cursor.directory
         </Link>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-5">
           {navigationLinks.map((link) => (
             <Link
               key={link.href}
