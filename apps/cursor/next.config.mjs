@@ -3,11 +3,6 @@ const nextConfig = {
   redirects: async () => {
     return [
       {
-        source: "/generate",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/popular",
         destination: "/rules/popular",
         permanent: true,

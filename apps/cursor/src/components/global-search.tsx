@@ -2,20 +2,31 @@
 
 import type { Section } from "@/data";
 import { motion } from "motion/react";
-import { GenerateInput } from "./generate-input";
-import { GenerateTitle } from "./generate-title";
+import { GlobalSearchInput } from "./global-search-input";
+import { HeroTitle } from "./hero-title";
 import MCPList from "./mcp-list";
 import { RuleList } from "./rule-list";
+import { Cursor } from "./ui/cursor";
 
-export function Generate({ sections }: { sections: Section[] }) {
+export function GlobalSearch({ sections }: { sections: Section[] }) {
   return (
     <div>
       <div className="flex flex-col gap-4 w-full relative mx-auto h-screen">
         <div className="transition-all duration-1000">
-          <GenerateTitle />
+          <div
+            className="flex justify-center items-center mb-8"
+            style={{
+              opacity: 0,
+              animation: "fadeIn 0.05s ease forwards",
+            }}
+          >
+            <Cursor />
+          </div>
+
+          <HeroTitle />
 
           <div className="max-w-[620px] mx-auto w-full mb-14">
-            <GenerateInput />
+            <GlobalSearchInput />
           </div>
 
           <motion.div

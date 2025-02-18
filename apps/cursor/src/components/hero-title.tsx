@@ -1,6 +1,6 @@
 "use client";
 
-export function GenerateTitle() {
+export function HeroTitle() {
   const text = "Discover Cursor Rules & MCP Servers";
 
   return (

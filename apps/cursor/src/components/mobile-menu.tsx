@@ -11,6 +11,7 @@ import { Button } from "./ui/button";
 const navigationLinks = [
   { href: "/rules", label: "Rules" },
   { href: "/mcp", label: "MCP Store" },
+  { href: "/generate", label: "Generate" },
   { href: "/learn", label: "Learn" },
 ] as const;
 

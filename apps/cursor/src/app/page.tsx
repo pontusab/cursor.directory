@@ -1,4 +1,4 @@
-import { Generate } from "@/components/generate";
+import { GlobalSearch } from "@/components/global-search";
 import { getPopularRules } from "@/data/popular";
 import type { Metadata } from "next";
 
@@ -18,7 +18,7 @@ export default async function Page() {
   return (
     <div className="flex justify-center min-h-screen w-full px-2 mt-[15%]">
       <div className="w-full max-w-6xl">
-        <Generate sections={popularRules} />
+        <GlobalSearch sections={popularRules} />
       </div>
     </div>
   );

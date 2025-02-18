@@ -2,10 +2,13 @@
 
 import { createClient } from "@/utils/supabase/client";
 import { GithubIcon } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 import { Button } from "./ui/button";
 
 export function GithubSignin() {
   const supabase = createClient();
+  const searchParams = useSearchParams();
+  const next = searchParams.get("next");
 
   return (
     <Button
@@ -14,6 +17,9 @@ export function GithubSignin() {
       onClick={() => {
         supabase.auth.signInWithOAuth({
           provider: "github",
+          options: {
+            redirectTo: `${window.location.origin}/auth/callback?next=${next}`,
+          },
         });
       }}
     >

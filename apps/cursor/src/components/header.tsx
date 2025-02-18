@@ -8,7 +8,8 @@ import { Button } from "./ui/button";
 
 const navigationLinks = [
   { href: "/rules", label: "Rules" },
-  { href: "/mcp", label: "MCP Store" },
+  { href: "/mcp", label: "MCPs" },
+  { href: "/generate", label: "Generate" },
   { href: "/learn", label: "Learn" },
 ] as const;
 
@@ -36,7 +37,7 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/login">
+          <Link href={`/login?next=${pathname}`}>
             <Button
               variant="outline"
               className="bg-white text-black h-8 rounded-full"
