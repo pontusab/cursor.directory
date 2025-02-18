@@ -1,9 +1,13 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { CommandIcon, SearchIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { CommandMenu } from "./command-menu";
 import { MobileMenu } from "./mobile-menu";
+import { Button } from "./ui/button";
 import { UserMenu } from "./user-menu";
 
 const navigationLinks = [
@@ -17,6 +21,7 @@ const navigationLinks = [
 
 export function Header() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex justify-between items-center">
@@ -41,10 +46,21 @@ export function Header() {
             </Link>
           ))}
 
+          <Button
+            variant="ghost"
+            size="sm"
+            className="gap-2 hover:bg-transparent text-[#878787] px-0"
+            onClick={() => setOpen(true)}
+          >
+            <SearchIcon className="h-4 w-4" />
+            <span className="hidden sm:inline-flex">Search</span>
+          </Button>
+
           <UserMenu />
         </div>
       </div>
       <MobileMenu />
+      <CommandMenu open={open} setOpen={setOpen} />
     </div>
   );
 }

@@ -28,7 +28,7 @@ export function GlobalSearchInput() {
           />
 
           {!search && (
-            <div className="absolute top-4 left-4 pointer-events-none">
+            <div className="absolute top-4 left-4 pointer-events-none w-full">
               {placeholder.split("").map((char, index) => (
                 <span
                   key={index.toString()}

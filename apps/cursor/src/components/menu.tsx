@@ -1,6 +1,6 @@
 "use client";
 
-import { FilterInput } from "@/components/filter-input";
+// import { FilterInput } from "@/components/filter-input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -38,7 +38,7 @@ export function Menu() {
   return (
     <aside className="w-64 p-4 flex flex-col">
       {/* Search input */}
-      <FilterInput
+      {/* <FilterInput
         onSearch={(term) =>
           setSections(
             allSections.filter((section) =>
@@ -47,7 +47,7 @@ export function Menu() {
           )
         }
         clearSearch={clearSearch}
-      />
+      /> */}
       <ScrollArea className="flex-grow">
         <div className="space-y-1">
           {sections.map((section) => (
