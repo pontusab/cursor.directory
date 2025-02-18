@@ -11,13 +11,14 @@ export function Banner() {
 
   useEffect(() => {
     setCurrentBannerIndex(Math.floor(Math.random() * 2));
-  }, []); // Run once on mount
+  }, []);
+
   const [isAnimating, setIsAnimating] = useState(true); // Start as true
   const [animateDirection, setAnimateDirection] = useState<"up" | "down">("up");
 
   const banners = [
     {
-      href: "https://midday.ai?utm_source=directory",
+      href: "https://go.midday.ai/8cX3F4o",
       logo: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +40,7 @@ export function Banner() {
         "An all-in-one tool for freelancers to monitor financial health, time-track, and send invoices. ↗",
     },
     {
-      href: "https://languine.ai?utm_source=directory",
+      href: "https://go.midday.ai/NnI1CUO",
       logo: (
         <svg
           width="30"
