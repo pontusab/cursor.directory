@@ -158,5 +158,11 @@
     "name": "BrowserTools MCP",
     "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
     "description": "Analyze logs & interact with your browser for rapid debugging"
+  },
+  {
+    "name": "MongoDB",
+    "url": "https://github.com/kiliczsh/mcp-mongo-server",
+    "description": "A Model Context Protocol Server for MongoDB",
+    "logo": "https://cdn.brandfetch.io/ideyyfT0Lp/idO6r-bq1D.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   }
 ]
