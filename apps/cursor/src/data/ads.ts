@@ -3,22 +3,22 @@ export interface Ad {
   description: string;
   logoUrl: string;
   link: string;
-  company: string;
+  imageUrl: string;
 }
 
 export const ads: Ad[] = [
   {
-    title: "Build Better Apps",
-    description: "Deploy your apps with one click. Get started for free.",
-    logoUrl: "https://cdn.brandfetch.io/idDpCfN4VD/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
-    link: "https://vercel.com",
-    company: "Vercel"
-  },
+    title: "Midday",
+    description: "Invoicing, Time tracking, File reconciliation, Storage, Financial Overview & your own Assistant",
+    logoUrl: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/ads-midday-logo.png",
+    imageUrl: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/ads-midday.png",
+    link: "https://go.midday.ai/8cX3F4o",
+   },
   {
-    title: "Database for the Modern Web",
-    description: "Build in a weekend, scale to millions.",
-    logoUrl: "https://cdn.brandfetch.io/idsSceG8fK/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
-    link: "https://supabase.com",
-    company: "Supabase"
-  },
+    title: "Languine",
+    description: "Localization infrastructure made for fast-paced startups.",
+    logoUrl: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/ads-languine-logo.png",
+    imageUrl: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/ads-languine.png",
+    link: "https://go.midday.ai/NnI1CUO",
+   },
 ]; 

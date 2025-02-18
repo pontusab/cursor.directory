@@ -20,6 +20,9 @@ const nextConfig = {
       {
         hostname: "midday.ai",
       },
+      {
+        hostname: "pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev",
+      },
     ],
   },
 };
