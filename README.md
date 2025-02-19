@@ -1,35 +1,25 @@
 ![hero](image.png)
 
-## Recognition
+# How to Contribute to Directories
 
-<a href="https://news.ycombinator.com/item?id=41346156">
-  <img
-    style="width: 250px; height: 54px;" width="250" height="54"
-    alt="Featured on Hacker News"
-    src="https://hackernews-badge.vercel.app/api?id=41346156"
-  />
-</a>
-
-# How to Contribute to Cursor AI
-
-### This guide will help you understand how to add new rules or prompts to the Cursor AI directory.
+### This guide will help you understand how to add new rules or prompts to the both Cursor and Windsurf Directories.
 
 #### 1. Fork the Repo
 
 #### 2. Adding a New Rule
 
-If you want to submit a **new rule** that does not already exist in the Cursor directory, follow these steps:
+If you want to submit a **new rule** that does not already exist in the Directories, follow these steps:
 
 1. **Locate the Rule Index**:  
 
-   Add your new rule in the `src/data/index.ts` file. For example:
+   Add your new rule in the `packages/data/rules/index.ts` file. For example:
    
    ```typescript
    import { cRules } from "./rules/c";
 
 2. **Create a Rule File**:
     
-    Create a new file in the `src/data/rules/` directory with the appropriate name. For example, if you're adding a rule for Next.js, name the file `nextjs.ts`.
+    Create a new file in the `packages/data/rules/` directory with the appropriate name. For example, if you're adding a rule for Next.js, name the file `nextjs.ts`.
 
 3. **Define the Rule**:
    
@@ -47,7 +37,7 @@ If you want to add new prompts to an existing rule, follow these steps:
 
 1. **Find the Existing Rule**:
 
-    Navigate to the `src/data/rules/` directory and open the relevant file for the rule you want to update. For example, if you're adding prompts for **Next.js**, open `nextjs.ts`.
+    Navigate to the `packages/data/rules/` directory and open the relevant file for the rule you want to update. For example, if you're adding prompts for **Next.js**, open `nextjs.ts`.
 
 2. **Add Your New Prompts**:
 
@@ -104,12 +94,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### 6. How to Use Cursor Rules in Your Project.
-
-  - First, create a `.cursorrules` file in the root directory of your project.
-  - Navigate to the Cursor directory and copy the relevant rules.
-  - Paste these rules into the `.cursorrules` file.
-  - When using the Cursor AI editor (in the chat box or composer), inform the AI to "follow the cursor rules" to ensure the prompts align with the rules youdefined in the `.cursorrules` file. The AI will generate output that adheres to the guidelines set in your custom rules.
-
-
