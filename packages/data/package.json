@@ -1,0 +1,14 @@
+{
+  "name": "@directory/data",
+  "version": "1.0.0",
+  "description": "Directory data",
+  "main": "src/index.ts",
+  "exports": {
+    "./rules": "./src/rules/index.ts",
+    "./mcp": "./src/mcp/index.ts",
+    "./popular": "./src/popular/index.ts"
+  },
+  "dependencies": {
+    "@directory/kv": "workspace:*"
+  }
+}
