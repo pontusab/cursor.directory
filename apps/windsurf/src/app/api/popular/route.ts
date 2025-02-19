@@ -1,4 +1,4 @@
-import { getPopularRules } from "@directory/data/popular";
+import { getPopularRules } from "@directories/data/popular";
 import { NextResponse } from "next/server";
 
 export const revalidate = 86400; // Revalidate once every day

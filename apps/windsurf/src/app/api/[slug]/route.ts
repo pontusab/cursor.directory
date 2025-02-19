@@ -1,4 +1,4 @@
-import { getRuleBySlug, rules } from "@directory/data/rules";
+import { getRuleBySlug, rules } from "@directories/data/rules";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-static";

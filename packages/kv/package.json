@@ -1,5 +1,5 @@
 {
-  "name": "@directory/kv",
+  "name": "@directories/kv",
   "version": "1.0.0",
   "description": "Directory KV",
   "main": "src/index.ts",

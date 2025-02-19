@@ -4,7 +4,7 @@ import { AdCard } from "@/components/ad-card";
 import { RuleCard } from "@/components/rule-card";
 import { RuleCardSmall } from "@/components/rule-card-small";
 import { ads } from "@/data/ads";
-import type { Section } from "@directory/data/rules";
+import type { Section } from "@directories/data/rules";
 import { useQueryState } from "nuqs";
 import { Fragment, useEffect, useState } from "react";
 import { AdCardSmall } from "./ad-card-small";

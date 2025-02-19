@@ -1,5 +1,5 @@
 import { GlobalSearch } from "@/components/global-search";
-import { getPopularRules } from "@directory/data/popular";
+import { getPopularRules } from "@directories/data/popular";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-import type { MCP } from "@directory/data/mcp";
+import type { MCP } from "@directories/data/mcp";
 import { SearchInput } from "./search-input";
 import { SearchList } from "./search-list";
 import { SearchTitle } from "./search-title";

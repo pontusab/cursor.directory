@@ -1,6 +1,6 @@
 import { Menu } from "@/components/menu";
 import { RuleCard } from "@/components/rule-card";
-import { getRuleBySlug, rules } from "@directory/data/rules";
+import { getRuleBySlug, rules } from "@directories/data/rules";
 
 type Params = Promise<{ slug: string }>;
 

@@ -1,7 +1,7 @@
 import { Menu } from "@/components/menu";
 import { RuleList } from "@/components/rule-list";
 import { Tabs } from "@/components/tabs";
-import { getSections } from "@directory/data/rules";
+import { getSections } from "@directories/data/rules";
 import { Suspense } from "react";
 
 const sections = getSections();

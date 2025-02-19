@@ -1,6 +1,6 @@
 "use client";
 
-import type { MCP } from "@directory/data/mcp";
+import type { MCP } from "@directories/data/mcp";
 import Image from "next/image";
 import Link from "next/link";
 import { useQueryState } from "nuqs";

@@ -1,5 +1,5 @@
 import { Search } from "@/components/search";
-import mcpData from "@directory/data/mcp";
+import mcpData from "@directories/data/mcp";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 

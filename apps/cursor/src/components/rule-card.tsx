@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn, generateNameAbbr, isImageUrl } from "@/lib/utils";
-import type { Rule } from "@directory/data/rules";
+import type { Rule } from "@directories/data/rules";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";

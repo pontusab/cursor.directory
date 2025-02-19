@@ -12,7 +12,9 @@ interface Rule {
 }
 
 const getRules = async () => {
-  const rules = await import("@directory/data/rules").then((mod) => mod.rules);
+  const rules = await import("@directories/data/rules").then(
+    (mod) => mod.rules,
+  );
   // Filter out duplicates based on title
   const uniqueRules = Array.from(
     new Map(rules.map((rule) => [rule.title, rule])).values(),

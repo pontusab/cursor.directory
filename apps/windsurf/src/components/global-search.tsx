@@ -1,6 +1,6 @@
 "use client";
 
-import type { Section } from "@directory/data/rules";
+import type { Section } from "@directories/data/rules";
 import { motion } from "motion/react";
 import { GlobalSearchInput } from "./global-search-input";
 import { HeroTitle } from "./hero-title";

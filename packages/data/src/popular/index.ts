@@ -1,4 +1,4 @@
-import { redis } from "@directory/kv/redis";
+import { redis } from "@directories/kv/redis";
 import { getSections } from "../rules";
 
 export async function getPopularRules() {
