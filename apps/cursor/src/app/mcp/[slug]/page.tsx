@@ -1,5 +1,5 @@
 import { HowTo } from "@/components/how-to";
-import mcpData from "@/data/mcp/data.json";
+import mcpData from "@directory/data/mcp";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";

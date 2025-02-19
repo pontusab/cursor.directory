@@ -1,7 +1,7 @@
 import { Menu } from "@/components/menu";
 import { RuleList } from "@/components/rule-list";
 import { Tabs } from "@/components/tabs";
-import { getPopularRules } from "@/data/popular";
+import { getPopularRules } from "@directory/data/popular";
 
 export const metadata = {
   title: "Popular rules",

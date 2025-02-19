@@ -1,5 +1,5 @@
-import { redis } from "@/lib/redis";
-import { getSections } from ".";
+import { redis } from "@directory/kv/redis";
+import { getSections } from "../rules";
 
 export async function getPopularRules() {
   const sections = getSections();

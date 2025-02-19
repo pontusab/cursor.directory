@@ -1,5 +1,5 @@
 {
-  "name": "cursorrules",
+  "name": "@directories/cursor",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@directories/data": "workspace:*",
     "@ai-sdk/xai": "^1.1.9",
     "@openpanel/nextjs": "^1.0.7",
     "@radix-ui/react-avatar": "^1.1.2",
