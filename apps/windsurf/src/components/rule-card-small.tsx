@@ -28,7 +28,7 @@ export function RuleCardSmall({
   return (
     <Card
       className={cn(
-        "bg-background max-h-[calc(100vh-8rem)] flex flex-col",
+        "bg-background max-h-[calc(100vh-8rem)] flex flex-col rounded-[8px]",
         small ? "p-2" : "p-4 aspect-square",
       )}
     >

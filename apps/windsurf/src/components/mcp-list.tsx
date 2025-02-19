@@ -64,7 +64,7 @@ export default function MCPList() {
             >
               <Link
                 href={`/mcp/${slugify(mcp.name, { lower: true })}`}
-                className="px-6 py-2 text-sm rounded-full font-medium whitespace-nowrap flex items-center gap-2 border border-border"
+                className="px-6 py-2 text-sm rounded-[8px] font-medium whitespace-nowrap flex items-center gap-2 border border-border"
               >
                 {mcp.logo && (
                   <Image
