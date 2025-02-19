@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { getSession } from "@/utils/supabase/auth-client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 export function GenerateInput({
   value,
@@ -37,6 +38,7 @@ export function GenerateInput({
     const file = e.dataTransfer.files[0];
     if (
       file?.name?.endsWith("package.json") ||
+      file?.name?.endsWith("composer.json") ||
       file?.name?.endsWith("requirements.txt") ||
       file?.name?.endsWith(".cursorrules")
     ) {
@@ -44,6 +46,8 @@ export function GenerateInput({
 
       setValue("Loading...");
       onSubmit(text);
+    } else {
+      toast.error("File type not supported");
     }
   };
 
