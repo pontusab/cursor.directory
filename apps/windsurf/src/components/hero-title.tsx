@@ -26,7 +26,16 @@ export function HeroTitle() {
         <a href="/login" className="border-b border-border border-dashed">
           Join the community
         </a>{" "}
-        and level up your Windsurf experience today.
+        and level up your{" "}
+        <a
+          href="https://windsurf.ai?utm_source=windsurf.run"
+          className="border-b border-border border-dashed"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Windsurf
+        </a>{" "}
+        experience today.
       </p>
       <style jsx>{`
         @keyframes fadeIn {
