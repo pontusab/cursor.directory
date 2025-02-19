@@ -1,6 +1,6 @@
 "use server";
 
- import { getSession } from "@/utils/supabase/auth";
+import { getSession } from "@/utils/supabase/auth";
 import { xai } from "@ai-sdk/xai";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
@@ -55,7 +55,7 @@ globs: **/*.{ts,tsx}
 - Use proper data fetching patterns with suspense
 
 ---
-name: typescript-best-practices.mdc 
+name: typescript-best-practices.mdc
 description: TypeScript coding standards and type safety guidelines
 globs: **/*.{ts,tsx}
 ---
@@ -74,6 +74,28 @@ globs: **/*.{ts,tsx,css}
 - Use Tailwind CSS for styling
 - Follow Shadcn UI component guidelines
 - Ensure UI is responsive and accessible
+
+Add more practices for packages if needed. Additional to this, add conventions for some of the practices, only the important ones of main frameworks and libraries in this format, the following is just an example, don't use it, and generate a minimum of seven conventions and up to unlimited ones:
+
+---
+name: project-conventions.mdc
+description: This rule explains project tech stack and some basic code conventions
+globs: *
+---
+
+## Project conventions
+
+These conventions should be used when writing code for [project-name].
+
+### Convention 1: Minimize dependencies, vanilla Laravel is plenty
+
+Dependencies are a natural part of building software, but we aim to minimize them when possible to keep this open-source codebase easy to understand, maintain, and contribute to.
+
+- Push Laravel to its limits before adding new dependencies
+- When a new dependency is added, there must be a strong technical or business reason to add it
+- When adding dependencies, you should favor old and reliable over new and flashy
+
+Add more conventions as needed, putting a number for each convention, a clear title, and extended description. If we add more conventions we will have a better code generation, so, if you are descriptive with each convention the code generated will be much better.
 
 Generate separate sections with best practices for each major library/framework found in these dependencies:
 
