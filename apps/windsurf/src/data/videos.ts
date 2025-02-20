@@ -8,6 +8,15 @@ export const videos = [{
     }
   },
   {
+    "title": "AI Agent Tools for Beginners – A Complete MCP Guide",
+    "description": "What MCP is, how it works and how to setup MCP servers with Windsurf.",
+    "url": "https://www.youtube.com/embed/7NqQylSBIIo",
+    "author": {
+      "name": "Richardson Dackam",
+      "image": "https://yt3.ggpht.com/t0k-MTFK3RinQ8TUo2uRKtkiDIk0z5EXIUP03kREVx6Fod0tJPjfXpSiPFSMkLjVjliDOlHa=s88-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  {
     "title": "Windsurf Tutorial for Beginners (AI Code Editor) - Better than Cursor??",
     "description": "The Windsurf Editor combines agent and copilot functionalities for collaborative coding. It offers deep contextual awareness, multi-file editing, and utilizes Cascade for real-time codebase understanding and command execution.",
     "url": "https://www.youtube.com/embed/8TcWGk1DJVs",
