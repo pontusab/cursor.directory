@@ -60,7 +60,7 @@ export default [
   },
   {
     name: "Stripe",
-    url: "https://github.com/stripe/agent-toolkit",
+    url: "https://github.com/stripe/agent-toolkit/tree/main/modelcontextprotocol",
     description: "Interact with the Stripe API",
     logo: "https://cdn.brandfetch.io/idxAg10C0L/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
