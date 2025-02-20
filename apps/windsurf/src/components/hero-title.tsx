@@ -23,19 +23,14 @@ export function HeroTitle() {
         }}
       >
         Explore a curated collection of rules and MCP servers. <br />
-        <a href="/login" className="border-b border-border border-dashed">
-          Join the community
-        </a>{" "}
-        and level up your{" "}
         <a
-          href="https://windsurf.ai?utm_source=windsurf.run"
           className="border-b border-border border-dashed"
+          href="https://windsurf.ai?utm_source=windsurf.run"
           target="_blank"
           rel="noreferrer"
         >
-          Windsurf
-        </a>{" "}
-        experience today.
+          Not on Windsurf? Learn more here.
+        </a>
       </p>
       <style jsx>{`
         @keyframes fadeIn {
