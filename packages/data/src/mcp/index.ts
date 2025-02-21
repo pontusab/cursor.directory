@@ -169,5 +169,10 @@ export default [
     name: "BrowserTools MCP",
     url: "https://github.com/AgentDeskAI/browser-tools-mcp",
     description: "Analyze logs & interact with your browser for rapid debugging"
+  },
+  {
+    name: "Firecrawl",
+    url: "https://github.com/mendableai/firecrawl-mcp-server",
+    description: "Turn entire websites into LLM-ready data"
   }
 ];
