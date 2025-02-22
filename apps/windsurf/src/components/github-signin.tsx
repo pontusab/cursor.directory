@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 export function GithubSignin() {
   const supabase = createClient();
   const searchParams = useSearchParams();
-  const next = searchParams.get("next");
+  const next = searchParams.get("next") ?? "/";
 
   return (
     <Button

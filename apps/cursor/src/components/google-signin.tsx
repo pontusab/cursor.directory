@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 export function GoogleSignin() {
   const supabase = createClient();
   const searchParams = useSearchParams();
-  const next = searchParams.get("next");
+  const next = searchParams.get("next") ?? "/";
 
   return (
     <Button
