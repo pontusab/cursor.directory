@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";
 import { ShareButton } from "./share-button";
+import { SaveRuleButton } from "./save-rule-button";
 
 function truncateContent(content: string, limit: number) {
   if (content.length <= limit) return content;
@@ -29,24 +30,29 @@ export function RuleCardSmall({
     <Card
       className={cn(
         "bg-background max-h-[calc(100vh-8rem)] flex flex-col",
-        small ? "p-2" : "p-4 aspect-square",
+        small ? "p-2" : "p-4 aspect-square"
       )}
     >
       <CardContent
         className={cn(
           "bg-card h-full mb-2 font-mono pr-1 text-sm opacity-50 hover:opacity-100 transition-opacity group relative flex-grow",
           small ? "p-2" : "p-4",
-          isPage && "opacity-100",
+          isPage && "opacity-100"
         )}
       >
         <div
           className={cn(
             "group-hover:flex hidden right-4 bottom-4 absolute z-10 space-x-2",
-            small ? "right-2 bottom-2" : "right-4 bottom-4",
+            small ? "right-2 bottom-2" : "right-4 bottom-4"
           )}
         >
           <ShareButton slug={rule.slug} small={small} />
           <CopyButton content={rule.content} slug={rule.slug} small={small} />
+          <SaveRuleButton
+            slug={rule.slug}
+            content={rule.content}
+            small={small}
+          />
         </div>
 
         <Link href={`/${rule.slug}`}>
@@ -71,7 +77,7 @@ export function RuleCardSmall({
             <PopoverTrigger
               className={cn(
                 "flex gap-2 items-center overflow-x-auto whitespace-nowrap cursor-pointer hover:bg-accent",
-                small ? "h-4" : "h-5",
+                small ? "h-4" : "h-5"
               )}
             >
               {rule.libs.slice(0, 2).map((lib) => (
@@ -79,7 +85,7 @@ export function RuleCardSmall({
                   key={lib}
                   className={cn(
                     "text-[#878787] font-mono flex-shrink-0",
-                    small ? "text-[10px]" : "text-xs",
+                    small ? "text-[10px]" : "text-xs"
                   )}
                 >
                   {lib}
@@ -89,7 +95,7 @@ export function RuleCardSmall({
                 <span
                   className={cn(
                     "text-[#878787] font-mono flex gap-1 items-center",
-                    small ? "text-[10px]" : "text-xs",
+                    small ? "text-[10px]" : "text-xs"
                   )}
                 >
                   <span>+{rule.libs.length - 2} more</span>
