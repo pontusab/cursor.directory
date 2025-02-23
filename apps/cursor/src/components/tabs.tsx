@@ -14,6 +14,10 @@ const tabs = [
     name: "Popular",
     path: "/rules/popular",
   },
+  {
+    name: "Official",
+    path: "/rules/official",
+  },
 ];
 
 export function Tabs() {
