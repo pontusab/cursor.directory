@@ -1,5 +1,23 @@
 export const videos = [
   {
+    "title": "Cursor UPDATE: Code Editor just got EVEN BETTER! (MCP Servers, Codebase Understanding, Fusion Model)",
+    "description": "In this video, we dive into the latest and most powerful update to Cursor, the agentic AI code editor! This update brings MCP servers, improved codebase understanding, and the game-changing Fusion Model—making Cursor smarter, faster, and more intuitive than ever before.",
+    "url": "https://www.youtube.com/embed/2vJobjx1p6w",
+    "author": {
+      "name": "WorldofAI",
+      "image": "https://yt3.ggpht.com/Aee59geVCIWJz9y7AzVdnY3I1jPR1S4VFF4kIkNJ46VD6jrEGhH2VszD-vKly0XhHz_sLBN3u4A=s88-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  {
+    "title": "I spent 400+ hours in Cursor, here’s what I learned",
+    "description": "I spent 400+ hours in Cursor, here’s what I learned",
+    "url": "https://www.youtube.com/embed/gYLNxUxVomY",
+    "author": {
+      "name": "David Ondrej",
+      "image": "https://yt3.ggpht.com/Ksq0cOgKhbOuQMtIAjJlmrHSIDNbqmLtwosJNUZUuEZwNR3bc_W8l8Ve_xulQNidyb7dxqffyYI=s88-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  {
     "title": "Cursor AI for Beginners: A Complete Guide",
     "description": "Are you new to Cursor AI and wondering how to get started? In this video you'll learn exactly how to use Cursor AI (No Experience Needed).",
     "url": "https://www.youtube.com/embed/YG459bD8qmw",
