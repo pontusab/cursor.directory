@@ -6,7 +6,7 @@ const readMdFile = (filename: string) => {
     const filePath = join(process.cwd(), 'src/data/official', filename);
     return readFileSync(filePath, 'utf-8');
   } catch (error) {
-     return null;
+     return '';
   }
 };
 
