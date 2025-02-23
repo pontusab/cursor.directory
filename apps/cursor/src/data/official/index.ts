@@ -165,6 +165,7 @@ export const officialRules = [
     },
   ];
   
-  export async function getOfficialRuleBySlug(slug: string) {
-    return officialRules.find((rule) => rule.slug === slug);
+  export function getOfficialRuleBySlug(slug: string) {
+    console.log(slug);
+    return officialRules.find((rule) => rule.slug === `official/${slug}`);
   }

@@ -4,6 +4,8 @@ import { getOfficialRuleBySlug, officialRules } from "@/data/official";
 
 type Params = Promise<{ slug: string }>;
 
+export const revalidate = 86400; // Revalidate every 24 hours (86400 seconds)
+
 export async function generateMetadata({ params }: { params: Params }) {
   const { slug } = await params;
   const rule = getOfficialRuleBySlug(slug);
@@ -40,5 +42,3 @@ export default async function Page({ params }: { params: Params }) {
     </div>
   );
 }
-
-export const revalidate = 86400; // Revalidate every 24 hours (86400 seconds)
