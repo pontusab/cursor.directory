@@ -174,5 +174,10 @@ export default [
     name: "Firecrawl",
     url: "https://github.com/mendableai/firecrawl-mcp-server",
     description: "Turn entire websites into LLM-ready data"
+  },
+  {
+    "name": "Apify RAG Web Browser",
+    "url": "https://apify.com/apify/rag-web-browser#anthropic-model-context-protocol-mcp-server",
+    "description": "Web browser for LLM apps similar to a web browser in ChatGPT. It queries Google Search, scrapes the top N pages from the results, and returns their cleaned content as Markdown."
   }
 ];
