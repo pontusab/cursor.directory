@@ -41,6 +41,12 @@ export default [
     logo: "https://cdn.brandfetch.io/idDpCfN4VD/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
   },
   {
+    name: "Figma",
+    url: "https://github.com/GLips/Figma-Context-MCP",
+    description: "Proivde coding agents with design data direct from Figma for far more accurate design implementations in one-shot.",
+    logo: "https://cdn.brandfetch.io/idZHcZ_i7F/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+  },
+  {
     name: "Sentry",
     url: "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry",
     description: "A Model Context Protocol server for retrieving and analyzing issues from Sentry.io. This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
